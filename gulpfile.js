@@ -12,32 +12,7 @@ var dateFormat  = require('dateformat');
 var del         = require('del');
 var cleanCSS    = require('gulp-clean-css');
 
-// var spawn = require('child_process').spawn;
-//
-// gulp.task('serve', function() {
-//   spawn('node', ['server.js'], { stdio: 'inherit' });
-// });
-// var express = require('express'),
-//     serverport = 1981;
-//
-// // Set up an express server (but not starting it yet)
-// var server = express();
-// // Use our 'static' folder as rootfolder
-// server.use(express.static('.'));
-// // Because I like HTML5 pushstate .. this redirects everything back to our index.html
-// server.all('/', function(req, res) {
-//   res.sendFile('index.php', { root: '.' });
-// });
-// server.listen(serverport);
-// Dev task
-// gulp.task('dev', function() {
-// // Start webserver
-// server.listen(serverport);
-// });
 
-
-// Enter URL of your local server here
-// Example: 'http://localwebsite.dev'
 var mampFolder = '2017-f-web-des/tech-tornado';
 var URL = 'http://localhost:8888/'+mampFolder;
 
@@ -184,10 +159,6 @@ gulp.task( 'build', ['clean'], function(done) {
 gulp.task('clean', function(done) {
   sequence(['clean:css'], done);
 });
-
-
-
-
 
 // Clean CSS
 gulp.task('clean:css', function() {
