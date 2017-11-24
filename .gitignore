@@ -1,0 +1,10 @@
+# Add any directories, files, or patterns you don't want to be tracked by version control
+node_modules
+.DS_Store
+*/.DS_Store
+**/.DS_Store
+**/*/.DS_Store
+js/scripts.js
+js/scripts.js.map
+css/styles.css
+css/styles.css.map
