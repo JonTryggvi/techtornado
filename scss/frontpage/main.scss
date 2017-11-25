@@ -1,3 +1,39 @@
-body {
-  background-color: blue;
+
+
+
+.size {
+  // height: 40px;
+  // width: 40px;
+  svg {
+    cursor: pointer;
+   height: 140px;
+   width: 140px;
+   // overflow: hidden;
+   
+ }
+
+}
+
+
+svg .test {
+  transform: translateY(0px);
+  transition: all 400ms ease;
+  // animation: svvg 200ms alternate;
+  &:hover {
+  transform: translateY(20px);
+  }
+}
+
+
+@keyframes svvg {
+  0% {
+    transform: translateY(10px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0px);
+
+  }
 }
