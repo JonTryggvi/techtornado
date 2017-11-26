@@ -1,20 +1,25 @@
 .size {
-  display:flex;
+  display: flex;
   justify-content: center;
   margin: 0 auto;
   width: 100%;
   height: 150px;
+
   svg {
     width: 150px;
     height: 150px;
- }
+  }
+}
+
+.settup {
+  width: 90%;
+  margin: 0 auto;
 }
 
 .redArrowForward {
-    // transform: translateX(0px);
-    animation: svvg 2s 1s ease infinite;
-  }
-
+  // transform: translateX(0px);
+  animation: svvg 2s 1s ease infinite;
+}
 
 @keyframes svvg {
   0% {

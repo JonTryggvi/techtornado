@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  &:active,
+  &:focus {
+    outline: none;
+  }
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: $robo;
+  font-size: 14px;
+  line-height: 17px;
+  color: $black;
+}
+
+h2 {
+  font-family: $mont;
+  font-size: 80px;
+  line-height: 100px;
+  font-weight: 500;
+  @include x-linear-gradient('to right', $gradLight, $gradLight, $gradDark);
+  background-clip: text;
+  color: transparent;
+}
+
+h3 {
+  font-family: $mont;
+  font-size: 20px;
+  line-height: 20px;
+  color: $greyLight;
+}
+
+h4 {
+  font-family: $mont;
+  font-size: 12px;
+  font-weight: 300;
+  color: $greyLight;
+}
+
+p {
+  font-family: $play;
+  font-size: 16px;
+  line-height: 26px;
+  color: $black;
+}
