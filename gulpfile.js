@@ -58,6 +58,7 @@ gulp.task('browser-sync', ['build'], function() {
             'js/custom/**/*.js',
             'scss/**/*.scss',
             'index.php',
+            '**/*.php',
             'images/**/*.{png,jpg,gif}',
           ];
 
