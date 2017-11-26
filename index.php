@@ -16,19 +16,20 @@
         <path d="M0.31740411,19.3897427 L52.499489,19.3897427" id="Stroke-42" stroke="#3E3E3E" stroke-width="3"></path>
         <polyline id="Stroke-43" stroke="#3E3E3E" stroke-width="3" points="34.0046079 0.727521992 52.6876436 19.3900503 34.0046079 38.0518097"></polyline>
       </svg>
-
-      <!-- but when we are not we can simply use <svg><use></use></svg> -->
-
     </div>
-
     <div class="size">
       <p>this is the use method</p>
-    <svg>
-      <use href="#acceptHollowRed"></use>
-    </svg>
+      <svg>
+        <use href="#acceptHollowRed"></use>
+      </svg>
+    </div>
+    <div class="size">
+      <svg>
+        <use href="#utensils"></use>
+      </svg>
     </div>
 
     <!-- <img class="size" src="img/icons/accept_hollow_red.svg" alt=""> -->
-    <!-- <h1>Tech Tornado is up and running!!</h1> -->
+    <h2 class="settup">Tech Tornado is up and running!!</h2>
   </body>
 </html>
