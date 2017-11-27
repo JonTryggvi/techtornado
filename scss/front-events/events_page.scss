@@ -6,12 +6,12 @@
   &__left {
     width: 53%;
     max-height: 100vh;
+    background-color: white;
     overflow: scroll;
     &__container {
       width: 90%;
       background-color: $white;
       padding: 6% 0 6% 0;
-
       &__filter {
         display: flex;
         flex-flow: row nowrap;
@@ -25,17 +25,29 @@
           background: #FFFFFF;
           box-shadow: inset 1px 2px 3px 0 rgba(0,0,0,0.06);
           height: 50px;
+          font-family: $mont;
+          font-size: 18px;
+          color: $black;
+          font-weight: 500;
+          text-indent: 30px;
+          padding-top: 2px;
         }
         .filterGenre {
           background: #FFFFFF;
           width: 48%;
           height: 50px;
           box-shadow: 2px 4px 4px 0 rgba(0,0,0,0.04);
+          font-family: $mont;
+          font-size: 18px;
+          color: $black;
+          font-weight: 500;
+          text-indent: 30px;
+          padding-top: 14px;
         }
       }
       &__list {
         &__item {
-          padding: 0 6% 0 6%;
+          padding: 0 10% 0 10%;
           display: flex;
           flex-flow: row nowrap;
           width: 100%;
@@ -52,6 +64,12 @@
           &__leftText {
             padding: 12% 0 12% 0;
             width: 25%;
+            span {
+              font-family: $mont;
+              font-size: 14px;
+              font-weight: 300;
+              color: $greyLight;
+            }
           }
         }
         .selectedEvent {
@@ -132,7 +150,7 @@
         .linkGetTicket {
           position: absolute;
           top: -140px;
-          left: 390px;
+          left: 360px;
           span {
             position: absolute;
             top: 70px;

@@ -11,7 +11,7 @@
     <div class="eventsection__left">
       <div class="eventsection__left__container">
         <div class="eventsection__left__container__filter">
-          <input class="searchInput" type="text" name="" value="" placeholder="search">
+          <input class="searchInput" type="text" name="" value="" placeholder="Search">
           <div class="filterGenre">Genre</div>
         </div>
         <div class="eventsection__left__container__list">
