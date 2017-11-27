@@ -1,0 +1,151 @@
+.eventsection {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100vw;
+  justify-content: space-around;
+  &__left {
+    width: 53%;
+    max-height: 100vh;
+    overflow: scroll;
+    &__container {
+      width: 90%;
+      background-color: $white;
+      padding: 6% 0 6% 0;
+
+      &__filter {
+        display: flex;
+        flex-flow: row nowrap;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        padding: 6%;
+        .searchInput {
+          width: 48%;
+          border: none;
+          background: #FFFFFF;
+          box-shadow: inset 1px 2px 3px 0 rgba(0,0,0,0.06);
+          height: 50px;
+        }
+        .filterGenre {
+          background: #FFFFFF;
+          width: 48%;
+          height: 50px;
+          box-shadow: 2px 4px 4px 0 rgba(0,0,0,0.04);
+        }
+      }
+      &__list {
+        &__item {
+          padding: 0 6% 0 6%;
+          display: flex;
+          flex-flow: row nowrap;
+          width: 100%;
+          justify-content: space-between;
+          &__rightText {
+            border-bottom: 1px solid $greyLight;
+            width: 75%;
+            padding: 12% 0 12% 0;
+            h3 {
+              font-size: 18px;
+              font-weight: 300;
+            }
+          }
+          &__leftText {
+            padding: 12% 0 12% 0;
+            width: 25%;
+          }
+        }
+        .selectedEvent {
+          border: 1px solid $blue;
+          border-left: none;
+          position: relative;
+          &::after {
+            position: absolute;
+            content: '';
+            width: 40px;
+            height: 40px;
+            background-color: $white;
+            right: -21px;
+            top: 50%;
+            margin-top: -19px;
+            transform: rotate(45deg);
+            border-top: 1px solid $blue;
+            border-right: 1px solid $blue;
+          }
+          h3, span {
+            color: $blue;
+          }
+        }
+      }
+    }
+  }
+  &__left::-webkit-scrollbar {
+  display: none;
+  }
+  &__right {
+    background-color: white;
+    padding: 6%;
+    width: 47%;
+    max-height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    &__event {
+      h2 {
+        font-size: 40px;
+        line-height: 50px;
+      }
+      h3 {
+        font-size: 18px;
+        line-height: 30px;
+        color: $black;
+        font-weight: 500;
+      }
+      img {
+        width: 100%;
+        margin: 20px 0 20px 0;
+      }
+      &__buttons {
+        position: relative;
+        display: flex;
+        flex-flow: row;
+        width: 100%;
+        justify-content: space-between;
+        font-family: $mont;
+        font-weight: 500;
+        .linkMap {
+          width: 30%;
+          margin: 3% 0 3% 0;
+          a {
+            color: $black;
+            font-size: 14px;
+          }
+        }
+        .linkShare
+        {
+          width: 70%;
+          margin: 3% 0 3% 0;
+          a {
+            font-size: 14px;
+            color: $black;
+          }
+
+        }
+        .linkGetTicket {
+          position: absolute;
+          top: -140px;
+          left: 390px;
+          span {
+            position: absolute;
+            top: 70px;
+            left: 50px;
+            color: white;
+            font-size: 16px;
+            font-weight: 500;
+          }
+          #svggaur {
+            padding: 10px;
+          }
+        }
+      }
+    }
+  }
+}
