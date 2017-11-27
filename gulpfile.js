@@ -1,20 +1,20 @@
 "use strict";
 
-var $           = require('gulp-load-plugins')();
+var $ = require('gulp-load-plugins')();
 // var server      = require('express')();
-var argv        = require('yargs').argv;
-var gulp        = require('gulp');
+var argv = require('yargs').argv;
+var gulp = require('gulp');
 var browserSync = require('browser-sync').create();
-var merge       = require('merge-stream');
-var sequence    = require('run-sequence');
-var colors      = require('colors');
-var dateFormat  = require('dateformat');
-var del         = require('del');
-var cleanCSS    = require('gulp-clean-css');
+var merge = require('merge-stream');
+var sequence = require('run-sequence');
+var colors = require('colors');
+var dateFormat = require('dateformat');
+var del = require('del');
+var cleanCSS = require('gulp-clean-css');
 
 
 var mampFolder = '2017-f-web-des/tech-tornado';
-var URL = 'http://localhost:8888/'+mampFolder;
+var URL = 'http://localhost:8888/' + mampFolder;
 
 // Check for --production flag
 var isProduction = !!(argv.production);
@@ -55,12 +55,12 @@ var PATHS = {
 gulp.task('browser-sync', ['build'], function() {
 
   var files = [
-            'js/custom/**/*.js',
-            'scss/**/*.scss',
-            'index.php',
-            '**/*.php',
-            'images/**/*.{png,jpg,gif}',
-          ];
+    'js/custom/**/*.js',
+    'scss/**/*.scss',
+    'index.php',
+    '**/*.php',
+    'images/**/*.{png,jpg,gif}',
+  ];
 
   browserSync.init(files, {
     // Proxy address
@@ -80,8 +80,8 @@ gulp.task('sass', function() {
       includePaths: PATHS.sass
     }))
     .on('error', $.notify.onError({
-        message: "<%= error.message %>",
-        title: "Sass Error"
+      message: "<%= error.message %>",
+      title: "Sass Error"
     }))
     .pipe($.autoprefixer({
       browsers: COMPATIBILITY
@@ -90,7 +90,9 @@ gulp.task('sass', function() {
     .pipe($.if(isProduction, cleanCSS()))
     .pipe($.if(!isProduction, $.sourcemaps.write('.')))
     .pipe(gulp.dest('css'))
-    .pipe(browserSync.stream({match: '**/*.css'}));
+    .pipe(browserSync.stream({
+      match: '**/*.css'
+    }));
 });
 
 
@@ -98,12 +100,12 @@ gulp.task('sass', function() {
 gulp.task('lint', function() {
   return gulp.src('js/custom/**/*.js')
     .pipe($.jshint())
-    .pipe($.notify(function (file) {
+    .pipe($.notify(function(file) {
       if (file.jshint.success) {
         return false;
       }
 
-      var errors = file.jshint.results.map(function (data) {
+      var errors = file.jshint.results.map(function(data) {
         if (data.error) {
           return "(" + data.error.line + ':' + data.error.character + ') ' + data.error.reason;
         }
@@ -125,7 +127,7 @@ gulp.task('javascript', function() {
     .pipe($.sourcemaps.init())
     .pipe($.babel())
     .pipe($.concat('scripts.js', {
-      newLine:'\n;'
+      newLine: '\n;'
     }))
     .pipe($.if(isProduction, uglify))
     .pipe($.if(!isProduction, $.sourcemaps.write(".")))
@@ -149,10 +151,10 @@ gulp.task('package', ['build'], function() {
 
 // Build task
 // Runs copy then runs sass & javascript in parallel
-gulp.task( 'build', ['clean'], function(done) {
+gulp.task('build', ['clean'], function(done) {
   sequence(
-          ['sass','javascript', 'lint'],
-          done);
+    ['sass', 'javascript', 'lint'],
+    done);
 });
 
 
@@ -164,16 +166,16 @@ gulp.task('clean', function(done) {
 // Clean CSS
 gulp.task('clean:css', function() {
   return del([
-      'stylesheets/styles.css',
-      'stylesheets/styles.css.map',
-      'stylesheets/admin-styles.css',
-      'stylesheets/admin-styles.css.map'
-    ]);
+    'stylesheets/styles.css',
+    'stylesheets/styles.css.map',
+    'stylesheets/admin-styles.css',
+    'stylesheets/admin-styles.css.map'
+  ]);
 });
 
 // Default gulp task
 // Run build task and watch for file changes
-  gulp.task('default', [ 'build', 'browser-sync' ], function() {
+gulp.task('default', ['build', 'browser-sync'], function() {
   // Log file changes to console
   function logFileChange(event) {
     var fileName = require('path').relative(__dirname, event.path);
@@ -187,7 +189,7 @@ gulp.task('clean:css', function() {
     });
 
   // JS Watch
-  gulp.watch(['js/custom/**/*.js'], [ 'javascript', 'lint'])
+  gulp.watch(['js/custom/**/*.js'], ['javascript', 'lint'])
     .on('change', function(event) {
       logFileChange(event);
     });
