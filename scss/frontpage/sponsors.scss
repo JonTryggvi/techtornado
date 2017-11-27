@@ -1,0 +1,43 @@
+.sponsorsModal {
+  background: $white;
+  width: 70%;
+  overflow: hidden;
+  margin: 0 auto;
+  padding-top: 4%;
+  &__btnClose {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    img {
+      width: 20px;
+    }
+  }
+  &__topInfo {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 35px;
+      margin: 0 auto;
+    }
+    h2 {
+      font-family: $mont;
+      font-size: 20px;
+      color: $black;
+      font-weight: 500;
+      text-align: center;
+    }
+  }
+  &__allIcons {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 40px;
+    img {
+        max-width: 170px;
+        margin: 10px 20px;
+    }
+  }
+}
