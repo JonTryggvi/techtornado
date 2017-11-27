@@ -12,6 +12,7 @@
 body {
   width: 100%;
   min-height: 100vh;
+  background-color: $white;
 }
 
 a {
@@ -30,9 +31,9 @@ h1 {
 h2 {
   font-family: $mont;
   font-size: 70px;
-  line-height: 100px;
-  font-weight: 500;
-  @include x-linear-gradient(-135deg, $gradLight, $gradLight, $gradDark);
+  line-height: 90px;
+  font-weight: 700;
+  @include x-linear-gradient(135deg, $gradLight, $gradLight, $gradDark);
   background-clip: text;
   color: transparent;
 }
