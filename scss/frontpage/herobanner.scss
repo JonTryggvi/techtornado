@@ -1,0 +1,129 @@
+.fp-hero {
+  width: 100%;
+  height: 80vh;
+
+  &__slider {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+
+    &__content {
+
+      align-items: flex-start;
+      justify-content: center;
+      width: 70%;
+      height: 100%;
+
+      &__slide {
+        display: flex;
+        flex-flow: column;
+
+        h3 {
+          color: $black;
+        }
+      }
+
+    }
+
+    &__controlls {
+      display: flex;
+      flex-flow: column nowrap;
+
+      width: 10%;
+      justify-content: flex-end;
+
+      &__conainer {
+        position: relative;
+        display: flex;
+        flex-flow: column;
+        align-items: flex-end;
+        justify-content: space-evenly;
+        min-height: 20%;
+        margin-bottom: 100px;
+        // background-color: $red;
+        &__nextContainer,
+        &__prevContainer {
+          svg {
+            width: 24px;
+            height: 30px;
+          }
+        }
+
+        &__nextContainer,
+        &__prevContainer {
+          position: relative;
+          display: flex;
+          flex-flow: column;
+          align-items: center;
+          justify-content: space-between;
+
+          .btnCommonRules {
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+
+            position: absolute;
+            font-family: $mont;
+            font-size: 14px;
+            white-space: nowrap;
+            width: 0;
+            height: 100%;
+          }
+        }
+
+        &__prevContainer {
+          .prevText {
+            bottom: -80px;
+            transform: rotate(-90deg);
+          }
+        }
+
+        &__nextContainer {
+          .nextText {
+            bottom: 70px;
+            transform: rotate(90deg);
+          }
+        }
+      }
+    }
+  }
+}
+
+// svg slider animations
+.arrowUpRed {
+  cursor: pointer;
+
+  &:hover {
+    .slide-up {
+      transform: translateY(0px);
+      fill: $red;
+    }
+  }
+}
+
+.slide-up {
+  transition: all 200ms 100ms ease;
+  fill: transparent;
+  transform: translateY(20px);
+}
+
+.arrowDownRed {
+  cursor: pointer;
+  position: relative;
+  overflow: visible;
+
+  &:hover {
+    .slide-down {
+      transform: translateY(0px);
+      fill: $red;
+    }
+  }
+}
+
+.slide-down {
+  transition: all 200ms 100ms ease;
+  fill: transparent;
+  transform: translateY(-20px);
+}

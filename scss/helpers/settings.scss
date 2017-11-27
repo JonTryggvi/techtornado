@@ -15,7 +15,9 @@ body {
 }
 
 a {
+  font-family: $mont;
   text-decoration: none;
+  color: $black;
 }
 
 h1 {
@@ -27,17 +29,17 @@ h1 {
 
 h2 {
   font-family: $mont;
-  font-size: 80px;
+  font-size: 70px;
   line-height: 100px;
   font-weight: 500;
-  @include x-linear-gradient(45deg, $gradLight, $gradLight, $gradDark);
+  @include x-linear-gradient(-135deg, $gradLight, $gradLight, $gradDark);
   background-clip: text;
   color: transparent;
 }
 
 h3 {
   font-family: $mont;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 20px;
   color: $greyLight;
 }
@@ -51,7 +53,13 @@ h4 {
 
 p {
   font-family: $play;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 26px;
   color: $black;
+}
+
+.wrapper {
+  max-width: 1440px;
+  width: 90%;
+  margin: 0 auto;
 }
