@@ -1,0 +1,26 @@
+.top-bar-container {
+  background-color: #fff;
+  height: 60px;
+}
+
+.top-bar {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    cursor: pointer;
+    width: 134px;
+    height: 34px;
+  }
+
+  &__sign-in {
+    font-size: 14px;
+    transition: color 300ms ease;
+
+    &:hover {
+      color: $red;
+    }
+  }
+}

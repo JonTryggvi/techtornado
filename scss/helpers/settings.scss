@@ -12,10 +12,13 @@
 body {
   width: 100%;
   min-height: 100vh;
+  background-color: $white;
 }
 
 a {
+  font-family: $mont;
   text-decoration: none;
+  color: $black;
 }
 
 h1 {
@@ -27,17 +30,17 @@ h1 {
 
 h2 {
   font-family: $mont;
-  font-size: 80px;
-  line-height: 100px;
-  font-weight: 500;
-  @include x-linear-gradient(45deg, $gradLight, $gradLight, $gradDark);
+  font-size: 70px;
+  line-height: 90px;
+  font-weight: 700;
+  @include x-linear-gradient(135deg, $gradLight, $gradLight, $gradDark);
   background-clip: text;
   color: transparent;
 }
 
 h3 {
   font-family: $mont;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 20px;
   color: $greyLight;
 }
@@ -51,7 +54,7 @@ h4 {
 
 p {
   font-family: $play;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 26px;
   color: $black;
 }
@@ -69,4 +72,9 @@ button{
   font-weight: 500;
   line-height: 17px;
   color: $white;
+}
+.wrapper {
+  max-width: 1440px;
+  width: 90%;
+  margin: 0 auto;
 }
