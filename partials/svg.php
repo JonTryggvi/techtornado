@@ -338,7 +338,7 @@
 
   <!-- envelope -->
   <symbol id="envelope" viewBox="0 0 62 43" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-    <g id="Style-Guide" transform="translate(-270.000000, -2320.000000)" stroke-width="3" stroke="#2B2B2B">
+    <g id="Style-Guide" transform="translate(-270.000000, -2320.000000)" stroke-width="3" stroke="#AFC5DB">
       <g id="Group-14" transform="translate(119.000000, 2019.000000)">
         <g id="Page-1" transform="translate(8.000000, 109.000000)">
           <g id="Group-36" transform="translate(145.000000, 194.000000)">
@@ -424,7 +424,7 @@
 
   <!-- lock -->
   <symbol id="lock" viewBox="0 0 54 58" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-    <g id="Style-Guide" transform="translate(-600.000000, -2132.000000)" stroke-width="3" stroke="#2B2B2B">
+    <g id="Style-Guide" transform="translate(-600.000000, -2132.000000)" stroke-width="3" stroke="#AFC5DB">
       <g id="Group-14" transform="translate(119.000000, 2019.000000)">
         <g id="Page-1" transform="translate(1.000000, 108.000000)">
           <g id="Group-29" transform="translate(481.000000, 6.000000)">

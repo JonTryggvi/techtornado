@@ -59,6 +59,20 @@ p {
   color: $black;
 }
 
+a{
+  font-family: $mont;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  color: $blue;
+}
+button{
+  font-family: $mont;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 17px;
+  color: $white;
+}
 .wrapper {
   max-width: 1440px;
   width: 90%;
