@@ -7,11 +7,19 @@
 
   </head>
   <body>
+    <?php include_once("partials/svg.php") ?>
   <section class="eventsection">
     <div class="eventsection__left">
       <div class="eventsection__left__container">
+
         <div class="eventsection__left__container__filter">
-          <input class="searchInput" type="text" name="" value="" placeholder="Search">
+          <label>
+            <input class="searchInput" type="text" name="" value="" placeholder="Search">
+            <svg class="searchInput__icon">
+              <use href="#spyglass"></use>
+            </svg>
+          </label>
+
           <div class="filterGenre">Genre</div>
         </div>
         <div class="eventsection__left__container__list">
