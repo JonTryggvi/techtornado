@@ -33,7 +33,7 @@ h2 {
   font-size: 70px;
   line-height: 90px;
   font-weight: 700;
-  @include x-linear-gradient(135deg, $gradLight, $gradLight, $gradDark);
+  @include x-linear-gradient('135deg', $gradLight, $gradLight, $gradDark);
   background-clip: text;
   color: transparent;
 }
@@ -63,4 +63,8 @@ p {
   max-width: 1440px;
   width: 90%;
   margin: 0 auto;
+}
+
+ul {
+  font-family: $mont;
 }
