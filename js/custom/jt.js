@@ -33,7 +33,7 @@ $(document).ready(function() {
   });
 
   nextArrow.click(function() {
-    console.log('y');
+    // console.log('y');
     headSlider.trigger('next.owl.carousel');
   });
 
