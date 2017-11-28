@@ -72,7 +72,7 @@
           <div class="linkGetTicket">
             <a href="#">
               <span>Get Ticket</span>
-              <svg id="svggaur"></svg>
+              <svg class="svggaur"></svg>
             </a>
           </div>
         </div>
@@ -81,7 +81,7 @@
 
     </div>
   </section>
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/scripts.js"></script>
   </body>
 </html>

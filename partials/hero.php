@@ -78,5 +78,5 @@
       </div>
     </div>
   </div>
-  <a href="#" id="component-4" class="fp-hero__btn-seeEvents">See All Events</a>
+  <a href="#" id="component-4" class="fp-hero__btn-seeEvents ">See All Events</a>
 </section>

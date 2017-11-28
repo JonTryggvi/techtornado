@@ -1,5 +1,4 @@
-var paths = [
-  {
+var paths = [{
     path: 'M77.7122332,142.612593 C117.736274,127.78677 174.519689,111.164655 156.124449,66.1757496 C137.729209,21.1868438 126.894016,6.99966701 82.429832,1.58158455 C37.9656476,-3.8364979 2.47925544,29.2496673 2.00462116,73.7991365 C1.52998687,118.348606 37.6881921,157.438416 77.7122332,142.612593 Z',
     fill: '#FF6565'
   },
@@ -10,8 +9,7 @@ var paths = [
   {
     path: 'M80.7122332,146.612593 C125.868647,144.562587 156.343176,128.036664 159.124449,70.1757496 C161.905722,12.3148354 124.624258,-1.35704686 79.4775428,0.182045709 C34.3308276,1.72113827 4.9571936,35.3927144 0.837241732,79.7384733 C-3.28271014,124.084232 35.5558196,148.662598 80.7122332,146.612593 Z',
     fill: '#FF6565'
-  }
-  ,
+  },
   {
     path: 'M97.6907049,154.149794 C142.82695,143.103926 176.838802,139.397539 168.148687,81.9014386 C159.458573,24.4053378 128.592961,-10.9676162 77.1851757,3.38154271 C25.77739,17.7307016 -5.12486654,36.6657282 1.98427531,82.3254743 C9.09341716,127.98522 52.5544596,165.195662 97.6907049,154.149794 Z',
     fill: '#FF6565'
@@ -22,22 +20,29 @@ var paths = [
   }
 ];
 
-var s = Snap(svggaur);
-var p = s.path(paths[0].path).attr({
-  fill: paths[0].fill
-});
-var counter = 0;
+var svggaur = $('.svggaur');
 
-setInterval(morph, 2500);
+if (svggaur) {
+  for (var i = 0; i < svggaur.length; i++) {
+    console.log(svggaur[i]);
+    var s = Snap(svggaur[i]);
+    var p = s.path(paths[0].path).attr({
+      fill: paths[0].fill
+    });
+    var counter = 0;
 
-function morph() {
-  if(counter < paths.length) {
-    ++counter;
-  } else {
-    counter = 0;
+    setInterval(morph, 2500);
+
+    function morph() {
+      if (counter < paths.length) {
+        ++counter;
+      } else {
+        counter = 0;
+      }
+      p.animate({
+        d: paths[counter].path,
+        fill: paths[counter].fill
+      }, 1600, mina.easein)
+    }
   }
-  p.animate({
-    d: paths[counter].path,
-    fill: paths[counter].fill
-  }, 1600, mina.easein)
 }
