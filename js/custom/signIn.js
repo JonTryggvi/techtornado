@@ -1,6 +1,6 @@
-$( document ).ready(function() {
+$(document).ready(function() {
   // Input Email Icon
-  $( ".inputLogInEmail" ).focus(function() {
+  $(".inputLogInEmail").focus(function() {
     $(".envelopeRed").css({
       "transition": "all 300ms 100ms ease",
       "fill": "#FF6565",
@@ -13,7 +13,7 @@ $( document ).ready(function() {
 
 
   // Input password Icon
-  $( ".inputLogInPassword" ).focus(function() {
+  $(".inputLogInPassword").focus(function() {
     $(".lockRed").css({
       "transition": "all 300ms 100ms ease",
       "fill": "#FF6565",
@@ -25,7 +25,7 @@ $( document ).ready(function() {
   });
 
   // Sign in with Facebook Icon
-  $(".withFacebook").mouseover(function(){
+  $(".withFacebook").mouseover(function() {
     $(".arrowForwRedFacebook").css({
       "transition": "all 300ms 100ms ease",
       "fill": "#FF6565",
@@ -40,7 +40,7 @@ $( document ).ready(function() {
     });
   });
   // Sign in with Google Icon
-  $(".withGoogle").mouseover(function(){
+  $(".withGoogle").mouseover(function() {
     $(".arrowForwRedGoogle").css({
       "transition": "all 300ms 100ms ease",
       "fill": "#FF6565",
@@ -54,4 +54,58 @@ $( document ).ready(function() {
       "transform": "translateX(-5px)"
     });
   });
+
+
+  // signin with jquery
+  var btnSignin = $('#btnSignin');
+  var signIn = $('.signIn');
+  var btnCLoseSignIn = $('#btnCLoseSignIn');
+  var btnSendSignIn = $('#btnSendSignIn');
+  var btnUserOptions = $('#btnUserOptions');
+  var userOptionsDropdown = $('#userOptionsDropdown');
+  btnSignin.click(function() {
+    console.log('x');
+    signIn.addClass('scaleUp');
+  });
+
+  btnCLoseSignIn.click(function() {
+    console.log('x');
+    signIn.removeClass('scaleUp');
+  });
+
+  btnSendSignIn.click(function() {
+    $.post('api-signin.php', {
+      'loggedin': true
+    }).done(function(data) {
+      console.log(data);
+      signIn.removeClass('scaleUp');
+    });
+  });
+
+  btnUserOptions.click(function() {
+    // console.log('x');
+    userOptionsDropdown.toggleClass('dropDownActive');
+  });
+
+  $(document).mouseup(function(e) {
+    var container = btnUserOptions;
+
+    // if the target of the click isn't the container nor a descendant of the container
+    if (!container.is(e.target) && container.has(e.target).length === 0) {
+      userOptionsDropdown.removeClass('dropDownActive');
+    }
+  });
+
+
 });
+
+
+
+// var closeButton = document.querySelector(".signIn__close");
+// var divLogIn = document.querySelector(".signIn");
+// closeButton.addEventListener("click", function() {
+//   divLogIn.style.display = "none";
+// });
+//
+// var logInFacebook = document.querySelector(".withFacebook");
+// var logInGoogle = document.querySelector(".withGoogle");
