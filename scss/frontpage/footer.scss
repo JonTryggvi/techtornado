@@ -1,0 +1,109 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 520px;
+  background-color: #fff;
+}
+
+.footer-left{
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  &__logo {
+    width: 90px;
+    height: 90px;
+    margin-top: 55px;
+  }
+}
+
+.footer-main {
+  width: 75%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 160px;
+  &__about{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    &__header{
+    }
+    &__body{
+      margin-top: 45px;
+      display: flex;
+      flex-direction: row;
+      &__txt{
+        width: 470px;
+      }
+      &__SoMe{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 16px;
+        font-weight: 500;
+        text-align: right;
+        margin-left: 17%;
+        &__arrow {
+          width: 20px;
+          height: 20px;
+          margin-left: 20px;
+        }
+        &__facebook{
+          margin-top: 15px;
+        }
+      }
+    }
+  }
+}
+
+
+.footer-right {
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  &__btn-sponsors {
+    transform: rotate(90deg);
+    &__arrow {
+      width: 20px;
+      height: 20px;
+      margin-left: 20px;
+    }
+    h3 {
+      font-size: 22px;
+      color: $black;
+      text-transform: uppercase;
+      margin-left: -200px;
+    }
+  }
+  &__box-sponsors {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 140px;
+    background-color: $white;
+    &:hover{
+    }
+    &__diamond {
+      height: 30px;
+      width: 30px;
+    }
+  }
+}
+
+.copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #fff;
+  p{
+    color: #A5B6D0;
+    font-family: $mont;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 30px;
+  }
+}
