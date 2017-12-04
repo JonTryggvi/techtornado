@@ -35,9 +35,13 @@
     flex-wrap: wrap;
     justify-content: space-around;
     margin-top: 40px;
-    img {
-        max-width: 170px;
-        margin: 10px 20px;
+    &__eachIcon {
+      padding: 40px;
+      img {
+          max-width: 100px;
+          max-height: 80px;
+      }
     }
+
   }
 }

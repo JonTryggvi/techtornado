@@ -1,3 +1,59 @@
+///dropdown for Genre
+$(document).ready(function(){
+
+  $('#filterDropdown').click(function(){
+    $('.filterGenre__icon').toggleClass('iconActive');
+    $('.filterGenre__dropdown').toggleClass('dropdownActive');
+  });
+  // $(window).click(function(event) {
+  //   // console.dir(event.target.parentNode.id);
+  //   if(event.target.parentNode.id == 'userDropdown' || event.target.id == 'userDropdown') {
+  //       $('.header__nav__user__dropdown').addClass('showDropdown');
+  //   }else{
+  //       $('.header__nav__user__dropdown').removeClass('showDropdown');
+  //   }
+  // });
+  //
+//image slider
+  $(".owl-carousel").owlCarousel({
+  stagePadding: 100,
+  loop: true,
+  margin: 10,
+  nav: false,
+  items: 1,
+  lazyLoad: true,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  responsive: {
+    600: {
+      items: 1,
+      stagePadding: 60
+    },
+    1000: {
+      items: 1,
+      stagePadding: 100
+    },
+    1400: {
+      items: 1,
+      stagePadding: 140
+    },
+    1600: {
+      items: 1,
+      stagePadding: 350
+    },
+    1800: {
+      items: 1,
+      stagePadding: 400
+    }
+  }
+});
+
+
+});
+
+
+
+////floating button
 var paths = [{
     path: 'M77.7122332,142.612593 C117.736274,127.78677 174.519689,111.164655 156.124449,66.1757496 C137.729209,21.1868438 126.894016,6.99966701 82.429832,1.58158455 C37.9656476,-3.8364979 2.47925544,29.2496673 2.00462116,73.7991365 C1.52998687,118.348606 37.6881921,157.438416 77.7122332,142.612593 Z',
     fill: '#FF6565'
