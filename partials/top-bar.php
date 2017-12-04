@@ -1,5 +1,5 @@
 <div class="top-bar-container">
-  <div class="top-bar wrapper">
+  <div class="top-bar topbar_wrapper">
     <svg class="top-bar__logo">
       <use href="#topBarLogo"></use>
     </svg>

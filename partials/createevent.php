@@ -1,5 +1,6 @@
 <section class="fp-createevent">
-    <a href="#" id="" class="fp-createevent__btn-create">Create Event
+    <a href="#" id="" class="fp-createevent__btn-create">
+      <span>Create Event</span>
       <!-- arrow_frw_red -->
       <svg id="arrowForwRed" viewBox="0 0 55 41" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" class="fp-createevent__btn-create__arrow leftTrans">
         <polygon id="Fill-41" fill="#FF6565" points="29.3808877 0.727521992 48.0639233 19.3900503 29.3808877 38.0518097" class="redPoly"></polygon>

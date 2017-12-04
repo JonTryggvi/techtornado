@@ -5,25 +5,17 @@ $(document).ready(function(){
     $('.filterGenre__icon').toggleClass('iconActive');
     $('.filterGenre__dropdown').toggleClass('dropdownActive');
   });
-  // $(window).click(function(event) {
-  //   // console.dir(event.target.parentNode.id);
-  //   if(event.target.parentNode.id == 'userDropdown' || event.target.id == 'userDropdown') {
-  //       $('.header__nav__user__dropdown').addClass('showDropdown');
-  //   }else{
-  //       $('.header__nav__user__dropdown').removeClass('showDropdown');
-  //   }
-  // });
-  //
+
 //image slider
-  $(".owl-carousel").owlCarousel({
+  $("#myImageSlider").owlCarousel({
   stagePadding: 100,
   loop: true,
   margin: 10,
   nav: false,
   items: 1,
-  lazyLoad: true,
   autoplay: true,
-  autoplaySpeed: 2000,
+  autoplaySpeed: 1500,
+  autoplayTimeout: 10000,
   responsive: {
     600: {
       items: 1,
@@ -50,8 +42,6 @@ $(document).ready(function(){
 
 
 });
-
-
 
 ////floating button
 var paths = [{
