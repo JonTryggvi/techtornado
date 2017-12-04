@@ -46,6 +46,7 @@
     align-items: center;
     color: #fff;
     font-size: 38px;
+    font-family: $mont;
     font-weight: 500;
     &:hover{
       .leftTransSub {
@@ -71,4 +72,70 @@
     }
   }
   }
+  .activeForm{
+    display: none;
   }
+  &__frmSubscribe{
+    display: none;
+    position: relative;
+  input{
+    width: 830px;
+    height: 80px;
+    font-size: 16px;
+    font-family: $mont;
+    font-weight: 500;
+    color: white;
+    position: relative;
+    background: none;
+    border: 1px solid white;
+    padding: 0px 30px 0px 30px;
+    &::placeholder{
+      color: white;
+    }
+    }
+    &__toSubscribe {
+      width: 130px;
+      position: absolute;
+      top: 32px;
+      right: 40px;
+          .btnSubscribe {
+            display: flex;
+            justify-content: space-between;
+            color: white;
+            font-size: 16px;
+            font-family: $mont;
+            font-weight: 500;
+            padding-bottom: 25px;
+            svg{
+              width: 25px;
+              height: 18px;
+              margin-left: 24px;
+              transform: translateX(-3px);
+              transition: all 100ms ease;
+              .arrowSub {
+              stroke: #fff;
+              }
+            }
+            .goTo_subscribe{
+              .arrowForwRed_subscribe {
+                transition: all 200ms ease;
+                fill: transparent;
+                transform: translateX(-5px);
+              }
+            }
+            &:hover {
+              .arrowForwRed_subscribe {
+                fill: $black;
+                transform: translateX(0);
+              }
+              svg {
+              transform: translateX(0px);
+              }
+            }
+          }
+        }
+  }
+  .showForm{
+    display: flex;
+  }
+}
