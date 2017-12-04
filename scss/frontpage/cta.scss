@@ -1,0 +1,74 @@
+.fp-createevent {
+  height: 265px;
+  width: 100%;
+  background-color: $white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__btn-create {
+    display: flex;
+    align-items: center;
+    color: $black;
+    font-size: 38px;
+    font-weight: 500;
+    &:hover{
+      .leftTrans {
+        transform: translateX(5px);
+      }
+      .redPoly {
+        transform: translateX(0);
+        fill: $red;
+      }
+    }
+    &__arrow{
+    height: 38px;
+    width: 40px;
+    margin-left: 25px;
+    transition: all 200ms ease;
+    .redPoly {
+      transform: translateX(-5px);
+      fill: transparent;
+      transition: all 200ms 100ms ease;
+    }
+  }
+}
+}
+
+.fp-subscribe {
+  height: 265px;
+  width: 100%;
+  background-color: $red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__btn-subscribe {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 38px;
+    font-weight: 500;
+    &:hover{
+      .leftTransSub {
+        transform: translateX(5px);
+      }
+      .whitePoly {
+        transform: translateX(0);
+        fill: $black;
+      }
+    }
+    &__arrow{
+    height: 38px;
+    width: 40px;
+    margin-left: 25px;
+    transition: all 200ms ease;
+    .whiteArrow{
+      stroke: #fff;
+    }
+    .whitePoly {
+      transform: translateX(-5px);
+      fill: transparent;
+      transition: all 200ms 100ms ease;
+    }
+  }
+  }
+  }
