@@ -1,101 +1,129 @@
-.signIn{
+.signIn {
   width: 100vw;
   height: 100vh;
-  // position: absolute;
-  // top: 0;
-  // left: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
   background-color: $white;
   display: flex;
   justify-content: center;
   align-items: center;
+  transform: scale(0);
+  transition: transform 200ms ease;
 
-  &__close{
-    width: 35px;
-    height: 35px;
+  &__close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
     border: none;
     background-color: $white;
-    font-size: 25px;
-    color: $signInGrey;
     position: absolute;
     top: 30px;
     right: 30px;
+    cursor: pointer;
+
+    &:hover {
+      .declineHollowStroke {
+        fill: $grey;
+        stroke: $grey;
+      }
+    }
+
+    &__svg {
+      width: 18px;
+      height: 18px;
+
+      .declineHollowStroke {
+        transition: all 200ms ease;
+        fill: $greyLight;
+        stroke: $greyLight;
+      }
+    }
+
   }
 
-  &__logInForm{
+  &__logInForm {
     max-width: 620px;
     width: 100%;
     height: 500px;
     position: relative;
 
-    h2{
+    h2 {
       font-size: 50px;
       font-weight: 700;
       text-align: center;
     }
 
-    form{
+    form {
       width: 100%;
       height: 220px;
       position: relative;
 
-      label{
+      label {
         width: 100%;
         position: relative;
 
-        svg.logIn_email{
+        svg.logIn_email {
           width: 20px;
           height: 18px;
           position: absolute;
           left: 10%;
           top: -1px;
-          .envelopeRed{
+
+          .envelopeRed {
             transition: all 200ms 100ms ease;
             fill: transparent;
             transform: translateX(5px);
           }
         }
 
-        svg.logIn_password{
+        svg.logIn_password {
           width: 21px;
           height: 23px;
           position: absolute;
           left: 10%;
           top: -6px;
-          .lockRed{
+
+          .lockRed {
             transition: all 200ms 100ms ease;
             fill: transparent;
             transform: translateX(5px);
           }
         }
 
-        input:first-child{
+        input:first-child {
           margin: 40px 10%;
         }
-        input{
+
+        input {
           width: 80%;
           height: 40px;
           font-size: 18px;
           color: $black;
-          margin: 70px 10% 0 10%;
+          margin: 70px 10% 0;
           padding-left: 45px;
           position: relative;
           background: none;
           border: none;
           border-bottom: 1px solid $signInGrey;
-          &::placeholder{
+
+          &::placeholder {
             color: $signInGrey;
           }
         }
       }
 
-      a{
+      a {
         width: 100%;
         display: flex;
         justify-content: center;
         margin-top: 22px;
       }
 
-      button{
+      button {
         width: 140px;
         height: 140px;
         border: none;
@@ -109,24 +137,30 @@
         bottom: -70px;
       }
     }
-    &__withMedia{
+
+    &__withMedia {
       width: 230px;
       height: 50px;
       position: absolute;
       right: 0;
       bottom: 0;
+
       a {
         display: flex;
         justify-content: space-between;
         color: $signInBlack;
         padding-bottom: 25px;
-        svg{
+
+        svg {
           width: 25px;
           height: 18px;
           margin-left: 30px;
         }
-        .logIn_facebook, .logIn_google{
-          .arrowForwRedFacebook, .arrowForwRedGoogle{
+
+        .logIn_facebook,
+        .logIn_google {
+          .arrowForwRedFacebook,
+          .arrowForwRedGoogle {
             transition: all 200ms 100ms ease;
             fill: transparent;
             transform: translateX(-5px);
@@ -136,4 +170,8 @@
       }
     }
   }
+}
+
+.scaleUp {
+  transform: scale(1);
 }
