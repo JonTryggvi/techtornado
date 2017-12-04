@@ -33,7 +33,7 @@ h2 {
   font-size: 70px;
   line-height: 90px;
   font-weight: 700;
-  @include x-linear-gradient(135deg, $gradLight, $gradLight, $gradDark);
+  @include x-linear-gradient('135deg', $gradLight, $gradLight, $gradDark);
   background-clip: text;
   color: transparent;
 }
@@ -59,8 +59,26 @@ p {
   color: $black;
 }
 
+a{
+  font-family: $mont;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  color: $blue;
+}
+button{
+  font-family: $mont;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 17px;
+  color: $white;
+}
 .wrapper {
   max-width: 1440px;
   width: 90%;
   margin: 0 auto;
+}
+
+ul {
+  font-family: $mont;
 }

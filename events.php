@@ -7,12 +7,60 @@
 
   </head>
   <body>
+    <?php include_once("partials/svg.php") ?>
   <section class="eventsection">
     <div class="eventsection__left">
       <div class="eventsection__left__container">
+
         <div class="eventsection__left__container__filter">
-          <input class="searchInput" type="text" name="" value="" placeholder="Search">
-          <div class="filterGenre">Genre</div>
+          <div class="eventsection__left__container__filter__background">
+            <label>
+              <input class="searchInput" type="text" name="" value="" placeholder="Search">
+              <svg class="searchInput__icon">
+                <use href="#spyglass"></use>
+              </svg>
+            </label>
+
+            <div class="filterGenre" id="filterDropdown">
+
+              <span>Genre
+                  <div class="filterGenre__dropdown">
+                    <div class="filterGenre__dropdown__item">
+                      <div class="filterGenre__dropdown__item__checkboxContainer">
+                          <input type="checkbox" id="checkbox-1">
+                          <label for="checkbox-1"><span class="dropdownItem checkbox">Backend</span></label>
+                      </div>
+                    </div>
+                    <div class="filterGenre__dropdown__item">
+                      <div class="filterGenre__dropdown__item__checkboxContainer">
+                          <input type="checkbox" id="checkbox-2">
+                          <label for="checkbox-2"><span class="dropdownItem checkbox">Frontend</span></label>
+                      </div>
+                    </div>
+                    <div class="filterGenre__dropdown__item">
+                      <div class="filterGenre__dropdown__item__checkboxContainer">
+                          <input type="checkbox" id="checkbox-3">
+                          <label for="checkbox-3"><span class="dropdownItem checkbox">UX Design</span></label>
+                      </div>
+                    </div>
+                    <div class="filterGenre__dropdown__item">
+                      <div class="filterGenre__dropdown__item__checkboxContainer">
+                          <input type="checkbox" id="checkbox-4">
+                          <label for="checkbox-4"><span class="dropdownItem checkbox">UI Design</span></label>
+                      </div>
+                    </div>
+                  </div>
+              </span>
+              <div class="filterGenre__icon">
+                <span></span>
+                <span></span>
+              </div>
+
+            </div>
+          </div>
+
+
+
         </div>
         <div class="eventsection__left__container__list">
           <div class="eventsection__left__container__list__item selectedEvent">
@@ -45,6 +93,22 @@
             </div>
             <div class="eventsection__left__container__list__item__rightText">
               <h3>Trust Summit</h3>
+            </div>
+          </div>
+          <div class="eventsection__left__container__list__item">
+            <div class="eventsection__left__container__list__item__leftText">
+              <span>5. Mar 2018</span>
+            </div>
+            <div class="eventsection__left__container__list__item__rightText">
+              <h3>Future of Urban Mobility Meetup</h3>
+            </div>
+          </div>
+          <div class="eventsection__left__container__list__item">
+            <div class="eventsection__left__container__list__item__leftText">
+              <span>5. Mar 2018</span>
+            </div>
+            <div class="eventsection__left__container__list__item__rightText">
+              <h3>Future of Urban Mobility Meetup</h3>
             </div>
           </div>
           <div class="eventsection__left__container__list__item">
