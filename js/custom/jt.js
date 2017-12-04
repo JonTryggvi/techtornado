@@ -3,7 +3,7 @@ $(document).ready(function() {
   var prevArrow = $('.prevArrow');
   var nextText = $('.nextText');
   var prevText = $('.prevText');
-  var headSlider = $('.owl-carousel');
+  var headSlider = $('#dasSlider');
   nextArrow.hover(
     function() {
       prevArrow.css('opacity', 0).css('transition', 'all 100ms ease');
@@ -29,7 +29,11 @@ $(document).ready(function() {
   headSlider.owlCarousel({
     'items': 1,
     'loop': true,
-    'smartSpeed': 500
+    'smartSpeed': 500,
+    'autoplay': true,
+    'autoplaySpeed': 500,
+    'autoplayTimeout': 5000
+
   });
 
   nextArrow.click(function() {

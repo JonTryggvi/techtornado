@@ -17,10 +17,129 @@
 
   &__sign-in {
     font-size: 14px;
+    color: $black;
     transition: color 300ms ease;
 
     &:hover {
       color: $red;
     }
   }
+
+  &__user {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 120px;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+
+    span {
+      font-family: $mont;
+      font-size: 12px;
+
+    }
+
+    img {
+      width: 30px;
+      height: 30px;
+      border-radius: 1px;
+    }
+
+    .user-dropdown {
+      position: absolute;
+      height: 195px;
+      width: 356px;
+      background-color: #fff;
+      bottom: -206px;
+      right: 0;
+      z-index: 1;
+
+      &:after {
+        position: absolute;
+        content: '';
+        width: 16px;
+        height: 16px;
+        background-color: #fff;
+        transform: rotate(45deg);
+        top: -6px;
+        right: 75px;
+      }
+    }
+  }
+}
+
+.user-dropdown {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 12px;
+  transform: scale(0) translateY(-500px);
+  transition: all 200ms ease;
+  box-shadow: 4px 6px 10px rgba($black, 0.12);
+
+  &__user-info {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    img {
+      width: 50px;
+      height: 50px;
+      margin-right: 22px;
+      border-radius: 2px;
+    }
+
+    &__contact {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      // align-items: center;
+
+      span {
+        font-family: $mont;
+        font-size: 14px;
+        color: $userDrGrey;
+      }
+
+      a {
+        font-family: $mont;
+        font-size: 14px;
+        line-height: 20px;
+        color: $userDrGrey;
+        transition: color 200ms ease;
+
+        &:hover {
+          color: $red;
+        }
+      }
+    }
+  }
+
+  &__editProfile,
+  &__signOut {
+    width: 80%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    color: $userDrGrey;
+    padding-left: 11px;
+    transition: all 200ms ease;
+
+    &:hover {
+      color: $red;
+    }
+  }
+
+  &__editProfile {
+    margin-top: 12px;
+    border-bottom: 1px solid $userDrGrey;
+  }
+}
+
+.dropDownActive {
+  transform: scale(1) translateY(0);
 }
