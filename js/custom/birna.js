@@ -2,7 +2,6 @@
 $(document).ready(function(){
 
   $('#filterDropdown').click(function(){
-    console.log('x');
     $('.filterGenre__icon').toggleClass('iconActive');
     $('.filterGenre__dropdown').toggleClass('dropdownActive');
   });
@@ -15,7 +14,43 @@ $(document).ready(function(){
   //   }
   // });
   //
+//image slider
+  $(".owl-carousel").owlCarousel({
+  stagePadding: 100,
+  loop: true,
+  margin: 10,
+  nav: false,
+  items: 1,
+  lazyLoad: true,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  responsive: {
+    600: {
+      items: 1,
+      stagePadding: 60
+    },
+    1000: {
+      items: 1,
+      stagePadding: 100
+    },
+    1400: {
+      items: 1,
+      stagePadding: 140
+    },
+    1600: {
+      items: 1,
+      stagePadding: 350
+    },
+    1800: {
+      items: 1,
+      stagePadding: 400
+    }
+  }
 });
+
+
+});
+
 
 
 ////floating button
