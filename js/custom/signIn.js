@@ -63,6 +63,7 @@ $(document).ready(function() {
   var btnSendSignIn = $('#btnSendSignIn');
   var btnUserOptions = $('#btnUserOptions');
   var userOptionsDropdown = $('#userOptionsDropdown');
+  var btnSignOut = $('#signOut');
   btnSignin.click(function() {
     console.log('x');
     signIn.addClass('scaleUp');
@@ -79,6 +80,9 @@ $(document).ready(function() {
     }).done(function(data) {
       console.log(data);
       signIn.removeClass('scaleUp');
+      hidePages('rootPage', 'showRootPage');
+      pageCms.classList.add('showRootPage');
+      window.location.replace('index.php');
     });
   });
 
@@ -95,6 +99,16 @@ $(document).ready(function() {
       userOptionsDropdown.removeClass('dropDownActive');
     }
   });
+
+  btnSignOut.click(function() {
+    // console.log('x');
+    $.get('api-loggout.php?logout=true', function() {
+      hidePages('rootPage', 'showRootPage');
+      pageFront.classList.add('showRootPage');
+      window.location.replace('index.php');
+    });
+  })
+
 
 
 });

@@ -1,7 +1,7 @@
 ///dropdown for Genre
-$(document).ready(function(){
+$(document).ready(function() {
 
-  $('#filterDropdown').click(function(){
+  $('#filterDropdown').click(function() {
     $('.filterGenre__icon').toggleClass('iconActive');
     $('.filterGenre__dropdown').toggleClass('dropdownActive');
   });
@@ -14,39 +14,39 @@ $(document).ready(function(){
   //   }
   // });
   //
-//image slider
+  //image slider
   $(".owl-carousel").owlCarousel({
-  stagePadding: 100,
-  loop: true,
-  margin: 10,
-  nav: false,
-  items: 1,
-  lazyLoad: true,
-  autoplay: true,
-  autoplaySpeed: 2000,
-  responsive: {
-    600: {
-      items: 1,
-      stagePadding: 60
-    },
-    1000: {
-      items: 1,
-      stagePadding: 100
-    },
-    1400: {
-      items: 1,
-      stagePadding: 140
-    },
-    1600: {
-      items: 1,
-      stagePadding: 350
-    },
-    1800: {
-      items: 1,
-      stagePadding: 400
+    stagePadding: 100,
+    loop: true,
+    margin: 10,
+    nav: false,
+    items: 1,
+    lazyLoad: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    responsive: {
+      600: {
+        items: 1,
+        stagePadding: 60
+      },
+      1000: {
+        items: 1,
+        stagePadding: 100
+      },
+      1400: {
+        items: 1,
+        stagePadding: 140
+      },
+      1600: {
+        items: 1,
+        stagePadding: 350
+      },
+      1800: {
+        items: 1,
+        stagePadding: 400
+      }
     }
-  }
-});
+  });
 
 
 });
@@ -78,27 +78,27 @@ var paths = [{
 
 var svggaur = $('.svggaur');
 
-if (svggaur) {
-  for (var i = 0; i < svggaur.length; i++) {
-    console.log(svggaur[i]);
-    var s = Snap(svggaur[i]);
-    var p = s.path(paths[0].path).attr({
-      fill: paths[0].fill
-    });
-    var counter = 0;
-
-    setInterval(morph, 2500);
-
-    function morph() {
-      if (counter < paths.length) {
-        ++counter;
-      } else {
-        counter = 0;
-      }
-      p.animate({
-        d: paths[counter].path,
-        fill: paths[counter].fill
-      }, 1600, mina.easein)
-    }
-  }
-}
+// if (svggaur) {
+//   for (var i = 0; i < svggaur.length; i++) {
+//     console.log(svggaur[i]);
+//     var s = Snap(svggaur[i]);
+//     var p = s.path(paths[0].path).attr({
+//       fill: paths[0].fill
+//     });
+//     var counter = 0;
+//
+//     setInterval(morph, 2500);
+//
+//     function morph() {
+//       if (counter < paths.length) {
+//         ++counter;
+//       } else {
+//         counter = 0;
+//       }
+//       p.animate({
+//         d: paths[counter].path,
+//         fill: paths[counter].fill
+//       }, 1600, mina.easein)
+//     }
+//   }
+// }
