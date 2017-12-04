@@ -9,7 +9,7 @@
       <use href="#topBarLogo"></use>
     </svg>
     <?php if (!$isLoggedin): ?>
-    <a id="btnSignin" class="top-bar__sign-in" href="#">Sign In</a>
+    <a id="btnSignin" class="top-bar__sign-in" href="#" data-page="pageCms">Sign In</a>
   <?php else: ?>
     <div id="btnUserOptions" class="top-bar__user">
       <span>Jón Tryggvi</span>
@@ -23,7 +23,7 @@
           </div>
         </div>
         <a href="#" id="editProfile" class="user-dropdown__editProfile">Edit Profile</a>
-        <a href="#" id="signOut" class="user-dropdown__signOut">Sign Out</a>
+        <a href="#" id="signOut" class="user-dropdown__signOut btnRootNav" data-page="pageFront">Sign Out</a>
       </div>
     </div>
   <?php endif; ?>
