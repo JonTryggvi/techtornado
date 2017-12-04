@@ -4,8 +4,8 @@
   // var_dump($isLoggedin);
  ?>
 <div class="top-bar-container">
-  <div class="top-bar wrapper">
-    <svg class="top-bar__logo <?php if($isLoggedin){echo 'btnCmsNav';} ?>" data-page="pageCmsAllEvents" >
+  <div class="top-bar topbar_wrapper">
+    <svg class="top-bar__logo">
       <use href="#topBarLogo"></use>
     </svg>
     <?php if (!$isLoggedin): ?>
