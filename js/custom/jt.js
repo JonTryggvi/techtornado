@@ -30,7 +30,7 @@ $(document).ready(function() {
     'items': 1,
     'loop': true,
     'smartSpeed': 500,
-    'autoplay': true,
+    'autoplay': false,
     'autoplaySpeed': 500,
     'autoplayTimeout': 5000
 

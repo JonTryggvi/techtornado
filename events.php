@@ -131,8 +131,26 @@
         <h3>  08:30 — 09:30</h3>
         <h3>KLUB, COPENHAGEN</h3>
         <div class="eventsection__right__event__buttons">
-          <div class="linkMap"><a href="#">Map</a></div>
-          <div class="linkShare"><a href="#">Share</a></div>
+          <div class="toLinks linkMap">
+            <a href="#">
+              <span>Map</span>
+              <svg id="arrowForwRed" class="goTo_map" viewBox="0 0 55 41" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" >
+                <polygon id="Fill-41" fill="#FF6565" points="29.3808877 0.727521992 48.0639233 19.3900503 29.3808877 38.0518097" class="arrowForwRed_map"></polygon>
+                <path d="M0.31740411,19.3897427 L52.499489,19.3897427" id="Stroke-42" stroke="#3E3E3E" stroke-width="3"></path>
+                <polyline id="Stroke-43" stroke="#3E3E3E" stroke-width="3" points="34.0046079 0.727521992 52.6876436 19.3900503 34.0046079 38.0518097"></polyline>
+              </svg>
+            </a>
+          </div>
+          <div class="toLinks linkShare">
+            <a href="#">
+              <span>Share</span>
+              <svg id="arrowForwRed" class="goTo_share" viewBox="0 0 55 41" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" >
+                <polygon id="Fill-41" fill="#FF6565" points="29.3808877 0.727521992 48.0639233 19.3900503 29.3808877 38.0518097" class="arrowForwRed_share"></polygon>
+                <path d="M0.31740411,19.3897427 L52.499489,19.3897427" id="Stroke-42" stroke="#3E3E3E" stroke-width="3"></path>
+                <polyline id="Stroke-43" stroke="#3E3E3E" stroke-width="3" points="34.0046079 0.727521992 52.6876436 19.3900503 34.0046079 38.0518097"></polyline>
+              </svg>
+            </a>
+          </div>
           <div class="linkGetTicket">
             <a href="#">
               <span>Get Ticket</span>
