@@ -3,35 +3,32 @@ function hidePages(pageClass, showClass) {
   for (var j = 0; j < aPages.length; j++) {
     // console.log(aPages[j].classList);
     aPages[j].classList.remove(showClass);
+
+  }
+}
+
+function hideActiveClass(btnClass, navActiveClass) {
+  var theBtnClass = document.querySelectorAll('.' + btnClass);
+  for (var i = 0; i < theBtnClass.length; i++) {
+    theBtnClass[i].classList.remove(navActiveClass);;
   }
 }
 
 function createNav(pageClass, showClass, btnClass) {
   document.addEventListener('click', function(e) {
     if (e.target.classList.contains(btnClass)) {
+      if (btnClass == 'btnCmsNav') {
+        hideActiveClass('btnCmsNav', 'activeSidebar');
+        e.target.classList.add('activeSidebar');
+      }
+      // console.log('p');
       hidePages(pageClass, showClass);
+
       var pageId = e.target.getAttribute('data-page');
       var getPage = document.querySelector('#' + pageId);
       getPage.classList.add(showClass);
       // console.log(pageId);
     }
-
-    switch (btnClass) {
-      case 'btnCmsNav':
-
-        var activeSidebar = 'activeSidebar';
-        var btnCmsNav = document.querySelectorAll('.btnCmsNav');
-        for (var i = 0; i < btnCmsNav.length; i++) {
-          // console.log(aPages[i].classList);
-          btnCmsNav[i].classList.remove(activeSidebar);
-        }
-        e.target.classList.add(activeSidebar);
-        e.target.parentNode.classList.add(activeSidebar);
-        break;
-      default:
-
-    }
-
   });
 }
 
