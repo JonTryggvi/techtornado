@@ -37,6 +37,7 @@ $(document).ready(function() {
               items: 1,
               stagePadding: 400
             }
+          }
           });
 
 
