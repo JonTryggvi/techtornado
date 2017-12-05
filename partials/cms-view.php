@@ -15,8 +15,15 @@
               <span></span>
             </span>
             <ul id="eventFilter" class="cms-container__sidebar__main-ul__li__events-ul__accordion__allEvents">
-              <li class="cms-container__sidebar__main-ul__li__events-ul__accordion__allEvents__li"><input id="inputUpComing" type="checkbox">Upcoming</li>
-              <li class="cms-container__sidebar__main-ul__li__events-ul__accordion__allEvents__li"><input id="inputPrevious" type="checkbox">Previous</li>
+              <li class="cms-container__sidebar__main-ul__li__events-ul__accordion__allEvents__li checkboxContainer">
+
+                    <input type="checkbox" id="checkbox-6">
+                    <label for="checkbox-6"><span class="dropdownItem checkbox">Upcoming</span></label>
+
+
+              <li class="cms-container__sidebar__main-ul__li__events-ul__accordion__allEvents__li checkboxContainer">
+                <input type="checkbox" id="checkbox-7">
+                <label for="checkbox-7"><span class="dropdownItem checkbox">Previous</span></label>
             </ul>
           </li>
         </ul>

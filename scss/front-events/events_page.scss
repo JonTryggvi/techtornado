@@ -4,23 +4,17 @@
   flex-flow: row nowrap;
   width: 100vw;
   justify-content: space-around;
-  @include bp(1024) {
-    justify-content: flex-start;
-  }
 
   &__left {
     width: 53%;
     margin-top: 160px;
     max-height: calc(100vh - 160px);
-    background-color: white;
+    background-color: #FFF;
     overflow: scroll;
-    @include bp(1024) {
-      justify-content: flex-start;
-      width: 80%;
-    }
 
     &__container {
       width: 90%;
+      height: 100%;
       background-color: $white;
       // padding: 6% 0 6% 0;
       &__filter {
@@ -44,9 +38,6 @@
           top: 0;
           left: 0;
           z-index: 3;
-          @include bp(1024) {
-            width: 80%;
-          }
 
           .searchInput {
             width: 100%;
@@ -213,6 +204,8 @@
       }
 
       &__list {
+        position: relative;
+
         &__item {
           padding: 0 10%;
           display: flex;
@@ -263,11 +256,23 @@
             border-right: 1px solid $blue;
           }
 
-          h3,
-          span {
-            color: $blue;
+          .eventsection__left__container__list__item__rightText {
+            border-bottom: 1px solid transparent;
+
+            h3,
+            span {
+              color: $blue;
+            }
           }
         }
+      }
+
+      .flexFix {
+        position: absolute;
+        width: 100%;
+        background-color: $white;
+        height: 100%;
+
       }
     }
   }
@@ -278,7 +283,7 @@
 
   &__right {
     background-color: white;
-    padding: 6%;
+    padding: 0 6% 0 0;
     width: 47%;
     max-height: 100vh;
     overflow-y: scroll;
@@ -286,14 +291,46 @@
     @include bp(1280) {
       padding: 1%;
     }
-    @include bp(1024) {
-      position: absolute;
-      z-index: 4;
-      width: 80%;
-      right: 0;
+
+    &__stats {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      height: 137px;
+      // background-color: $red;
+      border-bottom: 1px solid $black;
+      margin: 0 0 54px;
+
+      &__item {
+        display: flex;
+        flex-flow: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 30%;
+        height: 80%;
+        // background-color: $red;
+
+        svg {
+          width: 46px;
+          height: 31px;
+        }
+
+        div {
+          display: flex;
+          flex-flow: column;
+          align-items: center;
+          justify-content: space-around;
+          font-family: $mont;
+          font-size: 14px;
+          line-height: 18px;
+        }
+      }
     }
 
     &__event {
+      paddin-top: 6%;
+
       h2 {
         font-size: 40px;
         line-height: 50px;
@@ -320,55 +357,75 @@
         font-weight: 500;
         height: 50px;
         align-items: center;
+
         .linkShare {
           width: 70%;
         }
+
         .linkMap {
           width: 30%;
         }
+
         .toLinks {
-          svg{
+          svg {
             width: 50px;
             height: 22px;
-            transform: translateX(-3px);
+            transform: translateX(10px);
             transition: all 100ms ease;
           }
-          .goTo_map, .goTo_share {
-            .arrowForwRed_map, .arrowForwRed_share {
+
+          .goTo_map,
+          .goTo_share {
+            .arrowForwRed_map,
+            .arrowForwRed_share {
               transition: all 200ms ease;
               fill: transparent;
               transform: translateX(-5px);
             }
           }
+
           &:hover {
-            .arrowForwRed_map, .arrowForwRed_share {
+            .arrowForwRed_map,
+            .arrowForwRed_share {
               fill: $red;
               transform: translateX(0);
             }
+
             svg {
-            transform: translateX(0px);
+              transform: translateX(13px);
             }
           }
+
           a {
-              color: $black;
+            display: flex;
+            align-items: center;
+            height: 22px;
+            color: $black;
           }
         }
-          .linkGetTicket {
+
+        .linkGetTicket {
+          position: absolute;
+          top: -140px;
+          left: 360px;
+
+          span {
             position: absolute;
-            top: -140px;
-            left: 360px;
-            span {
-              position: absolute;
-              top: 70px;
-              left: 50px;
-              color: white;
-              font-size: 16px;
-              font-weight: 500;
-            }
-            #svggaur {
-              padding: 16px;
-            }
+            top: 70px;
+            left: 50px;
+            color: white;
+            font-size: 16px;
+            font-weight: 500;
           }
+
+          #svggaur {
+            padding: 16px;
+          }
+        }
+      }
+
+      &__p {
+        margin-bottom: 100px;
       }
     }
   }

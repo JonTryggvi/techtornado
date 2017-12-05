@@ -1,5 +1,5 @@
 <section id="pageAllEvents" class="cmsPage showCmsPage">
-  <section class="eventsection eventsection-cms ">
+  <div class="eventsection eventsection-cms ">
     <div id="eventLeft" class="eventsection__left">
       <div class="eventsection__left__container">
 
@@ -59,7 +59,7 @@
               <h3>Morning Booster: Happiness at Work with Alexander Kjerulf</h3>
             </div>
           </div>
-          <div class="eventsection__left__container__list__item">
+          <div class="eventsection__left__container__list__item ">
             <div class="eventsection__left__container__list__item__leftText">
               <span>12. Jan 2018</span>
             </div>
@@ -107,11 +107,42 @@
               <h3>Future of Urban Mobility Meetup</h3>
             </div>
           </div>
+          <div class="flexFix"></div>
         </div>
       </div>
 
     </div>
     <div id="eventRight" class="eventsection__right">
+      <div class="eventsection__right__stats">
+        <div class="eventsection__right__stats__item">
+          <svg>
+            <use href="#eyeRed"></use>
+          </svg>
+          <div>
+            <span>123</span>
+            <span>views</span>
+          </div>
+
+        </div>
+        <div class="eventsection__right__stats__item">
+          <svg>
+            <use href="#usersRed"></use>
+          </svg>
+          <div>
+            <span>37</span>
+            <span>Attending</span>
+          </div>
+        </div>
+        <div class="eventsection__right__stats__item">
+          <svg>
+            <use href="#heartRed"></use>
+          </svg>
+          <div>
+            <span>12</span>
+            <span>Shares</span>
+          </div>
+        </div>
+      </div>
       <div class="eventsection__right__event">
         <h2>Morning Booster: Happiness at Work with Alexander Kjerulf</h2>
         <img src="img/unprosessed_slider_img/techtornado_pic9.jpg" alt="">
@@ -119,8 +150,26 @@
         <h3>  08:30 — 09:30</h3>
         <h3>KLUB, COPENHAGEN</h3>
         <div class="eventsection__right__event__buttons">
-          <div class="linkMap"><a href="#">Map</a></div>
-          <div class="linkShare"><a href="#">Share</a></div>
+          <div class="toLinks linkMap">
+            <a href="#">
+              <span>Map</span>
+              <svg class="goTo_map" viewBox="0 0 55 41" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" >
+                <polygon id="Fill-41" fill="#FF6565" points="29.3808877 0.727521992 48.0639233 19.3900503 29.3808877 38.0518097" class="arrowForwRed_map"></polygon>
+                <path d="M0.31740411,19.3897427 L52.499489,19.3897427" id="Stroke-42" stroke="#3E3E3E" stroke-width="3"></path>
+                <polyline id="Stroke-43" stroke="#3E3E3E" stroke-width="3" points="34.0046079 0.727521992 52.6876436 19.3900503 34.0046079 38.0518097"></polyline>
+              </svg>
+            </a>
+          </div>
+          <div class="toLinks linkShare">
+            <a href="#">
+              <span>Share</span>
+              <svg class="goTo_share" viewBox="0 0 55 41" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" >
+                <polygon id="Fill-41" fill="#FF6565" points="29.3808877 0.727521992 48.0639233 19.3900503 29.3808877 38.0518097" class="arrowForwRed_share"></polygon>
+                <path d="M0.31740411,19.3897427 L52.499489,19.3897427" id="Stroke-42" stroke="#3E3E3E" stroke-width="3"></path>
+                <polyline id="Stroke-43" stroke="#3E3E3E" stroke-width="3" points="34.0046079 0.727521992 52.6876436 19.3900503 34.0046079 38.0518097"></polyline>
+              </svg>
+            </a>
+          </div>
           <div class="linkGetTicket">
             <a href="#">
               <span>Get Ticket</span>
@@ -128,9 +177,9 @@
             </a>
           </div>
         </div>
-        <p>My money's in that office, right? If she start giving me some bullshit about it ain't there, and we got to go someplace else and get it, I'm gonna shoot you in the head then and there. Then I'm gonna shoot that bitch in the kneecaps, find out where my goddamn money is. She gonna tell me too. Hey, look at me when I'm talking to you, motherfucker. You listen: we go in there, and that nigga Winston or anybody else is in there, you the first motherfucker to get shot. You understand?</p>
+        <p class="eventsection__right__event__p">My money's in that office, right? If she start giving me some bullshit about it ain't there, and we got to go someplace else and get it, I'm gonna shoot you in the head then and there. Then I'm gonna shoot that bitch in the kneecaps, find out where my goddamn money is. She gonna tell me too. Hey, look at me when I'm talking to you, motherfucker. You listen: we go in there, and that nigga Winston or anybody else is in there, you the first motherfucker to get shot. You understand?</p>
       </div>
 
     </div>
-  </section>
+  </div>
 </section>
