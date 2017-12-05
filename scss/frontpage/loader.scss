@@ -1,0 +1,17 @@
+.loader {
+  width: 100vw;
+  height: 100vh;
+  background-color: $white;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  transform: scale(0);
+  transition: all 300ms ease;
+}
+
+.loaderScale {
+  opacity: 1;
+  transform: scale(1);
+}

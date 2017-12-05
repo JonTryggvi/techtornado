@@ -107,7 +107,7 @@ $(document).ready(function() {
       pageFront.classList.add('showRootPage');
       window.location.replace('index.php');
     });
-  })
+  });
 
 
 

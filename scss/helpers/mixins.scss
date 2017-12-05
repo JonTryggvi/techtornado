@@ -1,5 +1,5 @@
 // simple breakpoint mixin
-@mixin breakpoint($size) {
+@mixin bp($size) {
   @media only screen and (max-width : $size + px) {
     @content;
   }
