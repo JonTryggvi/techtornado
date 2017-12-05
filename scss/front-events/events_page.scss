@@ -263,43 +263,59 @@
         display: flex;
         flex-flow: row;
         width: 100%;
-        justify-content: space-between;
         font-family: $mont;
         font-weight: 500;
+        height: 50px;
+        align-items: center;
+        .linkShare {
+          width: 70%;
+        }
         .linkMap {
           width: 30%;
-          margin: 3% 0 3% 0;
+        }
+        .toLinks {
+          svg{
+            width: 50px;
+            height: 22px;
+            transform: translateX(-3px);
+            transition: all 100ms ease;
+          }
+          .goTo_map, .goTo_share {
+            .arrowForwRed_map, .arrowForwRed_share {
+              transition: all 200ms ease;
+              fill: transparent;
+              transform: translateX(-5px);
+            }
+          }
+          &:hover {
+            .arrowForwRed_map, .arrowForwRed_share {
+              fill: $red;
+              transform: translateX(0);
+            }
+            svg {
+            transform: translateX(0px);
+            }
+          }
           a {
-            color: $black;
-            font-size: 14px;
+              color: $black;
           }
         }
-        .linkShare
-        {
-          width: 70%;
-          margin: 3% 0 3% 0;
-          a {
-            font-size: 14px;
-            color: $black;
-          }
-
-        }
-        .linkGetTicket {
-          position: absolute;
-          top: -140px;
-          left: 360px;
-          span {
+          .linkGetTicket {
             position: absolute;
-            top: 70px;
-            left: 50px;
-            color: white;
-            font-size: 16px;
-            font-weight: 500;
+            top: -140px;
+            left: 360px;
+            span {
+              position: absolute;
+              top: 70px;
+              left: 50px;
+              color: white;
+              font-size: 16px;
+              font-weight: 500;
+            }
+            #svggaur {
+              padding: 16px;
+            }
           }
-          #svggaur {
-            padding: 10px;
-          }
-        }
       }
     }
   }

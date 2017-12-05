@@ -4,5 +4,4 @@
   <?php include_once('partials/imageslider.php'); ?>
   <?php include_once('partials/subscribe.php'); ?>
   <?php include_once('partials/footer.php'); ?>
-
 </div>
