@@ -1,23 +1,22 @@
-<section class="cms-container rootPage showRootPage">
+
   <div class="cms-container__sidebar">
     <ul class="cms-container__sidebar__main-ul">
       <li class="cms-container__sidebar__main-ul__manageContent">Manage Your Content</li>
       <li class="cms-container__sidebar__main-ul__li">
         <span class="listText listHeadText">EVENTS</span>
         <ul class="cms-container__sidebar__main-ul__li__events-ul">
-          <li>Create Event</li>
-          <li>My Events</li>
-          <li>Pending Events <span class="pendingIndicator">3</span></li>
-          <li id="btnAllEvents" class="cms-container__sidebar__main-ul__li__events-ul__accordion">
-            <span class="listText">All Events</span>
-            <span class="listPlus">
+          <li class="btnCmsNav" data-page="pageCmsStep1">Create Event</li>
+          <li class="btnCmsNav" data-page="pageMyEvents">My Events</li>
+          <li class="btnCmsNav" data-page="pagePendingEvents">Pending Events <span class="btnCmsNav pendingIndicator" data-page="pagePendingEvents">3</span></li>
+          <li id="btnAllEvents" class="btnCmsNav cms-container__sidebar__main-ul__li__events-ul__accordion activeSidebar" data-page="pageAllEvents">
+            <span class="btnCmsNav listText " data-page="pageAllEvents">All Events</span>
+            <span class="btnCmsNav listPlus" data-page="pageAllEvents">
               <span></span>
               <span></span>
             </span>
             <ul id="eventFilter" class="cms-container__sidebar__main-ul__li__events-ul__accordion__allEvents">
-              <li>Upcoming</li>
-              <li>teosdg</li>
-
+              <li class="cms-container__sidebar__main-ul__li__events-ul__accordion__allEvents__li"><input id="inputUpComing" type="checkbox">Upcoming</li>
+              <li class="cms-container__sidebar__main-ul__li__events-ul__accordion__allEvents__li"><input id="inputPrevious" type="checkbox">Previous</li>
             </ul>
           </li>
         </ul>
@@ -25,13 +24,18 @@
       <li class="cms-container__sidebar__main-ul__li">
         <span class="listText listHeadText">CONFIGURE</span>
         <ul>
-          <li>Users</li>
-          <li>Sponsers</li>
+          <li class="btnCmsNav" data-page="pageUsers">Users</li>
+          <li class="btnCmsNav" data-page="pageSponsors">Sponsors</li>
         </ul>
       </li>
     </ul>
   </div>
   <div class="cms-container__view">
+    <?php include_once('partials/cms-pages/cms-step-one.php'); ?>
+    <?php include_once('partials/cms-pages/cms-all-events.php'); ?>
+    <?php include_once('partials/cms-pages/cms-my-events.php'); ?>
+    <?php include_once('partials/cms-pages/cms-pending-events.php'); ?>
+    <?php include_once('partials/cms-pages/cms-users.php'); ?>
+    <?php include_once('partials/cms-pages/cms-sponsors.php'); ?>
 
   </div>
-</section>

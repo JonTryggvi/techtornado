@@ -1,9 +1,38 @@
+// main view such as front page - cms view
+
 .rootPage {
   transform: translateX(-104vw);
+  transition: transform 200ms ease;
   position: absolute;
 }
 
 .showRootPage {
   transform: translateX(0);
   position: relative;
+}
+
+.frontPage-view {
+  height: 100%;
+  width: 100%;
+}
+
+// cms view
+.cmsPage {
+  transform: rotate3d(1,1,0,90deg);
+  position: absolute;
+  background-color: $white;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  transition: all 1000ms ease;
+  z-index: 1;
+}
+
+.showCmsPage {
+  transform: rotate3d(1,0,1,0deg);
+  opacity: 1;
+  position: relative;
+  z-index: 2;
 }
