@@ -29,10 +29,7 @@ $(document).ready(function() {
   headSlider.owlCarousel({
     'items': 1,
     'loop': true,
-    'smartSpeed': 500,
-    'autoplay': true,
-    'autoplaySpeed': 500,
-    'autoplayTimeout': 5000
+    'smartSpeed': 500
 
   });
 

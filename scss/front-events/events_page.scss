@@ -4,6 +4,9 @@
   flex-flow: row nowrap;
   width: 100vw;
   justify-content: space-around;
+  @include bp(1024) {
+    justify-content: flex-start;
+  }
 
   &__left {
     width: 53%;
@@ -11,6 +14,10 @@
     max-height: calc(100vh - 160px);
     background-color: white;
     overflow: scroll;
+    @include bp(1024) {
+      justify-content: flex-start;
+      width: 80%;
+    }
 
     &__container {
       width: 90%;
@@ -37,6 +44,9 @@
           top: 0;
           left: 0;
           z-index: 3;
+          @include bp(1024) {
+            width: 80%;
+          }
 
           .searchInput {
             width: 100%;
@@ -273,6 +283,15 @@
     max-height: 100vh;
     overflow-y: scroll;
     overflow-x: hidden;
+    @include bp(1280) {
+      padding: 1%;
+    }
+    @include bp(1024) {
+      position: absolute;
+      z-index: 4;
+      width: 80%;
+      right: 0;
+    }
 
     &__event {
       h2 {

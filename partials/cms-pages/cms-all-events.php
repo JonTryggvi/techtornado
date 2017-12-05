@@ -1,6 +1,6 @@
 <section id="pageAllEvents" class="cmsPage showCmsPage">
   <section class="eventsection eventsection-cms ">
-    <div class="eventsection__left">
+    <div id="eventLeft" class="eventsection__left">
       <div class="eventsection__left__container">
 
         <div class="eventsection__left__container__filter">
@@ -49,9 +49,6 @@
 
             </div>
           </div>
-
-
-
         </div>
         <div class="eventsection__left__container__list">
           <div class="eventsection__left__container__list__item selectedEvent">
@@ -114,7 +111,7 @@
       </div>
 
     </div>
-    <div class="eventsection__right">
+    <div id="eventRight" class="eventsection__right">
       <div class="eventsection__right__event">
         <h2>Morning Booster: Happiness at Work with Alexander Kjerulf</h2>
         <img src="img/unprosessed_slider_img/techtornado_pic9.jpg" alt="">
