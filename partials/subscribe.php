@@ -1,5 +1,6 @@
 <section class="fp-subscribe">
-    <div id="btnSubscribebtn" class="fp-subscribe__btn-subscribe">Subscribe
+    <div id="btnSubscribebtn" class="fp-subscribe__btn-subscribe">
+      <span>Subscribe</span>
       <!-- arrow_up_red -->
       <svg id="arrowForwRed" viewBox="0 0 55 41" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" class="fp-subscribe__btn-subscribe__arrow leftTransSub">
         <polygon id="Fill-41" fill="#FF6565" points="29.3808877 0.727521992 48.0639233 19.3900503 29.3808877 38.0518097" class="whitePoly"></polygon>
