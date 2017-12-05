@@ -1,7 +1,7 @@
 .signIn {
   width: 100vw;
   height: 100vh;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 2;
@@ -144,15 +144,16 @@
       position: absolute;
       right: 0;
       bottom: 0;
+      z-index: 999999;
 
       a {
         display: flex;
         justify-content: space-between;
-        color: $signInBlack;
+        color: $black;
         padding-bottom: 25px;
 
         svg {
-          width: 25px;
+          width: 24px;
           height: 18px;
           margin-left: 30px;
         }
