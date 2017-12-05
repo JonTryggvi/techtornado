@@ -33,7 +33,6 @@ var PATHS = {
   ],
 
   javascript: [
-    'js/snap.js',
     'js/custom/**/*.js'
   ],
 

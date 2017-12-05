@@ -64,13 +64,19 @@ $(document).ready(function() {
   var btnUserOptions = $('#btnUserOptions');
   var userOptionsDropdown = $('#userOptionsDropdown');
   var btnSignOut = $('#signOut');
+  var btnCreateevent = $('#btnCreateevent');
   btnSignin.click(function() {
-    console.log('x');
+    //console.log('x');
+    signIn.addClass('scaleUp');
+  });
+
+  btnCreateevent.click(function() {
+    //console.log('x');
     signIn.addClass('scaleUp');
   });
 
   btnCLoseSignIn.click(function() {
-    console.log('x');
+    //console.log('x');
     signIn.removeClass('scaleUp');
   });
 

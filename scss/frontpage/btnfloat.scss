@@ -87,3 +87,15 @@
   align-items: center;
   justify-content: center;
 }
+.btnFloatingForm_getTicket {
+  display: flex;
+  width: 30%;
+  margin: 0 auto;
+  position: relative;
+  top: -20px;
+  left: 0;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  z-index: 999999999;
+}
