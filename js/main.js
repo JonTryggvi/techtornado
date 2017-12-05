@@ -9,19 +9,19 @@
  * http://www.codrops.com
  */
 {
-	class ImgItem {
+	class ImgbtnFloater {
 		constructor(el) {
 			this.DOM = {};
 			this.DOM.el = el;
-			this.DOM.svg = this.DOM.el.querySelector('.item__svg');
+			this.DOM.svg = this.DOM.el.querySelector('.btnFloater__svg');
 			this.DOM.path = this.DOM.svg.querySelector('path');
 			this.paths = {};
 			this.paths.start = this.DOM.path.getAttribute('d');
 			this.paths.end = this.DOM.el.dataset.morphPath;
-			this.DOM.deco = this.DOM.svg.querySelector('.item__deco');
+			this.DOM.deco = this.DOM.svg.querySelector('.btnFloater__deco');
 			this.DOM.image = this.DOM.svg.querySelector('image');
-			// this.DOM.title = this.DOM.el.querySelector('.item__meta > .item__title');
-			// this.DOM.subtitle = this.DOM.el.querySelector('.item__meta > .item__subtitle');
+			// this.DOM.title = this.DOM.el.querySelector('.btnFloater__meta > .btnFloater__title');
+			// this.DOM.subtitle = this.DOM.el.querySelector('.btnFloater__meta > .btnFloater__subtitle');
 			this.CONFIG = {
 				// Defaults:
 				animation: {
@@ -133,7 +133,7 @@
 		}
 	}
 
-	const items = Array.from(document.querySelectorAll('.item'));
-	const init = (() => items.forEach(item => new ImgItem(item)))();
+	const btnFloater = Array.from(document.querySelectorAll('.btnFloater'));
+	const init = (() => btnFloater.forEach(btnFloater => new ImgbtnFloater(btnFloater)))();
 	setTimeout(() => document.body.classList.remove('loading'), 2000);
 };

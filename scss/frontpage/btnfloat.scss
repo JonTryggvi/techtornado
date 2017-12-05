@@ -9,40 +9,34 @@
 
   &__button {
     position: absolute;
+    top: -200px;
 
-    .btnHidden {
-      position: absolute;
-      overflow: hidden;
-      width: 0;
-      height: 0;
-      pointer-events: none;
-    }
-
-    /* items */
-    .item {
+    .btnFloater {
       position: relative;
-      width: 300px;
+      width: 250px;
+      height: 250px;
       max-width: 100%;
       margin: 0 0 0 auto;
       cursor: pointer;
+      z-index: 99999;
     }
 
-    .item__svg {
+    .btnFloater__svg {
       position: relative;
       display: block;
-      width: 80%;
+      width: 100%;
+      min-height: 300px;
       height: auto;
-      min-height: 500px;
       margin: 0 auto;
     }
 
-    .item__clippath,
-    .item__deco,
-    .item__img {
+    .btnFloater__clippath,
+    .btnFloater__deco,
+    .btnFloater__img {
       transform-origin: 50% 50%;
     }
 
-    .item__meta {
+    .btnFloater__meta {
       position: absolute;
       top: 0;
       display: flex;
@@ -54,17 +48,42 @@
       height: 100%;
     }
 
-    .item__title {
+    .btnFloater__title {
       font-family: $mont;
       font-size: 14px;
       font-weight: 500;
       width: 30%;
       text-align: center;
+      padding-top: 50px;
       color: #fff;
     }
 
-    .item--style-2 .item__deco {
+    .btnFloater--style-2 .btnFloater__deco {
       fill: #F7F9FB;
     }
   }
+}
+
+.btnFloatingForm_signIn {
+  display: flex;
+  width: 100vw;
+  margin: 0 auto;
+  position: absolute;
+  top: 300px;
+  left: -120px;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.btnFloatingForm_sponsers {
+  display: flex;
+  width: 100%;
+  min-height: 300px;
+  margin: 0 auto;
+  position: absolute;
+  top: 270px;
+  height: auto;
+  align-items: center;
+  justify-content: center;
 }

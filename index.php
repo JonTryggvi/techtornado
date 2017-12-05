@@ -16,6 +16,8 @@
     <?php include_once('partials/svg.php'); ?>
     <?php include_once('partials/top-bar.php'); ?>
     <?php include_once('partials/signIn.php'); ?>
+    <?php include_once('partials/sponsers.php'); ?>
+
     <section id="pageFront" class="frontPage-view rootPage <?php if(!$isLoggedin) {echo 'showRootPage';} ?>">
     <?php include_once('partials/frontpage.php'); ?>
   </section>
