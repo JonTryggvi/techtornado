@@ -566,10 +566,6 @@
 
   <!-- the top-bar logo -->
   <symbol id="topBarLogo" width="454px" height="105px" viewBox="0 0 454 105" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-      <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
-      <title>Group 2</title>
-      <desc>Created with Sketch.</desc>
-      <defs></defs>
       <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
           <g id="Style-Guide" transform="translate(-368.000000, -401.000000)" fill="#202020">
               <g id="Group-5" transform="translate(119.000000, 246.000000)">

@@ -1,3 +1,3 @@
 <section id="pageUsers" class="cmsPage">
-  <h2>Users</h2>
+  <div class="pageUser_userTable"></div>
 </section>
