@@ -16,7 +16,9 @@ function hideActiveClass(btnClass, navActiveClass) {
 
 function createNav(pageClass, showClass, btnClass) {
   document.addEventListener('click', function(e) {
-    if (e.target.classList.contains(btnClass)) {
+
+    if (e.target.classList.contains(btnClass) ) {
+      console.log("x");
       if (btnClass == 'btnCmsNav') {
         hideActiveClass('btnCmsNav', 'activeSidebar');
         e.target.classList.add('activeSidebar');
