@@ -31,6 +31,9 @@ $(document).ready(function() {
       "fill": "#FF6565",
       "transform": "translateX(0px)"
     });
+    $(".logIn_facebook").css({
+      "transform": "translateX(5px)"
+    });
   });
   $(".withFacebook").mouseout(function() {
     $(".arrowForwRedFacebook").css({
@@ -38,7 +41,11 @@ $(document).ready(function() {
       "fill": "transparent",
       "transform": "translateX(-5px)"
     });
+    $(".logIn_facebook").css({
+      "transform": "translateX(0px)"
+    });
   });
+
   // Sign in with Google Icon
   $(".withGoogle").mouseover(function() {
     $(".arrowForwRedGoogle").css({
@@ -46,12 +53,18 @@ $(document).ready(function() {
       "fill": "#FF6565",
       "transform": "translateX(0px)"
     });
+    $(".logIn_google").css({
+      "transform": "translateX(5px)"
+    });
   });
   $(".withGoogle").mouseout(function() {
     $(".arrowForwRedGoogle").css({
       "transition": "all 300ms 100ms ease",
       "fill": "transparent",
-      "transform": "translateX(-5px)"
+      "transform": "translateX(-10px)"
+    });
+    $(".logIn_google").css({
+      "transform": "translateX(0px)"
     });
   });
 
@@ -108,8 +121,6 @@ $(document).ready(function() {
       window.location.replace('index.php');
     });
   });
-
-
 
 });
 
