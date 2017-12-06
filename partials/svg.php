@@ -630,4 +630,24 @@
           </g>
       </g>
   </symbol>
+
+
+/* edit */
+  <symbol id="edit" width="17px" height="18px" viewBox="0 0 17 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+          <g id="CMS-/-My-Events-" transform="translate(-748.000000, -380.000000)">
+              <g id="Group-21" transform="translate(746.000000, 379.000000)">
+                  <g id="Group-19">
+                      <g id="Group-8">
+                          <g id="Group-20" transform="translate(9.565906, 11.162590) rotate(9.000000) translate(-9.565906, -11.162590) translate(2.065906, 1.162590)">
+                              <polygon id="Stroke-30" stroke="#B4C4D9" stroke-width="3" points="3.30312897 15.5334083 14.4184752 0 9.61315962 6.715304"></polygon>
+                              <polygon id="Path-5" fill="#B4C4D9" transform="translate(2.034204, 17.328887) rotate(-320.000000) translate(-2.034204, -17.328887) " points="0.514786162 16.1949818 2.00571693 18.6310201 3.55362284 16.0267541"></polygon>
+                          </g>
+                      </g>
+                  </g>
+              </g>
+          </g>
+      </g>
+  </symbol>
 </svg>

@@ -2,8 +2,11 @@
   background: white;
   display: flex;
   flex-flow: row nowrap;
-  width: 100vw;
+  position: relative;
   justify-content: space-around;
+  @include bp(1025) {
+    justify-content: space-between;
+  }
 
   &__left {
     width: 53%;
@@ -11,11 +14,32 @@
     max-height: calc(100vh - 160px);
     background-color: #FFF;
     overflow: scroll;
+    position: relative;
+    transition: all 300ms ease;
+    @include bp(1025) {
+      width: 35vw;
+      left: 0;
+    }
+    @include bp(769) {
+      width: 15vw;
+      left: 0;
+      opacity: 0.1;
+      // transform: rotate3d(0,1,0,36deg);
+
+      h3 {
+        font-size: 18px;
+      }
+    }
+
     &__container {
       width: 90%;
       height: 100%;
       background-color: $white;
       // padding: 6% 0 6% 0;
+      @include bp(1025) {
+        left: 0;
+      }
+
       &__filter {
         display: flex;
         flex-flow: row nowrap;
@@ -37,6 +61,24 @@
           top: 0;
           left: 0;
           z-index: 3;
+          transition: all 300ms ease;
+          @include bp(1025) {
+            width: calc(35vw - 35px);
+            flex-flow: column;
+            justify-content: space-around;
+            padding: 6px;
+
+          }
+          @include bp(769) {
+            width: calc(15vw - 35px);
+            opacity: 0.1;
+          }
+
+          label {
+            @include bp(1025) {
+              width: 90% !important;
+            }
+          }
 
           .searchInput {
             width: 100%;
@@ -185,6 +227,16 @@
             .dropdownActive {
               transform: scaleY(1);
             }
+            @include bp(1025) {
+              width: 90% !important;
+            }
+          }
+        }
+
+        .rezizeFilter {
+          @include bp(769) {
+            width: calc(55vw - 45px);
+            opacity: 1;
           }
         }
 
@@ -215,7 +267,7 @@
 
           &__rightText {
             border-bottom: 1px solid $greyLight;
-            width: 75%;
+            width: 60%;
             padding: 12% 0;
 
             h3 {
@@ -244,10 +296,12 @@
             width: 30px;
             height: 75px;
             align-self: center;
+            opacity: 0;
 
             svg {
-              width: 45px;
-              height: 45px;
+
+              width: 20px;
+              height: 20px;
               transition: all 300ms ease;
 
               &:hover {
@@ -255,7 +309,24 @@
               }
             }
 
+            .event_edit {
+              width: 20px;
+              height: 20px;
+
+              &:hover {
+                #Stroke-30 {
+                  stroke: $blue;
+                }
+
+                #Path-5 {
+                  fill: $blue;
+                }
+              }
+            }
+
             .pending_accept {
+              width: 25px;
+
               g {
                 stroke: $greyLight;
               }
@@ -274,11 +345,14 @@
 
               &:hover {
                 g {
-
                   stroke: $red;
                 }
               }
             }
+          }
+
+          .display {
+            opacity: 1;
           }
         }
 
@@ -322,6 +396,14 @@
     }
   }
 
+  .resizeLeft {
+    @include bp(769) {
+      width: 55vw;
+      opacity: 1;
+      // transform: rotate3d(0,1,0,0deg);
+    }
+  }
+
   &__left::-webkit-scrollbar {
     display: none;
   }
@@ -335,6 +417,11 @@
     overflow-x: hidden;
     @include bp(1280) {
       padding: 1%;
+
+    }
+    @include bp(1025) {
+      flex: 1;
+      padding: 3%;
     }
 
     &__stats {
@@ -375,6 +462,7 @@
 
     &__event {
       padding-top: 7%;
+
       h2 {
         font-size: 40px;
         line-height: 50px;
@@ -472,6 +560,17 @@
         margin-bottom: 100px;
       }
     }
+  }
+
+  .swipeRight {
+    opacity: 0.1;
+    transform: scale(0.8);
+    padding: 1%;
+
+    h2 {
+      font-size: 18px;
+    }
+
   }
 }
 

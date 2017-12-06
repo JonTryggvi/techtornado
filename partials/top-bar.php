@@ -6,7 +6,7 @@
 <div id="topBar" class="top-bar-container">
   <div class="top-bar topbar_wrapper">
     <svg data-page="pageFront" class="top-bar__logo btnRootNav">
-      <use href="#topBarLogo"></use>
+      <use href="#topBarLogo" data-page="pageFront" class="btnRootNav"></use>
     </svg>
     <?php if (!$isLoggedin): ?>
     <a id="btnSignin" class="top-bar__sign-in" href="#" data-page="pageCms">Sign In</a>

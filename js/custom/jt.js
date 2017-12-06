@@ -4,6 +4,9 @@ $(document).ready(function() {
   var nextText = $('.nextText');
   var prevText = $('.prevText');
   var headSlider = $('#dasSlider');
+  var decline = $('.pending_decline');
+  var pendingItem = $('.eventsection__left__container__list__item');
+  var setActiveAfter = $('#setActiveAfter');
   nextArrow.hover(
     function() {
       prevArrow.css('opacity', 0).css('transition', 'all 100ms ease');
@@ -41,4 +44,16 @@ $(document).ready(function() {
   prevArrow.click(function() {
     headSlider.trigger('prev.owl.carousel');
   });
+
+  var thisDecline = $('#thisDecline');
+  thisDecline.click(function() {
+    console.log('x');
+    console.dir(setActiveAfter);
+    setActiveAfter.addClass('selectedEvent')
+    $(this)[0].parentNode.parentNode.remove();
+
+  });
+
+
+
 });

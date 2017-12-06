@@ -52,14 +52,38 @@
         </div>
         <div class="eventsection__left__container__list">
 
-          <div class="eventsection__left__container__list__item ">
+          <div id="setActiveAfter" class="eventsection__left__container__list__item ">
             <div class="eventsection__left__container__list__item__leftText">
               <span>12. Jan 2018</span>
             </div>
             <div class="eventsection__left__container__list__item__rightText">
               <h3>Trust Summit</h3>
             </div>
-            <div class="eventsection__left__container__list__item__crud"></div>
+            <div class="eventsection__left__container__list__item__crud">
+              <svg class="pending_accept" width="20px" height="15px" viewBox="0 0 20 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="CMS-/-My-Events--Copy" transform="translate(-748.000000, -386.000000)" stroke-width="2" stroke="#B4C4D9">
+                          <g id="Group-26-Copy" transform="translate(749.000000, 387.000000)">
+                              <g id="Group-2">
+                                  <polyline id="Stroke-33" points="17.5456717 0 6.2873983 12.3416589 0.227443758 6.81939096"></polyline>
+                              </g>
+                          </g>
+                      </g>
+                  </g>
+              </svg>
+              <svg class="pending_decline" width="16px" height="17px" viewBox="0 0 16 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="CMS-/-My-Events--Copy" transform="translate(-749.000000, -432.000000)" stroke-width="2" stroke="#B4C4D9">
+                          <g id="Group-26" transform="translate(750.000000, 433.000000)">
+                              <g id="Group-2">
+                                  <path d="M13.5709122,0 L-1.77635684e-15,14.5402631" id="Stroke-33"></path>
+                                  <path d="M13.9757576,14.1421356 L0,0" id="Stroke-34"></path>
+                              </g>
+                          </g>
+                      </g>
+                  </g>
+              </svg>
+            </div>
           </div>
 
           <div class="eventsection__left__container__list__item selectedEvent">
@@ -69,6 +93,18 @@
             <div class="eventsection__left__container__list__item__rightText">
               <h3>ColdFront</h3>
             </div>
+<<<<<<< HEAD
+            <div class="eventsection__left__container__list__item__crud display">
+
+              <svg class="pending_accept" width="20px" height="15px" viewBox="0 0 20 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="CMS-/-My-Events--Copy" transform="translate(-748.000000, -386.000000)" stroke-width="2" stroke="#B4C4D9">
+                          <g id="Group-26-Copy" transform="translate(749.000000, 387.000000)">
+                              <g id="Group-2">
+                                  <polyline id="Stroke-33" points="17.5456717 0 6.2873983 12.3416589 0.227443758 6.81939096"></polyline>
+                              </g>
+                          </g>
+=======
             <div class="eventsection__left__container__list__item__crud">
               <svg class="pending_accept" viewBox="0 0 62 61" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                 <g  transform="translate(-207.000000, -2223.000000)" stroke-width="3" stroke="#2B2B2B">
@@ -79,23 +115,21 @@
 
                             <polyline id="Stroke-71" points="14.461963 28.6304996 26.1323164 39.3913682 43.1901712 16.972956"></polyline>
                         </g>
+>>>>>>> devMaster
                       </g>
-                    </g>
                   </g>
-                </g>
               </svg>
-              <svg class="pending_decline" viewBox="0 0 62 61" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                <g id="Style-Guide" transform="translate(-125.000000, -2222.000000)" stroke-width="3" stroke="#2B2B2B">
-                  <g id="Group-14" transform="translate(119.000000, 2019.000000)">
-                    <g id="Page-1" transform="translate(8.000000, 108.000000)">
-                      <g id="Group-30" transform="translate(0.000000, 97.000000)">
-
-                          <path d="M40.3163923,16.7229942 L17.4491512,40.7886429" id="Stroke-73"></path>
-                          <path d="M40.9285104,40.1768891 L16.8364173,17.334748" id="Stroke-74"></path>
+              <svg id="thisDecline" class="pending_decline" width="16px" height="17px" viewBox="0 0 16 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="CMS-/-My-Events--Copy" transform="translate(-749.000000, -432.000000)" stroke-width="2" stroke="#B4C4D9">
+                          <g id="Group-26" transform="translate(750.000000, 433.000000)">
+                              <g id="Group-2">
+                                  <path d="M13.5709122,0 L-1.77635684e-15,14.5402631" id="Stroke-33"></path>
+                                  <path d="M13.9757576,14.1421356 L0,0" id="Stroke-34"></path>
+                              </g>
+                          </g>
                       </g>
-                    </g>
                   </g>
-                </g>
               </svg>
             </div>
           </div>
@@ -108,7 +142,31 @@
             <div class="eventsection__left__container__list__item__rightText">
               <h3>Future of Urban Mobility Meetup</h3>
             </div>
-            <div class="eventsection__left__container__list__item__crud"></div>
+            <div class="eventsection__left__container__list__item__crud">
+              <svg class="pending_accept" width="20px" height="15px" viewBox="0 0 20 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="CMS-/-My-Events--Copy" transform="translate(-748.000000, -386.000000)" stroke-width="2" stroke="#B4C4D9">
+                          <g id="Group-26-Copy" transform="translate(749.000000, 387.000000)">
+                              <g id="Group-2">
+                                  <polyline id="Stroke-33" points="17.5456717 0 6.2873983 12.3416589 0.227443758 6.81939096"></polyline>
+                              </g>
+                          </g>
+                      </g>
+                  </g>
+              </svg>
+              <svg class="pending_decline" width="16px" height="17px" viewBox="0 0 16 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="CMS-/-My-Events--Copy" transform="translate(-749.000000, -432.000000)" stroke-width="2" stroke="#B4C4D9">
+                          <g id="Group-26" transform="translate(750.000000, 433.000000)">
+                              <g id="Group-2">
+                                  <path d="M13.5709122,0 L-1.77635684e-15,14.5402631" id="Stroke-33"></path>
+                                  <path d="M13.9757576,14.1421356 L0,0" id="Stroke-34"></path>
+                              </g>
+                          </g>
+                      </g>
+                  </g>
+              </svg>
+            </div>
 
           </div>
           <div class="flexFix"></div>

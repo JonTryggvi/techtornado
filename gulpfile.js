@@ -33,6 +33,7 @@ var PATHS = {
   ],
 
   javascript: [
+    'js/hammer.js',
     'js/custom/**/*.js'
   ],
 

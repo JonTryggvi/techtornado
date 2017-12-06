@@ -125,6 +125,7 @@ $(document).ready(function() {
     $.get('api-loggout.php?logout=true', function() {
       hidePages('rootPage', 'showRootPage');
       pageFront.classList.add('showRootPage');
+      localStorage.pageId = 'pageFront'
       window.location.replace('index.php');
     });
   });
