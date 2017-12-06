@@ -10,7 +10,7 @@ function hidePages(pageClass, showClass) {
 function hideActiveClass(btnClass, navActiveClass) {
   var theBtnClass = document.querySelectorAll('.' + btnClass);
   for (var i = 0; i < theBtnClass.length; i++) {
-    theBtnClass[i].classList.remove(navActiveClass);;
+    theBtnClass[i].classList.remove(navActiveClass);
   }
 }
 
