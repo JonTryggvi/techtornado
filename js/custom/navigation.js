@@ -10,7 +10,7 @@ function hidePages(pageClass, showClass) {
 function hideActiveClass(btnClass, navActiveClass) {
   var theBtnClass = document.querySelectorAll('.' + btnClass);
   for (var i = 0; i < theBtnClass.length; i++) {
-    theBtnClass[i].classList.remove(navActiveClass);;
+    theBtnClass[i].classList.remove(navActiveClass);
   }
 }
 
@@ -25,12 +25,22 @@ function createNav(pageClass, showClass, btnClass) {
       hidePages(pageClass, showClass);
 
       var pageId = e.target.getAttribute('data-page');
+      console.log(pageId);
+      localStorage.pageId = pageId;
       var getPage = document.querySelector('#' + pageId);
       getPage.classList.add(showClass);
       // console.log(pageId);
+
     }
   });
 }
 
 createNav('rootPage', 'showRootPage', 'btnRootNav');
 createNav('cmsPage', 'showCmsPage', 'btnCmsNav');
+
+console.log(localStorage.pageId);
+if (localStorage.pageId == 'pageFront') {
+  topBar.classList.remove('addShadow');
+} else {
+  topBar.classList.add('addShadow');
+}

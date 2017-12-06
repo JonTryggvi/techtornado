@@ -59,6 +59,7 @@
             <div class="eventsection__left__container__list__item__rightText">
               <h3>Trust Summit</h3>
             </div>
+            <div class="eventsection__left__container__list__item__crud"></div>
           </div>
 
           <div class="eventsection__left__container__list__item selectedEvent">
@@ -67,6 +68,35 @@
             </div>
             <div class="eventsection__left__container__list__item__rightText">
               <h3>ColdFront</h3>
+            </div>
+            <div class="eventsection__left__container__list__item__crud">
+              <svg class="pending_accept" viewBox="0 0 62 61" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g  transform="translate(-207.000000, -2223.000000)" stroke-width="3" stroke="#2B2B2B">
+                  <g id="Group-14" transform="translate(119.000000, 2019.000000)">
+                    <g id="Page-1" transform="translate(8.000000, 108.000000)">
+                      <g id="Group-129">
+                        <g id="Group-31" transform="translate(82.000000, 98.000000)">
+                            
+                            <polyline id="Stroke-71" points="14.461963 28.6304996 26.1323164 39.3913682 43.1901712 16.972956"></polyline>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+              <svg class="pending_decline" viewBox="0 0 62 61" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="Style-Guide" transform="translate(-125.000000, -2222.000000)" stroke-width="3" stroke="#2B2B2B">
+                  <g id="Group-14" transform="translate(119.000000, 2019.000000)">
+                    <g id="Page-1" transform="translate(8.000000, 108.000000)">
+                      <g id="Group-30" transform="translate(0.000000, 97.000000)">
+
+                          <path d="M40.3163923,16.7229942 L17.4491512,40.7886429" id="Stroke-73"></path>
+                          <path d="M40.9285104,40.1768891 L16.8364173,17.334748" id="Stroke-74"></path>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </svg>
             </div>
           </div>
 
@@ -78,6 +108,8 @@
             <div class="eventsection__left__container__list__item__rightText">
               <h3>Future of Urban Mobility Meetup</h3>
             </div>
+            <div class="eventsection__left__container__list__item__crud"></div>
+
           </div>
           <div class="flexFix"></div>
         </div>

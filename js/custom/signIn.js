@@ -82,6 +82,7 @@ $(document).ready(function() {
       signIn.removeClass('scaleUp');
       hidePages('rootPage', 'showRootPage');
       pageCms.classList.add('showRootPage');
+      localStorage.pageId = 'pageCms';
       window.location.replace('index.php');
     });
   });
@@ -113,7 +114,7 @@ $(document).ready(function() {
 
 });
 
-
+$('.loader').delay(1500).fadeOut('fast');
 
 // var closeButton = document.querySelector(".signIn__close");
 // var divLogIn = document.querySelector(".signIn");

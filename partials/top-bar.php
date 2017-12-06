@@ -3,7 +3,7 @@
   $isLoggedin = (bool)$_SESSION['loggedin'];
   // var_dump($isLoggedin);
  ?>
-<div class="top-bar-container">
+<div id="topBar" class="top-bar-container">
   <div class="top-bar topbar_wrapper">
     <svg class="top-bar__logo">
       <use href="#topBarLogo"></use>

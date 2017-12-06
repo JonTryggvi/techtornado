@@ -1,13 +1,13 @@
 .cms-container {
   width: 100vw;
   height: calc(100vh - 60px);
-  background-color: $red;
+  background-color: #fff;
   display: flex;
 
   &__sidebar {
     width: 230px;
     background-color: #fff;
-    box-shadow: 2px 2px 4px 0 rgba(0,0,0,0.2);
+    box-shadow: 2px 2px 4px 0 rgba(0,0,0,0.02);
 
     &__main-ul {
       width: 100%;
@@ -91,16 +91,6 @@
 
           }
 
-          .activeSidebar {
-            background-color: $blue;
-            color: $white;
-
-            .listPlus {
-              span {
-                background-color: $white;
-              }
-            }
-          }
         }
 
         &__events-ul {
@@ -109,6 +99,12 @@
             flex-direction: column;
             position: relative;
             transition: all 300ms ease;
+
+            &:hover {
+              .dropdownItem {
+                color: $white !important;
+              }
+            }
 
             .listPlus {
               display: flex;
@@ -145,6 +141,12 @@
               //   }
               // }
               .checkboxContainer {
+                &:hover {
+                  .dropdownItem {
+                    color: $white;
+                  }
+                }
+
                 input[type="checkbox"] {
                   display: none;
                 }
@@ -154,8 +156,12 @@
 
                   .dropdownItem {
                     padding-left: 30px;
-                    color: $white;
+                    color: $black;
                     font-size: 12px;
+
+                    &:hover {
+                      color: $white;
+                    }
                   }
                 }
 
@@ -204,6 +210,17 @@
               }
             }
           }
+
+          .activeSidebar {
+            background-color: $blue;
+            color: $white;
+
+            .listPlus {
+              span {
+                background-color: $white !important;
+              }
+            }
+          }
         }
       }
     }
@@ -216,11 +233,17 @@
 
 .accordActive {
   height: 80px;
+
+  .listPlusActive {
+    span {
+      background-color: $white !important;
+    }
+  }
 }
 
 .listPlusActive {
   span {
-    background-color: $white;
+    background-color: $white !important;
   }
 
   span:last-child {

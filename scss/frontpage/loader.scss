@@ -1,4 +1,7 @@
 .loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100vw;
   height: 100vh;
   background-color: $white;
@@ -7,8 +10,121 @@
   top: 0;
   left: 0;
   opacity: 1;
-  transform: scale(0);
+
   transition: all 300ms ease;
+
+  .myTornado {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 66px;
+    width: 78px;
+
+    span {
+      background-color: $black;
+      width: 100%;
+      height: 6px;
+      border-radius: 8px;
+    }
+
+    .firstLine {
+      width: 82%;
+    }
+
+    .secondLine {
+      width: 100%;
+    }
+
+    .thirdLine {
+      width: 59%;
+    }
+
+    .fourthLine {
+      width: 33.3%;
+    }
+
+    .fifthLine {
+      width: 17.94%;
+    }
+    @-webkit-keyframes moveFirst {
+      0% {
+        -webkit-transform: translateX(8px);
+      }
+
+      100% {
+        -webkit-transform: translateX(-8px);
+      }
+    }
+
+    @-webkit-keyframes moveSecond {
+      0% {
+        -webkit-transform: translateX(6px);
+      }
+
+      100% {
+        -webkit-transform: translateX(-6px);
+      }
+    }
+
+    @-webkit-keyframes moveThird {
+      0%,
+      100% {
+        -webkit-transform: translateX(6px);
+      }
+
+      50% {
+        -webkit-transform: translateX(-6px);
+      }
+    }
+
+    @-webkit-keyframes moveFourth {
+      0% {
+        -webkit-transform: translateX(4px);
+      }
+
+      100% {
+        -webkit-transform: translateX(-4px);
+      }
+    }
+
+    @-webkit-keyframes moveFifth {
+      0%,
+      100% {
+        -webkit-transform: translateX(-1px);
+      }
+
+      50% {
+        -webkit-transform: translateX(1px);
+      }
+    }
+
+    .firstLine {
+      -webkit-transition: all 1s;
+      -webkit-animation: moveFirst 1s infinite alternate ease-in-out;
+    }
+
+    .secondLine {
+      -webkit-transition: all 1s;
+      -webkit-animation: moveSecond 1s infinite alternate ease-in-out;
+    }
+
+    .thirdLine {
+      -webkit-transition: all 2s;
+      -webkit-animation: moveThird 2s infinite alternate ease-in-out;
+    }
+
+    .fourthLine {
+      -webkit-transition: all 1s;
+      -webkit-animation: moveFourth 1s infinite alternate ease-in-out;
+    }
+
+    .fifthLine {
+      -webkit-transition: all 2s;
+      -webkit-animation: moveFifth 2s infinite alternate ease-in-out;
+    }
+  }
+
 }
 
 .loaderScale {
