@@ -3,7 +3,7 @@
   $isLoggedin = (bool)$_SESSION['loggedin'];
   // var_dump($isLoggedin);
  ?>
-<div class="top-bar-container">
+<div id="topBar" class="top-bar-container">
   <div class="top-bar topbar_wrapper">
     <svg data-page="pageFront" class="top-bar__logo btnRootNav">
       <use href="#topBarLogo"></use>

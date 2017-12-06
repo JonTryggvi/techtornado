@@ -13,6 +13,7 @@
 
   </head>
   <body>
+    <?php include_once('partials/loader.php'); ?>
     <?php include_once('partials/svg.php'); ?>
     <?php include_once('partials/top-bar.php'); ?>
     <?php include_once('partials/signIn.php'); ?>

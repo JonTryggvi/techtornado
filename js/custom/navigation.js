@@ -16,9 +16,7 @@ function hideActiveClass(btnClass, navActiveClass) {
 
 function createNav(pageClass, showClass, btnClass) {
   document.addEventListener('click', function(e) {
-
-    if (e.target.classList.contains(btnClass) ) {
-      console.log("x");
+    if (e.target.classList.contains(btnClass)) {
       if (btnClass == 'btnCmsNav') {
         hideActiveClass('btnCmsNav', 'activeSidebar');
         e.target.classList.add('activeSidebar');
@@ -27,12 +25,22 @@ function createNav(pageClass, showClass, btnClass) {
       hidePages(pageClass, showClass);
 
       var pageId = e.target.getAttribute('data-page');
+      console.log(pageId);
+      localStorage.pageId = pageId;
       var getPage = document.querySelector('#' + pageId);
       getPage.classList.add(showClass);
       // console.log(pageId);
+
     }
   });
 }
 
 createNav('rootPage', 'showRootPage', 'btnRootNav');
 createNav('cmsPage', 'showCmsPage', 'btnCmsNav');
+
+console.log(localStorage.pageId);
+if (localStorage.pageId == 'pageFront') {
+  topBar.classList.remove('addShadow');
+} else {
+  topBar.classList.add('addShadow');
+}

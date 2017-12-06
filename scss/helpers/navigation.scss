@@ -7,6 +7,7 @@
 }
 
 .showRootPage {
+  top: 60px;
   transform: translateX(0);
   position: relative;
 }
@@ -18,7 +19,7 @@
 
 // cms view
 .cmsPage {
-  transform: rotate3d(1,1,0,90deg);
+  transform: translateX(104vw);
   position: absolute;
   background-color: $white;
   top: 0;
@@ -26,12 +27,13 @@
   width: 100%;
   height: 100%;
   opacity: 1;
-  transition: all 1000ms ease;
+  transition: all 700ms ease;
   z-index: 1;
+  box-shadow: inset 2px 2px 4px rgba($black, 0.02);
 }
 
 .showCmsPage {
-  transform: rotate3d(1,0,1,0deg);
+  transform: translateX(0);
   opacity: 1;
   position: relative;
   z-index: 2;
