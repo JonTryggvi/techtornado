@@ -76,7 +76,7 @@
                     <g id="Page-1" transform="translate(8.000000, 108.000000)">
                       <g id="Group-129">
                         <g id="Group-31" transform="translate(82.000000, 98.000000)">
-                            
+
                             <polyline id="Stroke-71" points="14.461963 28.6304996 26.1323164 39.3913682 43.1901712 16.972956"></polyline>
                         </g>
                       </g>
@@ -123,7 +123,7 @@
             <use href="#eyeRed"></use>
           </svg>
           <div>
-            <span>123</span>
+            <span>0</span>
             <span>views</span>
           </div>
 
@@ -133,7 +133,7 @@
             <use href="#usersRed"></use>
           </svg>
           <div>
-            <span>37</span>
+            <span>0</span>
             <span>Attending</span>
           </div>
         </div>
@@ -142,7 +142,7 @@
             <use href="#heartRed"></use>
           </svg>
           <div>
-            <span>12</span>
+            <span>0</span>
             <span>Shares</span>
           </div>
         </div>
