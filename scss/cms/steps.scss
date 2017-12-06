@@ -1,0 +1,500 @@
+#pageCmsStep1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.stepContainer{
+  position: relative;
+}
+.stepContainer__needHelp{
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  right: 45px;
+  bottom: 100px;
+  &__img{
+    width: 45px;
+    height: 45px;
+    background-image: url("../img/userImg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  &__info {
+    position: relative;
+    max-width: 220px;
+    height: 45px;
+    margin-left: 15px;
+    background-color: $black;
+    box-shadow: 2px 2px 6px 0 rgba(0,0,0,0.06);
+    border: 5px solid $black;
+    &__text {
+      min-height: 30px;
+      border-radius: 3px;
+      font-family: $mont;
+      font-size: 12px;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      span{
+        text-decoration: underline;
+        padding-left: 3px;
+      }
+    }
+    &__blob {
+      width: 0px;
+      height: 0px;
+      position: absolute;
+      background: transparent;
+      border: 10px solid $black;
+      top: 10px;
+      left: -25px;
+      border-top-color: transparent;
+      border-left-color: transparent;
+      border-bottom-color: transparent;
+    }
+  }
+
+
+}
+
+.step1, .step2, .step3, .step4, .stepDone {
+  height: 100vh;
+  width: 100%;
+  padding: 85px 20%;
+  &__line {
+    background-color: $red;
+    height: 14px;
+  }
+  h3 {
+    font-size: 30px;
+    color: $black;
+    font-weight: 500;
+    font-family: $mont;
+    margin-bottom: 15px;
+  }
+  h4{
+    font-size: 16px;
+    color: $black;
+    font-weight: 500;
+  }
+  p{
+    margin-top: 15px;
+  }
+  &__basicInfo {
+    margin-top: 45px;
+  }
+  .stepBtns {
+    top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 65px;
+    justify-content: space-between;
+    .back, .next {
+      display: flex;
+      justify-content: space-between;
+      color: $black;
+      padding-bottom: 25px;
+      span {
+        padding: 0 20px;
+      }
+      svg{
+        width: 25px;
+        height: 18px;
+        transform: translateX(-3px);
+        transition: all 100ms ease;
+      }
+      .goTo_back, .goTo_next{
+        .arrowBackRed_back, .arrowForwRed_next {
+          transition: all 200ms ease;
+          fill: transparent;
+          transform: translateX(-5px);
+        }
+        .arrowBackRed_back {
+          transform: translateX(5px);
+        }
+      }
+      &:hover {
+        .arrowBackRed_back, .arrowForwRed_next{
+          fill: $red;
+          transform: translateX(0);
+        }
+        svg {
+        transform: translateX(0px);
+        }
+        .goTo_back {
+          transform: translateX(-5px);
+        }
+      }
+    }
+  }
+}
+
+.step1{
+  &__line{
+      animation: line1 1s 1 forwards;
+  }
+  @keyframes line1 {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 25%;
+    }
+  }
+  .back {
+    opacity: 0;
+  }
+  &__basicInfoForm {
+    max-width: 620px;
+    width: 100%;
+    height: 500px;
+    position: relative;
+
+    h2 {
+      font-size: 50px;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    form {
+      width: 80%;
+      height: 220px;
+      position: relative;
+
+      label {
+        width: 100%;
+        height: 30px;
+        position: relative;
+
+        svg.logIn_email {
+          width: 20px;
+          height: 18px;
+          position: absolute;
+          left: 0;
+          top: -1px;
+
+          .envelopeRed {
+            transition: all 200ms 100ms ease;
+            fill: transparent;
+            transform: translateX(5px);
+          }
+        }
+
+        svg.makeEventName, svg.makeEventDay, svg.createEventLocation, svg.makeEventPrice {
+          width: 21px;
+          height: 23px;
+          position: absolute;
+          left: 0;
+          top: -6px;
+
+          .lockRed {
+            transition: all 200ms 100ms ease;
+            fill: transparent;
+            transform: translateX(5px);
+          }
+        }
+        svg.createEventLocation{
+          width: 25px;
+          height: 27px;
+        }
+        .clockRedFill, .locationRedFill{
+          transition: all 200ms ease;
+          fill: transparent;
+          transform: translateX(-5px);
+        }
+        .priceRedFill{
+          stroke: transparent;
+        }
+        .tagRedFill{
+          fill: transparent;
+        }
+
+        input:first-child {
+          margin: 40px 0;
+        }
+
+        input {
+          width: 100%;
+          height: 40px;
+          font-size: 18px;
+          color: $black;
+          margin-top: 15px;
+          padding-left: 35px;
+          position: relative;
+          background: none;
+          border: none;
+          border-bottom: 1px solid $signInGrey;
+
+          &::placeholder {
+            color: $signInGrey;
+          }
+        }
+      }
+
+      a {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 22px;
+      }
+
+      button {
+        width: 140px;
+        height: 140px;
+        border: none;
+        border-radius: 50%;
+        background-color: $red;
+        color: $white;
+        font-size: 16px;
+        text-transform: uppercase;
+        position: absolute;
+        right: -50px;
+        bottom: -70px;
+      }
+    }
+
+    &__withMedia {
+      width: 230px;
+      height: 50px;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+
+      a {
+        display: flex;
+        justify-content: space-between;
+        color: $signInBlack;
+        padding-bottom: 25px;
+
+        svg {
+          width: 25px;
+          height: 18px;
+          margin-left: 30px;
+        }
+
+        .logIn_facebook,
+        .logIn_google {
+          .arrowForwRedFacebook,
+          .arrowForwRedGoogle {
+            transition: all 200ms 100ms ease;
+            fill: transparent;
+            transform: translateX(-5px);
+          }
+        }
+      }
+    }
+  }
+}
+
+.step2{
+  .step2-line {
+    animation: line2 1s 1 forwards;
+    }
+    @keyframes line2 {
+      0% {
+        width: 25%;
+      }
+      100% {
+        width: 50%;
+      }
+    }
+  &__imgDropBox {
+    width: 80%;
+    height: 125px;
+    border: 1px dashed $greyLight;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p {
+      font-family: $mont;
+      font-size: 18px;
+      color: $greyLight;
+      font-weight: 500;
+      margin: 0;
+      span {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.step3, .step4 {
+  &__checkboxContainer {
+    display: flex;
+    flex-direction: row;
+    height: 25px;
+    width: 80%;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-left: 33px;
+
+  &__checkboxSteps {
+    width: 25%;
+    input[type="checkbox"] {
+      display: none;
+      }
+      label {
+        position: relative;
+        font-family: $mont;
+        strong {
+          font-size: 10px;
+        }
+      }
+
+      span::after,
+      span::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+      }
+      span.checkbox::before {
+        width: 18px;
+        height: 18px;
+        background-color: $white;
+        box-sizing: border-box;
+        border: 1px solid $greyLight;
+        transition: border-color 0.2s;
+        left: -33px;
+      }
+
+      span.checkbox:hover::before {
+        border: 3px solid $greyLight;
+      }
+
+      span.checkbox::after {
+        content: '';
+        background-image: url("../img/icons/svg/checkmark.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        width: 17px;
+        height: 17px;
+        transition: color 0.2s;
+        opacity: 0;
+        left: -32px;
+      }
+
+      input[type="checkbox"]:checked + label span.checkbox::after {
+        color: $blue;
+        opacity: 1;
+      }
+    }
+  }
+  &__keywordContainer {
+    height: 50px;
+    width: 80%;
+    border: 1px solid $greyLight;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 27px;
+    .keyword {
+      height: 28px;
+      width: 120px;
+      background-color: $black;
+      color: $white;
+      margin-left: 20px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding-left: 15px;
+      font-family: $mont;
+      font-weight: 100;
+      font-size: 14px;
+      position: relative;
+    }
+    .keyword::after {
+      content: '';
+      background-image: url("../img/icons/svg/close.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      width: 12px;
+      height: 12px;
+      stroke: white;
+      margin-left: 10px;
+      position: absolute;
+      right: 8px;
+      top: 8px;
+    }
+    p {
+      font-family: $mont;
+      color: $greyLight;
+      margin: 0 20px;
+      font-size: 14px;
+    }
+  }
+}
+
+.step3 {
+  .step3-line {
+    animation: line3 1s 1 forwards;
+    }
+    @keyframes line3 {
+      0% {
+        width: 50%;
+      }
+      100% {
+        width: 75%;
+      }
+    }
+}
+
+.step4 {
+  .step4-line {
+    animation: line4 1s 1 forwards;
+    }
+    @keyframes line4 {
+      0% {
+        width: 75%;
+      }
+      100% {
+        width: 95%;
+      }
+    }
+  &__checkboxContainer {
+    width: 100%;
+    &__checkboxSteps {
+      width: 33%;
+    }
+  }
+  &__iconsDrink {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 35px;
+    margin-left: -20px;
+    svg {
+      height: 65px;
+    }
+    svg:nth-child(2) {
+      height: 47px;
+      margin-top: 18px;
+    }
+  }
+}
+
+.stepDone {
+  .stepDone-line {
+    animation: lineDone 1s 1 forwards;
+    }
+    @keyframes lineDone {
+      0% {
+        width: 95%;
+      }
+      100% {
+        width: 100%;
+      }
+    }
+}
+
+
+.step2, .step3, .step4, .stepDone {
+  display: none;
+}

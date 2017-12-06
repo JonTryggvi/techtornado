@@ -31,6 +31,9 @@ $(document).ready(function() {
       "fill": "#FF6565",
       "transform": "translateX(0px)"
     });
+    $(".logIn_facebook").css({
+      "transform": "translateX(5px)"
+    });
   });
   $(".withFacebook").mouseout(function() {
     $(".arrowForwRedFacebook").css({
@@ -38,7 +41,11 @@ $(document).ready(function() {
       "fill": "transparent",
       "transform": "translateX(-5px)"
     });
+    $(".logIn_facebook").css({
+      "transform": "translateX(0px)"
+    });
   });
+
   // Sign in with Google Icon
   $(".withGoogle").mouseover(function() {
     $(".arrowForwRedGoogle").css({
@@ -46,12 +53,18 @@ $(document).ready(function() {
       "fill": "#FF6565",
       "transform": "translateX(0px)"
     });
+    $(".logIn_google").css({
+      "transform": "translateX(5px)"
+    });
   });
   $(".withGoogle").mouseout(function() {
     $(".arrowForwRedGoogle").css({
       "transition": "all 300ms 100ms ease",
       "fill": "transparent",
-      "transform": "translateX(-5px)"
+      "transform": "translateX(-10px)"
+    });
+    $(".logIn_google").css({
+      "transform": "translateX(0px)"
     });
   });
 
@@ -64,13 +77,19 @@ $(document).ready(function() {
   var btnUserOptions = $('#btnUserOptions');
   var userOptionsDropdown = $('#userOptionsDropdown');
   var btnSignOut = $('#signOut');
+  var btnCreateevent = $('#btnCreateevent');
   btnSignin.click(function() {
-    console.log('x');
+    //console.log('x');
+    signIn.addClass('scaleUp');
+  });
+
+  btnCreateevent.click(function() {
+    //console.log('x');
     signIn.addClass('scaleUp');
   });
 
   btnCLoseSignIn.click(function() {
-    console.log('x');
+    //console.log('x');
     signIn.removeClass('scaleUp');
   });
 
@@ -109,8 +128,6 @@ $(document).ready(function() {
       window.location.replace('index.php');
     });
   });
-
-
 
 });
 

@@ -11,10 +11,11 @@
   align-items: center;
   transform: scale(0);
   transition: transform 200ms ease;
+  height: 100vh;
+  overflow: visible;
   .sponsorsModal {
     width: 70%;
     margin: 0 auto;
-    overflow: scroll;
     padding-top: 4%;
     &__btnClose {
       position: absolute;
@@ -47,6 +48,8 @@
       flex-wrap: wrap;
       justify-content: space-around;
       margin-top: 40px;
+      height: 70vh;
+      overflow-y: scroll;
       &__eachIcon {
         padding: 40px;
         img {
@@ -54,11 +57,13 @@
             max-height: 80px;
         }
       }
-
+    }
+    &__allIcons::-webkit-scrollbar {
+      display: none;
     }
   }
-
 }
+
 .scaleUp {
   transform: scale(1);
 }

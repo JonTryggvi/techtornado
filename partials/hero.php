@@ -79,8 +79,8 @@
     </div>
 
   </div>
-  <div class="btnFloatingForm">
-    <div class="btnFloatingForm__button">
+  <div class="btnFloatingForm ">
+    <div data-page="pageEvents"  class="btnFloatingForm__button btnRootNav">
   		<div class="btnFloater btnFloater--style-2" data-animation-path-duration="1500" data-animation-path-easing="easeOutElastic" data-morph-path="M 418.1,159.8 C 460.9,222.9 497,321.5 452.4,383.4 417.2,432.4 371.2,405.6 271.3,420.3 137.2,440 90.45,500.6 42.16,442.8 -9.572,381 86.33,289.1 117.7,215.5 144.3,153.4 145.7,54.21 212.7,36.25 290.3,15.36 373.9,94.6 418.1,159.8 Z" data-path-scaleY="1.1" data-image-scaleX="1.3" data-image-scaleY="1.3" data-animation-deco-duration="2000" data-animation-deco-delay="100" data-deco-rotate="-10">
   			<svg class="btnFloater__svg" width="500px" height="500px" viewBox="0 0 500 500">
   				<clipPath id="clipShape2">
@@ -90,8 +90,8 @@
   					<image class="btnFloater__img btnFloater__color" xlink:href="img/2.png" x="0" y="0" height="500px" width="500px" />
   				</g>
   			</svg>
-  			<div class="btnFloater__meta">
-  				<h2 class="btnFloater__title">All Events</h2>
+  			<div data-page="pageEvents"  class="btnFloater__meta btnRootNav">
+  				<h2 data-page="pageEvents" class="btnFloater__title btnRootNav">All Events</h2>
   			</div>
   		</div>
     </div>
