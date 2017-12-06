@@ -1,7 +1,7 @@
 
   <div class="cms-container__sidebar">
     <ul class="cms-container__sidebar__main-ul">
-      <li class="cms-container__sidebar__main-ul__manageContent">Manage Your Content</li>
+      <li class="cms-container__sidebar__main-ul__manageContent"><p class="manageP">~ Manage Your Content ~</p></li>
       <li class="cms-container__sidebar__main-ul__li">
         <span class="listText listHeadText">EVENTS</span>
         <ul class="cms-container__sidebar__main-ul__li__events-ul">

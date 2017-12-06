@@ -93,6 +93,7 @@
             <div class="eventsection__left__container__list__item__rightText">
               <h3>ColdFront</h3>
             </div>
+<<<<<<< HEAD
             <div class="eventsection__left__container__list__item__crud display">
 
               <svg class="pending_accept" width="20px" height="15px" viewBox="0 0 20 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -103,6 +104,18 @@
                                   <polyline id="Stroke-33" points="17.5456717 0 6.2873983 12.3416589 0.227443758 6.81939096"></polyline>
                               </g>
                           </g>
+=======
+            <div class="eventsection__left__container__list__item__crud">
+              <svg class="pending_accept" viewBox="0 0 62 61" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g  transform="translate(-207.000000, -2223.000000)" stroke-width="3" stroke="#2B2B2B">
+                  <g id="Group-14" transform="translate(119.000000, 2019.000000)">
+                    <g id="Page-1" transform="translate(8.000000, 108.000000)">
+                      <g id="Group-129">
+                        <g id="Group-31" transform="translate(82.000000, 98.000000)">
+
+                            <polyline id="Stroke-71" points="14.461963 28.6304996 26.1323164 39.3913682 43.1901712 16.972956"></polyline>
+                        </g>
+>>>>>>> devMaster
                       </g>
                   </g>
               </svg>
