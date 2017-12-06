@@ -1,10 +1,10 @@
 <section id="pageAllEvents" class="cmsPage showCmsPage">
   <div class="eventsection eventsection-cms ">
-    <div id="eventLeft" class="eventsection__left">
+    <div id="eventLeftCmsAll" class="eventsection__left">
       <div class="eventsection__left__container">
 
         <div class="eventsection__left__container__filter">
-          <div class="eventsection__left__container__filter__background">
+          <div id="filterBackgroundAll" class="eventsection__left__container__filter__background">
             <label>
               <input class="searchInput" type="text" name="" value="" placeholder="Search">
               <svg class="searchInput__icon">
@@ -58,6 +58,7 @@
             <div class="eventsection__left__container__list__item__rightText">
               <h3>Morning Booster: Happiness at Work with Alexander Kjerulf</h3>
             </div>
+            <div class="eventsection__left__container__list__item__crud"></div>
           </div>
           <div class="eventsection__left__container__list__item ">
             <div class="eventsection__left__container__list__item__leftText">
@@ -66,6 +67,7 @@
             <div class="eventsection__left__container__list__item__rightText">
               <h3>ColdFront</h3>
             </div>
+            <div class="eventsection__left__container__list__item__crud"></div>
           </div>
           <div class="eventsection__left__container__list__item">
             <div class="eventsection__left__container__list__item__leftText">
@@ -74,6 +76,7 @@
             <div class="eventsection__left__container__list__item__rightText">
               <h3>Coworking & Coliving Summit</h3>
             </div>
+            <div class="eventsection__left__container__list__item__crud"></div>
           </div>
           <div class="eventsection__left__container__list__item">
             <div class="eventsection__left__container__list__item__leftText">
@@ -82,6 +85,7 @@
             <div class="eventsection__left__container__list__item__rightText">
               <h3>Trust Summit</h3>
             </div>
+            <div class="eventsection__left__container__list__item__crud"></div>
           </div>
           <div class="eventsection__left__container__list__item">
             <div class="eventsection__left__container__list__item__leftText">
@@ -90,6 +94,7 @@
             <div class="eventsection__left__container__list__item__rightText">
               <h3>Future of Urban Mobility Meetup</h3>
             </div>
+            <div class="eventsection__left__container__list__item__crud"></div>
           </div>
           <div class="eventsection__left__container__list__item">
             <div class="eventsection__left__container__list__item__leftText">
@@ -98,6 +103,7 @@
             <div class="eventsection__left__container__list__item__rightText">
               <h3>Future of Urban Mobility Meetup</h3>
             </div>
+            <div class="eventsection__left__container__list__item__crud"></div>
           </div>
           <div class="eventsection__left__container__list__item">
             <div class="eventsection__left__container__list__item__leftText">
@@ -106,13 +112,14 @@
             <div class="eventsection__left__container__list__item__rightText">
               <h3>Future of Urban Mobility Meetup</h3>
             </div>
+
           </div>
           <div class="flexFix"></div>
         </div>
       </div>
 
     </div>
-    <div id="eventRight" class="eventsection__right">
+    <div id="eventRightAll" class="eventsection__right">
       <div class="eventsection__right__stats">
         <div class="eventsection__right__stats__item">
           <svg>

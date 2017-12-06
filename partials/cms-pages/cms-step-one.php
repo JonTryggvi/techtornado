@@ -2,7 +2,7 @@
   <div class="stepContainer">
     <div class="stepContainer__needHelp">
       <div class="stepContainer__needHelp__img"></div>
-      <img src="../img/userImg.png" alt="">
+      <img src="img/userImg.png" alt="">
       <div class="stepContainer__needHelp__info">
         <span class="stepContainer__needHelp__info__blob"></span>
         <div class="stepContainer__needHelp__info__text">

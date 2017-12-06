@@ -30,7 +30,7 @@
       </li>
       <li class="cms-container__sidebar__main-ul__li">
         <span class="listText listHeadText">CONFIGURE</span>
-        <ul>
+        <ul class="cms-container__sidebar__main-ul__li__lists">
           <li class="btnCmsNav" data-page="pageUsers">Users</li>
           <li class="btnCmsNav" data-page="pageSponsors">Sponsors</li>
         </ul>

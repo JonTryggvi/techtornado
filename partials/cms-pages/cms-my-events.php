@@ -59,6 +59,32 @@
             <div class="eventsection__left__container__list__item__rightText">
               <h3>ColdFront</h3>
             </div>
+            <div class="eventsection__left__container__list__item__crud display">
+              <svg class="event_edit" width="17px" height="18px" viewBox="0 0 17 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="CMS-/-My-Events-" transform="translate(-748.000000, -380.000000)">
+                          <g id="Group-21" transform="translate(746.000000, 379.000000)">
+                            <g id="Group-20" transform="translate(9.565906, 11.162590) rotate(9.000000) translate(-9.565906, -11.162590) translate(2.065906, 1.162590)">
+                                <polygon id="Stroke-30" stroke="#B4C4D9" stroke-width="3" points="3.30312897 15.5334083 14.4184752 0 9.61315962 6.715304"></polygon>
+                                <polygon id="Path-5" fill="#B4C4D9" transform="translate(2.034204, 17.328887) rotate(-320.000000) translate(-2.034204, -17.328887) " points="0.514786162 16.1949818 2.00571693 18.6310201 3.55362284 16.0267541"></polygon>
+                            </g>
+                          </g>
+                      </g>
+                  </g>
+              </svg>
+
+              <svg class="pending_decline" width="16px" height="17px" viewBox="0 0 16 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+                  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="CMS-/-My-Events--Copy" transform="translate(-749.000000, -432.000000)" stroke-width="2" stroke="#B4C4D9">
+                          <g id="Group-26" transform="translate(750.000000, 433.000000)">
+                            <path d="M13.5709122,0 L-1.77635684e-15,14.5402631" id="Stroke-33"></path>
+                            <path d="M13.9757576,14.1421356 L0,0" id="Stroke-34"></path>
+                          </g>
+                      </g>
+                  </g>
+              </svg>
+            </div>
           </div>
           <div class="eventsection__left__container__list__item">
             <div class="eventsection__left__container__list__item__leftText">
@@ -67,6 +93,7 @@
             <div class="eventsection__left__container__list__item__rightText">
               <h3>Coworking & Coliving Summit</h3>
             </div>
+            <div class="eventsection__left__container__list__item__crud"></div>
           </div>
 
 
