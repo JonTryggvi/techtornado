@@ -21,6 +21,10 @@
     <section id="pageFront" class="frontPage-view rootPage <?php if(!$isLoggedin) {echo 'showRootPage';} ?>">
     <?php include_once('partials/frontpage.php'); ?>
   </section>
+  <section id="pageEvents" class="frontPage-view rootPage">
+    <?php include_once('partials/top-bar.php'); ?>
+    <?php include_once('partials/events.php'); ?>
+  </section>
     <section id="pageCms" class="cms-container rootPage <?php if($isLoggedin) {echo 'showRootPage';} ?>">
     <?php if($isLoggedin) {
       include_once('partials/cms-view.php');

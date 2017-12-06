@@ -5,7 +5,7 @@
  ?>
 <div class="top-bar-container">
   <div class="top-bar topbar_wrapper">
-    <svg class="top-bar__logo">
+    <svg data-page="pageFront" class="top-bar__logo btnRootNav">
       <use href="#topBarLogo"></use>
     </svg>
     <?php if (!$isLoggedin): ?>
