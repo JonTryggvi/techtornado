@@ -72,4 +72,53 @@ $(document).ready(function(){
   });
 
 
+
+   /***** * * * CREATE EVENT * * * *****/
+   //EVENT NAME
+   $(".inputCreateEventName").focus(function() {
+     $(".tagRedFill").css({
+       "transition": "all 300ms 100ms ease",
+       "fill": "#FF6565",
+       "transform": "translate(-6px, 5px)"
+     });
+     $(".tagFill").css({
+       "fill": "#000"
+     });
+   });
+   //LOCATION
+   $(".inputCreateEventLocation").focus(function() {
+     $(".locationRedFill").css({
+       "transition": "all 300ms 100ms ease",
+       "fill": "#FF6565",
+       "transform": "translate(-2px, -1px)"
+     });
+     $(".locationRedStroke").css({
+       "stroke": "#000"
+     });
+   });
+   //CLOCK
+   $(".inputCreateEventClock").focus(function() {
+     console.log("Event");
+     $(".clockRedFill").css({
+       "transition": "all 300ms 100ms ease",
+       "fill": "#FF6565",
+       "transform": "translateX(0px)"
+     });
+     $(".clockRedStroke").css({
+       "stroke": "#000"
+     });
+   });
+   //PRICE
+   $(".inputCreateEventPrice").focus(function() {
+     $(".priceRedFill").css({
+       "transition": "all 300ms 100ms ease",
+       "stroke": "#FF6565",
+       "transform": "translateX(0px)"
+     });
+     $(".priceRedStroke").css({
+       "stroke": "#000",
+       "fill": "#000"
+     });
+   });
+
 });

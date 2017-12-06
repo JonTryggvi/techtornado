@@ -1,5 +1,15 @@
 <section id="pageCmsStep1" class="cmsPage">
   <div class="stepContainer">
+    <div class="stepContainer__needHelp">
+      <div class="stepContainer__needHelp__img"></div>
+      <img src="../img/userImg.png" alt="">
+      <div class="stepContainer__needHelp__info">
+        <span class="stepContainer__needHelp__info__blob"></span>
+        <div class="stepContainer__needHelp__info__text">
+          Need help? <span>Let me know.</span>
+        </div>
+      </div>
+    </div>
     <div class="step1">
       <h3>Step 1 of 4</h3>
       <div class="step1__line"></div>
@@ -9,77 +19,70 @@
       </div>
       <div class="step1__basicInfoForm">
         <form class="" action="index.html" method="post">
-          <label for="logIn_email">
-            <svg id="envelopeRed" class="logIn_email" viewBox="0 0 68 42" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-              <g id="Style-Guide" transform="translate(-281.000000, -2628.000000)">
-                <g id="Group-14" transform="translate(119.000000, 2019.000000)">
-                  <g id="Page-1" transform="translate(8.000000, 109.000000)">
-                    <g id="Group-51" transform="translate(156.000000, 501.000000)">
-                      <polygon id="Fill-20" class="envelopeRed" fill="#FF6565" points="65.2889378 1.5518971 36.7362584 29.1819441 7.29130767 1.5518971"></polygon>
-                      <polygon id="Stroke-21" class="envelopeRedToBlack" stroke="#AFC5DB" stroke-width="3" points="0.362309589 39.1087358 58.3599397 39.1087358 58.3599397 0.783186722 0.362309589 0.783186722"></polygon>
-                      <polyline id="Stroke-22" class="envelopeRedToBlack" stroke="#AFC5DB" stroke-width="3" points="0.362155616 0.782879115 29.8071063 28.4129261 58.3597858 0.782879115"></polyline>
-                      <path d="M20.7837729,19.9458075 L0.362386575,39.1089665" class="envelopeRedToBlack" id="Stroke-23" stroke="#AFC5DB" stroke-width="3"></path>
-                      <path d="M38.5573693,19.9458075 L58.3597858,39.1089665" class="envelopeRedToBlack" id="Stroke-24" stroke="#AFC5DB" stroke-width="3"></path>
+          <label for="create_event_tag">
+            <svg width="46px" height="50px" class="makeEventName" viewBox="0 0 46 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="Style-Guide" transform="translate(-706.000000, -2455.000000)" fill-rule="nonzero">
+                        <g id="Group-40" transform="translate(706.000000, 2455.000000)">
+                            <g id="noun_130926-copy-2" transform="translate(1.000000, 8.000000)" class="tagRedFill" fill="#FF6565">
+                                <polygon id="Shape" points="0.141893655 8.8817842e-14 19.748801 0.516978539 41.9672445 22.7360784 22.8757444 41.8276934 0.659914535 19.6117299 0.14137093 8.8817842e-14"></polygon>
+                            </g>
+                            <g id="noun_130926-copy" class="tagFill" fill="#AFC5DB">
+                                <path d="M0.579858328,0.585602414 C0.193041525,0.972421543 -0.013435011,1.50403648 0.000678575001,2.04715145 L0.521835807,21.757677 C0.535426668,22.2856329 0.752357713,22.7811795 1.12192458,23.1507486 L23.3764361,45.405394 C24.1516379,46.1806005 25.4479969,46.2093506 26.2341759,45.4236895 L45.4239484,26.2338016 C46.2096047,25.4476179 46.1803321,24.1522965 45.4051303,23.3770901 L23.1516642,1.12296737 C22.7826201,0.753398279 22.2855082,0.535420472 21.7596464,0.521306801 L2.04871673,0.000669162221 C1.50403685,-0.0134445087 0.969811482,0.196169641 0.582471955,0.585079685 L0.579858328,0.585602414 Z M2.0790348,2.07903789 L21.6859421,2.59601643 L43.9043856,24.8151163 L24.8128855,43.9067313 L2.59705568,21.6907678 L2.07851207,2.07903789 L2.0790348,2.07903789 Z M8.29110355,8.29323493 C6.47515549,10.1097167 6.47515549,13.0856103 8.29110355,14.902092 C10.1070516,16.7185738 13.0834501,16.7185738 14.8993982,14.902092 C16.715869,13.0856103 16.7153462,10.1097167 14.8993982,8.29323493 C13.0834501,6.47675321 10.1070516,6.47675321 8.29110355,8.29323493 L8.29110355,8.29323493 Z M9.75943923,9.76157944 C10.7818901,8.73912239 12.4080889,8.73912239 13.4289716,9.76157944 C14.4514225,10.7840365 14.4514225,12.4107678 13.4289716,13.4311339 C12.4065207,14.4535909 10.780322,14.4535909 9.75943923,13.4311339 C8.73698833,12.4086768 8.73698833,10.7824683 9.75943923,9.76157944 L9.75943923,9.76157944 Z" id="Shape"></path>
+                            </g>
+                        </g>
                     </g>
-                  </g>
                 </g>
-              </g>
             </svg>
-            <input type="text" name="logIn_email" class="inputLogInEmail" value="" placeholder="Where will you call the event?">
+            <input type="text" name="create_event_tag" class="inputCreateEventName" value="" placeholder="Where will you call the event?">
           </label>
-          <label for="logIn_password">
-            <svg id="lockRed" class="logIn_password" viewBox="0 0 54 58" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-              <g id="Style-Guide" transform="translate(-622.000000, -2447.000000)">
-                <g id="Group-14" transform="translate(119.000000, 2019.000000)">
-                  <g id="Page-1" transform="translate(8.000000, 109.000000)">
-                    <g id="Group-42" transform="translate(497.000000, 321.000000)">
-                      <path d="M16.3164556,37.288738 C16.3164556,31.9794379 20.624609,27.6760133 25.9397433,27.6760133 C31.2548775,27.6760133 35.563031,31.9794379 35.563031,37.288738 C35.563031,42.5980382 31.2548775,46.9014628 25.9397433,46.9014628 C20.624609,46.9014628 16.3164556,42.5980382 16.3164556,37.288738" id="Fill-61" class="lockRed" fill="#FF6565"></path>
-                      <path d="M17.4712501,21.5238694 L17.4712501,12.2956537 C17.4712501,5.95125533 22.6678255,0.760383956 29.0191953,0.760383956 C35.3705652,0.760383956 40.5671405,5.95125533 40.5671405,12.2956537 L40.5671405,21.5238694 L17.4712501,21.5238694 Z" id="Fill-62" class="lockRed" fill="#FF6565"></path>
-                      <path d="M45.3954134,54.3993881 L5.3294326,54.3993881 C2.58641068,54.3993881 0.341490137,52.1577007 0.341490137,49.4176896 L0.341490137,26.3133134 C0.341490137,23.5733024 2.58641068,21.3316149 5.3294326,21.3316149 L45.3954134,21.3316149 C48.1384353,21.3316149 50.382586,23.5733024 50.382586,26.3133134 L50.382586,49.4176896 C50.382586,52.1577007 48.1384353,54.3993881 45.3954134,54.3993881 Z" id="Stroke-63" class="lockRedBlack" stroke="#AFC5DB" stroke-width="3"></path>
-                      <path d="M13.6219351,21.1393604 L13.6219351,11.9111447 C13.6219351,5.56674633 18.8185104,0.375874965 25.1698803,0.375874965 C31.5212501,0.375874965 36.7178255,5.56674633 36.7178255,11.9111447 L36.7178255,21.1393604" id="Stroke-64" class="lockRedBlack" stroke="#AFC5DB" stroke-width="3"></path>
-                      <path d="M19.2034419,37.8655015 C19.2034419,34.4679801 21.9610912,31.7133577 25.362346,31.7133577 C28.7636008,31.7133577 31.5212501,34.4679801 31.5212501,37.8655015 C31.5212501,41.263023 28.7636008,44.0176454 25.362346,44.0176454 C21.9610912,44.0176454 19.2034419,41.263023 19.2034419,37.8655015 Z" id="Stroke-65" class="lockRedBlack" stroke="#AFC5DB" stroke-width="3"></path>
+          <label for="create_event_location">
+            <svg class="createEventLocation" width="40px" height="74px" viewBox="0 0 40 74" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="Style-Guide" transform="translate(-720.000000, -2611.000000)">
+                        <g id="Group-25" transform="translate(720.000000, 2612.000000)">
+                            <path class="locationRedFill" d="M19.901188,72.4627925 C6.74754433,42.2695436 0.1707225,28.5366989 0.1707225,21.2642585 C0.1707225,10.3542942 9.01553263,1.51080851 19.901188,1.51080851 C20.0329373,1.51080851 20.0329373,21.8281365 19.901188,72.4627925 Z" id="Stroke-76-Copy-2" fill="#FF6565"></path>
+                            <g id="Group-24-Copy" class="locationRedStroke" transform="translate(3.000000, 0.000000)" stroke="#AFC5DB" stroke-width="3">
+                                <path d="M9,20.496976 C9,15.8042896 12.80847,12 17.5063129,12 C22.2047172,12 26.0131872,15.8042896 26.0131872,20.496976 C26.0131872,25.1896623 22.2047172,28.993952 17.5063129,28.993952 C12.80847,28.993952 9,25.1896623 9,20.496976 Z" id="Stroke-76-Copy" transform="translate(17.506594, 20.496976) rotate(-90.000000) translate(-17.506594, -20.496976) "></path>
+                                <path d="M-13.5,31.9868005 C9.9264672,20.3289335 24.8624254,14.5 31.3078747,14.5 C40.9772041,14.5 48.815046,22.3292388 48.815046,31.9868005 C48.815046,41.6443622 40.9772041,49.473601 31.3078747,49.473601 C24.8624254,49.473601 9.9264672,43.6446675 -13.5,31.9868005 Z" id="Stroke-76-Copy-2" transform="translate(17.657523, 31.986801) rotate(-90.000000) translate(-17.657523, -31.986801) "></path>
+                            </g>
+                        </g>
                     </g>
-                  </g>
                 </g>
-              </g>
             </svg>
-            <input type="text" name="logIn_password" class="inputLogInPassword" value="" placeholder="What is the location of the event?">
+            <input type="text" name="create_event_location" class="inputCreateEventLocation" value="" placeholder="What is the location of the event?">
           </label>
-          <label for="logIn_email">
-            <svg id="envelopeRed" class="logIn_email" viewBox="0 0 68 42" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-              <g id="Style-Guide" transform="translate(-281.000000, -2628.000000)">
+          <label for="create_event_day">
+            <svg id="clockRed" class="makeEventDay" viewBox="0 0 60 60" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <g id="Style-Guide" transform="translate(-372.000000, -2619.000000)">
                 <g id="Group-14" transform="translate(119.000000, 2019.000000)">
                   <g id="Page-1" transform="translate(8.000000, 109.000000)">
-                    <g id="Group-51" transform="translate(156.000000, 501.000000)">
-                      <polygon id="Fill-20" class="envelopeRed" fill="#FF6565" points="65.2889378 1.5518971 36.7362584 29.1819441 7.29130767 1.5518971"></polygon>
-                      <polygon id="Stroke-21" class="envelopeRedToBlack" stroke="#AFC5DB" stroke-width="3" points="0.362309589 39.1087358 58.3599397 39.1087358 58.3599397 0.783186722 0.362309589 0.783186722"></polygon>
-                      <polyline id="Stroke-22" class="envelopeRedToBlack" stroke="#AFC5DB" stroke-width="3" points="0.362155616 0.782879115 29.8071063 28.4129261 58.3597858 0.782879115"></polyline>
-                      <path d="M20.7837729,19.9458075 L0.362386575,39.1089665" class="envelopeRedToBlack" id="Stroke-23" stroke="#AFC5DB" stroke-width="3"></path>
-                      <path d="M38.5573693,19.9458075 L58.3597858,39.1089665" class="envelopeRedToBlack" id="Stroke-24" stroke="#AFC5DB" stroke-width="3"></path>
+                    <g id="Group-52" transform="translate(247.000000, 491.000000)">
+                        <path class="clockRedFill" d="M57.8914419,27.8173964 C57.8914419,12.7492581 45.6629378,0.534176487 30.5782419,0.534176487 L30.5782419,27.8173964" id="Fill-25" fill="#FF6565"></path>
+                        <path class="clockRedStroke" d="M0.322856438,30.9206916 C0.322856438,15.8525533 12.5513605,3.63747165 27.6360564,3.63747165 C42.7215222,3.63747165 54.9500263,15.8525533 54.9500263,30.9206916 C54.9500263,45.9888299 42.7215222,58.2039115 27.6360564,58.2039115 C12.5513605,58.2039115 0.322856438,45.9888299 0.322856438,30.9206916 Z" id="Stroke-26" stroke="#AFC5DB" stroke-width="3"></path>
+                        <polyline id="Stroke-27" class="clockRedStroke" stroke="#AFC5DB" stroke-width="3" points="27.6363644 11.3054268 27.6363644 31.8174434 40.4391863 31.8174434"></polyline>
                     </g>
                   </g>
                 </g>
               </g>
             </svg>
-            <input type="text" name="logIn_email" class="inputLogInEmail" value="" placeholder="DD/MM/YYYY">
+            <input type="text" name="create_event_day" class="inputCreateEventClock" value="" placeholder="DD/MM/YYYY">
           </label>
-          <label for="logIn_password">
-            <svg id="lockRed" class="logIn_password" viewBox="0 0 54 58" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-              <g id="Style-Guide" transform="translate(-622.000000, -2447.000000)">
-                <g id="Group-14" transform="translate(119.000000, 2019.000000)">
-                  <g id="Page-1" transform="translate(8.000000, 109.000000)">
-                    <g id="Group-42" transform="translate(497.000000, 321.000000)">
-                      <path d="M16.3164556,37.288738 C16.3164556,31.9794379 20.624609,27.6760133 25.9397433,27.6760133 C31.2548775,27.6760133 35.563031,31.9794379 35.563031,37.288738 C35.563031,42.5980382 31.2548775,46.9014628 25.9397433,46.9014628 C20.624609,46.9014628 16.3164556,42.5980382 16.3164556,37.288738" id="Fill-61" class="lockRed" fill="#FF6565"></path>
-                      <path d="M17.4712501,21.5238694 L17.4712501,12.2956537 C17.4712501,5.95125533 22.6678255,0.760383956 29.0191953,0.760383956 C35.3705652,0.760383956 40.5671405,5.95125533 40.5671405,12.2956537 L40.5671405,21.5238694 L17.4712501,21.5238694 Z" id="Fill-62" class="lockRed" fill="#FF6565"></path>
-                      <path d="M45.3954134,54.3993881 L5.3294326,54.3993881 C2.58641068,54.3993881 0.341490137,52.1577007 0.341490137,49.4176896 L0.341490137,26.3133134 C0.341490137,23.5733024 2.58641068,21.3316149 5.3294326,21.3316149 L45.3954134,21.3316149 C48.1384353,21.3316149 50.382586,23.5733024 50.382586,26.3133134 L50.382586,49.4176896 C50.382586,52.1577007 48.1384353,54.3993881 45.3954134,54.3993881 Z" id="Stroke-63" class="lockRedBlack" stroke="#AFC5DB" stroke-width="3"></path>
-                      <path d="M13.6219351,21.1393604 L13.6219351,11.9111447 C13.6219351,5.56674633 18.8185104,0.375874965 25.1698803,0.375874965 C31.5212501,0.375874965 36.7178255,5.56674633 36.7178255,11.9111447 L36.7178255,21.1393604" id="Stroke-64" class="lockRedBlack" stroke="#AFC5DB" stroke-width="3"></path>
-                      <path d="M19.2034419,37.8655015 C19.2034419,34.4679801 21.9610912,31.7133577 25.362346,31.7133577 C28.7636008,31.7133577 31.5212501,34.4679801 31.5212501,37.8655015 C31.5212501,41.263023 28.7636008,44.0176454 25.362346,44.0176454 C21.9610912,44.0176454 19.2034419,41.263023 19.2034419,37.8655015 Z" id="Stroke-65" class="lockRedBlack" stroke="#AFC5DB" stroke-width="3"></path>
+          <label for="create_event_price">
+            <svg width="21px" height="55px" class="makeEventPrice" viewBox="0 0 21 55" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="Style-Guide" transform="translate(-721.000000, -2523.000000)">
+                        <g id="Group-39" transform="translate(721.000000, 2523.000000)">
+                            <g id="Group-38-Copy">
+                                <path d="M13,2 L13,54.1820849" id="Stroke-87-Copy" class="priceRedFill" stroke="#FF6565" stroke-width="5"></path>
+                                <path class="priceRedStroke" d="M9.755,40.02 C12.1850122,40.02 14.0749933,39.5775044 15.425,38.6925 C16.7750067,37.8074956 17.45,36.3750099 17.45,34.395 C17.45,33.2549943 17.2325022,32.3025038 16.7975,31.5375 C16.3624978,30.7724962 15.7850036,30.1275026 15.065,29.6025 C14.3449964,29.0774974 13.5200047,28.6275019 12.59,28.2525 C11.6599954,27.8774981 10.6850051,27.4800021 9.665,27.06 C8.37499355,26.5499974 7.2200051,26.0250027 6.2,25.485 C5.1799949,24.9449973 4.3100036,24.3375034 3.59,23.6625 C2.8699964,22.9874966 2.32250187,22.2150044 1.9475,21.345 C1.57249813,20.4749956 1.385,19.4550058 1.385,18.285 C1.385,15.6149866 2.26999115,13.5900069 4.04,12.21 C5.81000885,10.8299931 8.26998425,10.14 11.42,10.14 C12.2600042,10.14 13.084996,10.1999994 13.895,10.32 C14.705004,10.4400006 15.4624965,10.597499 16.1675,10.7925 C16.8725035,10.987501 17.5174971,11.2049988 18.1025,11.445 C18.6875029,11.6850012 19.174998,11.9399986 19.565,12.21 L18.485,14.775 C17.6149956,14.174997 16.5575062,13.6950018 15.3125,13.335 C14.0674938,12.9749982 12.7250072,12.795 11.285,12.795 C10.2949951,12.795 9.38750412,12.892499 8.5625,13.0875 C7.73749588,13.282501 7.025003,13.5974978 6.425,14.0325 C5.824997,14.4675022 5.35250173,15.0149967 5.0075,15.675 C4.66249827,16.3350033 4.49,17.1299954 4.49,18.06 C4.49,19.0200048 4.6699982,19.8299967 5.03,20.49 C5.3900018,21.1500033 5.89249678,21.7199976 6.5375,22.2 C7.18250323,22.6800024 7.93999565,23.114998 8.81,23.505 C9.68000435,23.8950019 10.6249949,24.2999979 11.645,24.72 C12.8750061,25.2300025 14.0374945,25.7399974 15.1325,26.25 C16.2275055,26.7600026 17.179996,27.3599965 17.99,28.05 C18.800004,28.7400035 19.4449976,29.579995 19.925,30.57 C20.4050024,31.5600049 20.645,32.7749928 20.645,34.215 C20.645,37.0350141 19.6625098,39.149993 17.6975,40.56 C15.7324902,41.970007 13.0700168,42.675 9.71,42.675 C8.509994,42.675 7.41500495,42.6000008 6.425,42.45 C5.43499505,42.2999992 4.5500039,42.1125011 3.77,41.8875 C2.9899961,41.6624989 2.3300027,41.4300012 1.79,41.19 C1.2499973,40.9499988 0.8300015,40.7400009 0.53,40.56 L1.52,37.905 C1.8200015,38.0850009 2.22499745,38.2949988 2.735,38.535 C3.24500255,38.7750012 3.84499655,39.0074989 4.535,39.2325 C5.22500345,39.4575011 6.00499565,39.6449993 6.875,39.795 C7.74500435,39.9450007 8.70499475,40.02 9.755,40.02 Z" id="S" fill="#AFC5DB"></path>
+                                <path d="M11,0 L11,52.1820849" id="Stroke-87" class="priceRedStroke" stroke="#AFC5DB" stroke-width="3"></path>
+                            </g>
+                        </g>
                     </g>
-                  </g>
                 </g>
-              </g>
             </svg>
-            <input type="text" name="logIn_password" class="inputLogInPassword" value="" placeholder="Price?">
+            <input type="text" name="create_event_price" class="inputCreateEventPrice" value="" placeholder="Price?">
           </label>
         </form>
         <div class="stepBtns">
@@ -253,5 +256,15 @@
         <h4>Basic Info</h4>
         <p>But I can’t give you this case, it don’t belong to me. Besides, I’ve already been through too much shit this morning over this case to hand it over to your dumb ass.</p>
       </div>
+      <div class="stepBtns">
+        <a id="doneToMyEvents" data-page="pageMyEvents" class="back btnCmsNav">
+          <svg id="arrowBackRed" data-page="pageMyEvents" class="goTo_back btnCmsNav"viewBox="0 0 55 41" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <polygon id="Fill-47" fill="#FF6565" points="23.7075205 0.727521992 5.02448493 19.3900503 23.7075205 38.0518097" class="arrowBackRed_back"></polygon>
+            <path d="M52.7709271,19.3897427 L0.588842192,19.3897427" id="Stroke-48" stroke="#3E3E3E" stroke-width="3"></path>
+            <polyline id="Stroke-49" stroke="#3E3E3E" stroke-width="3" points="19.0837233 0.727521992 0.400687671 19.3900503 19.0837233 38.0518097"></polyline>
+          </svg>
+          <span class="btnCmsNav" data-page="pageMyEvents">My Events</span>
+        </a>
+    </div>
     </div>
 </section>
