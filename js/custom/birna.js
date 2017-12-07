@@ -5,6 +5,18 @@ $(document).ready(function() {
     $('.filterGenre__icon').toggleClass('iconActive');
     $('.filterGenre__dropdown').toggleClass('dropdownActive');
   });
+/// show icond when checkbox in step 4 is checked
+  $('#checkbox-12:checkbox').click(function() {
+    $('.coctailRed').toggleClass('showRefreshments');
+  });
+
+  $('#checkbox-13:checkbox').click(function() {
+    $('.drinkRed').toggleClass('showRefreshments');
+  });
+
+  $('#checkbox-14:checkbox').click(function() {
+    $('.utensilsRed').toggleClass('showRefreshments');
+  });
 
 
   //image slider

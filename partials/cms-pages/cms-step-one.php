@@ -93,7 +93,7 @@
             </svg>
             <span>Back</span>
           </a>
-          <a id="fromOnetoTwo" class="next"><span>Next</span>
+          <a id="fromOnetoTwo" class="next stepOneNext"><span>Next</span>
             <svg id="arrowForwRed" class="goTo_next" viewBox="0 0 55 41" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" >
               <polygon id="Fill-41" fill="#FF6565" points="29.3808877 0.727521992 48.0639233 19.3900503 29.3808877 38.0518097" class="arrowForwRed_next"></polygon>
               <path d="M0.31740411,19.3897427 L52.499489,19.3897427" id="Stroke-42" stroke="#3E3E3E" stroke-width="3"></path>
@@ -208,7 +208,7 @@
         </div>
       </div>
       <div class="step4__iconsDrink">
-        <svg id="coctailRed" viewBox="0 0 62 65" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <svg class="coctailRed" id="coctailRed" viewBox="0 0 62 65" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                   <polygon id="Fill-13" fill="#FF6565" points="21.4410466 60.2261134 25.2903616 60.2261134 25.2903616 35.617538 21.4410466 35.617538"></polygon>
 
                   <path d="M52.2353362,13.700218 C52.2353362,18.5842512 48.2713115,22.5439248 43.3819115,22.5439248 C38.4925115,22.5439248 34.5284868,18.5842512 34.5284868,13.700218 C34.5284868,8.81618479 38.4925115,4.8565112 43.3819115,4.8565112 C48.2713115,4.8565112 52.2353362,8.81618479 52.2353362,13.700218" id="Fill-15" fill="#FF6565"></path>
@@ -217,12 +217,12 @@
                   <path d="M22.5477247,36.836047 L22.5477247,62.2620885" id="Stroke-18" stroke="#3E3E3E" stroke-width="3"></path>
                   <path d="M32.375257,8.95299308 C34.1320844,4.03358506 38.8374871,0.513020747 44.3651036,0.513020747 C51.3939529,0.513020747 57.0924789,6.20529184 57.0924789,13.226426 C57.0924789,20.2475602 51.3939529,25.9390622 44.3651036,25.9390622 C42.6960405,25.9390622 41.1016542,25.6183817 39.6412241,25.0346971" id="Stroke-19" stroke="#3E3E3E" stroke-width="3"></path>
         </svg>
-        <svg id="drinkRed" viewBox="0 0 47 49" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <svg class="drinkRed" id="drinkRed" viewBox="0 0 47 49" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                   <polygon id="Fill-50" fill="#FF6565" points="44.5970337 12.4185129 40.2811816 8.65032476 37.4434666 12.2070329 33.3139214 8.86103568 29.5685378 12.4946456 26.3104775 9.11711867 22.7852748 12.7430385 19.3078036 9.37320166 15.6902173 13.0021975 12.3043597 9.62928465 7.87610767 14.1595696 8.01391315 14.1980205 15.5316255 44.5357798 38.2564419 45.3047978 44.9334638 12.4023635"></polygon>
                   <polygon id="Stroke-51" stroke="#3E3E3E" stroke-width="3" points="33.6371099 46.073662 10.1424304 46.073662 0.299731781 0.701601107 42.8446715 0.701601107"></polygon>
                   <polyline id="Stroke-52" stroke="#3E3E3E" stroke-width="3" points="3.61861123 14.9183596 7.44329068 11.4239419 10.7714085 14.9183596 14.5968578 11.4239419 18.018129 14.9183596 21.7496551 11.4239419 24.9468962 14.9183596 28.9024523 11.4239419 32.9904249 14.9183596 36.0175263 11.4677759 39.3317866 14.5438479"></polyline>
         </svg>
-        <svg id="utensilsRed" viewBox="0 0 47 69" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <svg class="utensilsRed" id="utensilsRed" viewBox="0 0 47 69" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                   <path d="M18.9557882,0.470093499 L18.9557882,16.4564393 C18.9557882,20.594525 15.5668512,23.9797422 11.4242184,23.9797422 C7.28235534,23.9797422 3.89341836,20.594525 3.89341836,16.4564393 L3.89341836,0.656964869" id="Fill-56" fill="#FF6565"></path>
                   <path d="M7.57513425,2.00812946 L7.57513425,67.8352996" id="Stroke-57" stroke="#3E3E3E" stroke-width="3"></path>
                   <path d="M34.9598545,29.4503054 L34.9598545,0.940501798 C34.9598545,0.940501798 44.3737395,-4.23191314 44.3737395,29.6217964 L35.4302408,29.6217964" id="Fill-58" fill="#FF6565"></path>
