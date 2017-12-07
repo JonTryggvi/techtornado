@@ -33,7 +33,6 @@ $(document).ready(function() {
     'items': 1,
     'loop': true,
     'smartSpeed': 500
-
   });
 
   nextArrow.click(function() {
@@ -53,7 +52,4 @@ $(document).ready(function() {
     $(this)[0].parentNode.parentNode.remove();
 
   });
-
-
-
 });

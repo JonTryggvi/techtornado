@@ -2,39 +2,39 @@
   <div class="fp-hero__slider">
     <div id="dasSlider" class="fp-hero__slider__content owl-carousel">
 
-      <div class="fp-hero__slider__content__slide">
-        <h2>Morning Booster: Happiness at Work with Alexander Kjerulf</h2>
-        <h3>Tuesday, Sep 5</h3>
-        <h3>08:30 — 09:30</h3>
-        <h3>KLUB, COPENHAGEN</h3>
+      <div data-page="pageEvents" class="fp-hero__slider__content__slide btnRootNav">
+        <h2 data-page="pageEvents" class="btnRootNav">Morning Booster: Happiness at Work with Alexander Kjerulf</h2>
+        <h3 data-page="pageEvents" class="btnRootNav">Tuesday, Sep 5</h3>
+        <h3 data-page="pageEvents" class="btnRootNav">08:30 — 09:30</h3>
+        <h3 data-page="pageEvents" class="btnRootNav">KLUB, COPENHAGEN</h3>
       </div>
 
-      <div class="fp-hero__slider__content__slide">
-        <h2>Trust Summit</h2>
-        <h3>Tuesday, Sep 5</h3>
-        <h3>08:30 — 09:30</h3>
-        <h3>KLUB, COPENHAGEN</h3>
+      <div data-page="pageEvents" class="fp-hero__slider__content__slide btnRootNav">
+        <h2 data-page="pageEvents" class="btnRootNav">Trust Summit</h2>
+        <h3 data-page="pageEvents" class="btnRootNav">Tuesday, Sep 5</h3>
+        <h3 data-page="pageEvents" class="btnRootNav">08:30 — 09:30</h3>
+        <h3 data-page="pageEvents" class="btnRootNav">KLUB, COPENHAGEN</h3>
       </div>
 
-      <div class="fp-hero__slider__content__slide">
-        <h2>Future of Urban Mobility Meetup</h2>
-        <h3>Tuesday, Sep 5</h3>
-        <h3>08:30 — 09:30</h3>
-        <h3>KLUB, COPENHAGEN</h3>
+      <div data-page="pageEvents" class="fp-hero__slider__content__slide btnRootNav">
+        <h2 data-page="pageEvents" class="btnRootNav">Future of Urban Mobility Meetup</h2>
+        <h3 data-page="pageEvents" class="btnRootNav">Tuesday, Sep 5</h3>
+        <h3 data-page="pageEvents" class="btnRootNav">08:30 — 09:30</h3>
+        <h3 data-page="pageEvents" class="btnRootNav">KLUB, COPENHAGEN</h3>
       </div>
 
-      <div class="fp-hero__slider__content__slide">
-        <h2>Coworking & Coliving Summit</h2>
-        <h3>Tuesday, Sep 5</h3>
-        <h3>08:30 — 09:30</h3>
-        <h3>KLUB, COPENHAGEN</h3>
+      <div data-page="pageEvents" class="fp-hero__slider__content__slide btnRootNav">
+        <h2 data-page="pageEvents" class="btnRootNav">Coworking & Coliving Summit</h2>
+        <h3 data-page="pageEvents" class="btnRootNav">Tuesday, Sep 5</h3>
+        <h3 data-page="pageEvents" class="btnRootNav">08:30 — 09:30</h3>
+        <h3 data-page="pageEvents" class="btnRootNav">KLUB, COPENHAGEN</h3>
       </div>
 
-      <div class="fp-hero__slider__content__slide">
-        <h2>Coworking & Coliving Summit</h2>
-        <h3>Tuesday, Sep 5</h3>
-        <h3>08:30 — 09:30</h3>
-        <h3>KLUB, COPENHAGEN</h3>
+      <div data-page="pageEvents" class="fp-hero__slider__content__slide btnRootNav">
+        <h2 data-page="pageEvents" class="btnRootNav">Coworking & Coliving Summit</h2>
+        <h3 data-page="pageEvents" class="btnRootNav">Tuesday, Sep 5</h3>
+        <h3 data-page="pageEvents" class="btnRootNav">08:30 — 09:30</h3>
+        <h3 data-page="pageEvents" class="btnRootNav">KLUB, COPENHAGEN</h3>
       </div>
 
     </div>
