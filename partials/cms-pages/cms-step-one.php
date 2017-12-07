@@ -255,6 +255,7 @@
       <div class="stepDone__basicInfo">
         <h4>Basic Info</h4>
         <p>But I can’t give you this case, it don’t belong to me. Besides, I’ve already been through too much shit this morning over this case to hand it over to your dumb ass.</p>
+        <img src="img/runningunigif.gif" alt="">
       </div>
       <div class="stepBtns">
         <a id="doneToMyEvents" data-page="pageMyEvents" class="back btnCmsNav">

@@ -37,9 +37,12 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      font-weight: 300;
+      padding: 10px;
       span{
         text-decoration: underline;
-        padding-left: 3px;
+        padding-left: 6px;
+        font-weight: 300;
       }
     }
     &__blob {
@@ -84,6 +87,16 @@
   }
   &__basicInfo {
     margin-top: 45px;
+    width: 100%;
+    img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 300px;
+      margin: 0 auto;
+      margin-top: 30px;
+      margin-bottom: -50px;
+    }
   }
   .stepBtns {
     top: 50px;
@@ -221,7 +234,8 @@
           height: 40px;
           font-size: 18px;
           color: $black;
-          margin-top: 15px;
+          margin-top: 20px;
+          font-weight: 500;
           padding-left: 35px;
           position: relative;
           background: none;
@@ -230,6 +244,7 @@
 
           &::placeholder {
             color: $signInGrey;
+            font-weight: 300;
           }
         }
       }
@@ -313,7 +328,7 @@
       font-family: $mont;
       font-size: 18px;
       color: $greyLight;
-      font-weight: 500;
+      font-weight: 300;
       margin: 0;
       span {
         text-decoration: underline;
@@ -428,6 +443,7 @@
       color: $greyLight;
       margin: 0 20px;
       font-size: 14px;
+      font-weight: 300;
     }
   }
 }
@@ -472,10 +488,12 @@
     margin-left: -20px;
     svg {
       height: 65px;
+      overflow: visible;
     }
     svg:nth-child(2) {
       height: 47px;
       margin-top: 18px;
+      overflow: visible;
     }
   }
 }
