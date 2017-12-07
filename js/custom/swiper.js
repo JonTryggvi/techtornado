@@ -29,6 +29,7 @@ if (isMobile) {
       filterBackgroundAll.classList.toggle('rezizeFilter');
       eventRightAll.classList.toggle('swipeRight');
     });
+
     // hammertimeAll.get('swipe').set({
     //   direction: Hammer.DIRECTION_HORIZONTAL
     // });

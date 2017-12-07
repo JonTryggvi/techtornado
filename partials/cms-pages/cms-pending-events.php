@@ -50,7 +50,7 @@
             </div>
           </div>
         </div>
-        <div class="eventsection__left__container__list">
+        <div class="cmsPendingList eventsection__left__container__list">
 
           <div id="setActiveAfter" class="eventsection__left__container__list__item ">
             <div class="eventsection__left__container__list__item__leftText">
