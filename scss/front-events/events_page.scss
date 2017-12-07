@@ -280,13 +280,13 @@
 
             .dropdownActive {
               transform: scaleY(1);
-              @include bp(769) {
-                opacity: 0.3;
-                transform: scale(0.6);
-              }
-              @include bp(376) {
-                transform: scale(0.3);
-              }
+              // @include bp(769) {
+              //   opacity: 0.3;
+              //   transform: scale(0.6);
+              // }
+              // @include bp(376) {
+              //   transform: scale(0.3);
+              // }
             }
             @include bp(1025) {
               width: 90% !important;
@@ -343,6 +343,26 @@
           width: 100%;
           justify-content: space-between;
           background-color: $white;
+          border: 1px solid transparent;
+          transition: all 300ms ease;
+          position: relative;
+
+          &::after {
+            transition: all 300ms ease;
+            position: absolute;
+            content: '';
+            width: 0;
+            height: 0;
+            background-color: $white;
+            right: 1px;
+            top: 50%;
+            margin-top: -19px;
+            transform: rotate(45deg) scale(0);
+            z-index: 1;
+            border-top: 1px solid transparent;
+            border-right: 1px solid transparent;
+
+          }
           @include bp(769) {
             opacity: 0.3;
             transform: scale(0.6);
@@ -449,6 +469,7 @@
           border: 1px solid $blue;
           border-left: none;
           position: relative;
+
           @include bp(769) {
             border: none;
             opacity: 0.3;
@@ -464,9 +485,10 @@
             right: -21px;
             top: 50%;
             margin-top: -19px;
-            transform: rotate(45deg);
+            transform: rotate(45deg) scale(1);
             border-top: 1px solid $blue;
             border-right: 1px solid $blue;
+
             @include bp(769) {
               opacity: 0.3;
               transform: scale(0.6);
@@ -642,6 +664,7 @@
         align-items: center;
         width: 30%;
         height: 80%;
+        transition: all 300ms ease;
         // background-color: $red;
 
         svg {
@@ -663,6 +686,7 @@
 
     &__event {
       padding-top: 7%;
+      transition: all 300ms ease;
       @include bp(376) {
         padding-top: 0;
       }
@@ -681,6 +705,10 @@
         line-height: 30px;
         color: $black;
         font-weight: 500;
+        @include bp(376) {
+          font-size: 16px;
+          line-height: 18px;
+        }
       }
 
       img {
@@ -712,6 +740,9 @@
             height: 22px;
             transform: translateX(10px);
             transition: all 100ms ease;
+            @include bp(376) {
+              width: 20px;
+            }
           }
 
           .goTo_map,
@@ -787,7 +818,6 @@
 
       &__item {
         transform: scale(0.5);
-
       }
     }
 
@@ -811,6 +841,53 @@
 
     p {
       line-height: 20px;
+    }
+
+  }
+
+  .eventRightAddjust {
+
+    @include bp(376) {
+      &:before {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        background-color: rgba($grey, 0.9);
+        z-index: 3;
+      }
+
+      .eventsection__right__stats {
+        &__item {
+          transform: scale(0.3);
+        }
+      }
+
+      .eventsection__right__event {
+        &__buttons {
+          .toLinks {
+            a svg {
+              transform: scale(0.6);
+            }
+          }
+        }
+
+        h2 {
+          font-size: 18px;
+          line-height: 18px;
+        }
+
+        h3 {
+          font-size: 14px;
+          line-height: 15px;
+        }
+
+        p {
+          line-height: 20px;
+        }
+      }
     }
 
   }

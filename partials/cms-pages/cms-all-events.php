@@ -50,7 +50,7 @@
             </div>
           </div>
         </div>
-        <div class="eventsection__left__container__list">
+        <div class="eventsection__left__container__list cmsAllEventsList">
           <div class="eventsection__left__container__list__item selectedEvent">
             <div class="eventsection__left__container__list__item__leftText">
               <span>18. Dec 2017</span>
@@ -74,7 +74,7 @@
               <span>28. Jan 2018</span>
             </div>
             <div class="eventsection__left__container__list__item__rightText">
-              <h3>Coworking & Coliving Summit</h3>
+              <h3>Coworking and Coliving Summit</h3>
             </div>
             <div class="eventsection__left__container__list__item__crud"></div>
           </div>

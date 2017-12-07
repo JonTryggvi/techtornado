@@ -74,12 +74,58 @@ switch (localStorage.pageId) {
 
 }
 
-console.log(localStorage.pageId);
+// console.log(localStorage.pageId);
 
 var cmsBurger = $('#cmsBurger');
 var cmsSidebar = $('#cmsSidebar');
 cmsBurger.click(function() {
-  console.log('x');
+  // console.log('x');
   $(this).toggleClass('burgerActive');
   $('#cmsSidebar').toggleClass('sideBarHidden');
+  $('.eventsection__right').toggleClass('eventRightAddjust');
 });
+
+var aImgList = [
+  'img/unprosessed_slider_img/techtornado_pic1.jpg',
+  'img/unprosessed_slider_img/techtornado_pic2.jpg',
+  'img/unprosessed_slider_img/techtornado_pic3.jpg',
+  'img/unprosessed_slider_img/techtornado_pic4.jpg',
+  'img/unprosessed_slider_img/techtornado_pic5.jpg',
+  'img/unprosessed_slider_img/techtornado_pic6.jpg',
+  'img/unprosessed_slider_img/techtornado_pic7.jpg',
+  'img/unprosessed_slider_img/techtornado_pic8.jpg',
+  'img/unprosessed_slider_img/techtornado_pic9.jpg',
+  'img/unprosessed_slider_img/techtornado_pic10.jpg',
+];
+
+function randomNumberFromRange(min, max) {
+  return Math.floor(Math.random() * (max - min + 1) + min);
+}
+var randomImgNumber = 0;
+
+
+function clickedEvent(motherClass, pageId) {
+
+  $('.' + motherClass + ' .eventsection__left__container__list__item').click(function() {
+    // console.log('list');
+
+    $('.' + motherClass + ' .eventsection__left__container__list__item').removeClass('selectedEvent');
+    $(this).addClass('selectedEvent');
+    var sThisHeading = $(this).children().children('h3').html();
+    $('#' + pageId + ' .eventsection__right__event h2').text(sThisHeading);
+    $('#' + pageId + ' .eventsection__right__event img').attr('src', aImgList[newRandomImgNumber]);
+    var views = $('#' + pageId + ' .eventsection__right__stats__item')[0];
+    var attending = $('#' + pageId + ' .eventsection__right__stats__item')[1];
+    var shares = $('#' + pageId + ' .eventsection__right__stats__item')[2];
+    views.children[1].children[0].innerHTML = randomNumberFromRange(0, 1000);
+    attending.children[1].children[0].innerHTML = randomNumberFromRange(0, 300);
+    shares.children[1].children[0].innerHTML = randomNumberFromRange(0, 300);
+    // console.dir(views.children[1].children[0].innerHTML);
+
+  });
+}
+
+clickedEvent('fpAllEventsList', 'pageEvents');
+clickedEvent('cmsAllEventsList', 'pageAllEvents');
+clickedEvent('cmsMyEventsList', 'pageMyEvents');
+clickedEvent('cmsPendingList', 'pagePendingEvents');
