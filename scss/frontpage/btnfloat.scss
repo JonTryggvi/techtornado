@@ -80,6 +80,14 @@
 
   .btnFloatingForm__button {
     right: -100px;
+    @include bp(769){
+      right: 55%;
+      top: -45px;
+    }
+    @include bp(415){
+      right: 20%;
+      top: -110px;
+    }
   }
 }
 
