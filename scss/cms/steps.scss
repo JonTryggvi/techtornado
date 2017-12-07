@@ -68,9 +68,11 @@
 .step1, .step2, .step3, .step4, .stepDone {
   height: 100vh;
   width: 100%;
+  position: relative;
   padding: 85px 20%;
   @include bp(530){
     padding: 55px 10%;
+    position: unset;
   }
 
   &__line {
@@ -106,12 +108,18 @@
     }
   }
   .stepBtns {
-    top: 50px;
-    width: 100%;
+    position: absolute;
+    bottom: 180px;
+    width: 48%;
     display: flex;
     flex-direction: row;
-    margin-top: 65px;
+    // margin-top: 65px;
     justify-content: space-between;
+    @include bp(530){
+      width: 100%;
+      position: unset;
+      margin-top: 65px;
+    }
     .back, .next {
       display: flex;
       justify-content: space-between;
@@ -149,6 +157,12 @@
         }
       }
     }
+    .stepOneNext {
+      right: 385px;
+      @include bp(530){
+      right: 0;
+      }
+    }
   }
 }
 
@@ -168,12 +182,12 @@
     opacity: 0;
   }
   &__basicInfoForm {
-    max-width: 620px;
+    // max-width: 620px;
     width: 100%;
     height: 500px;
-    position: relative;
     @include bp(530){
       height: 350px;
+      max-width: 620px;
     }
     h2 {
       font-size: 50px;
@@ -433,6 +447,9 @@
         transition: color 0.2s;
         opacity: 0;
         left: -32px;
+        @include bp(1025){
+          left: -25px;
+        }
       }
 
       input[type="checkbox"]:checked + label span.checkbox::after {
@@ -533,11 +550,18 @@
     }
   &__checkboxContainer {
     width: 100%;
+    @include bp(1025){
+      flex-flow: column;
+    }
     &__checkboxSteps {
       width: 33%;
       @include bp(1025){
         width: 50%;
         height: 30px;
+      }
+      @include bp(1025){
+        height: 70px;
+        padding-bottom: 50px;
       }
     }
   }
@@ -546,11 +570,21 @@
     flex-direction: row;
     justify-content: space-around;
     margin-top: 35px;
-    margin-left: -20px;
+    width: 98%;
+    margin-left: -40px;
+    @include bp(1025) {
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-top: 0;
+    width: 40%;
+    margin-left: 180px;
+    height: 40%;
+    margin-top: -90px;
+    }
     svg {
       height: 65px;
       overflow: visible;
-      @include bp(530){
+      @include bp(1025){
         height: 55px;
       }
     }
@@ -558,8 +592,10 @@
       height: 47px;
       margin-top: 18px;
       overflow: visible;
-      @include bp(530){
+      @include bp(1025){
         height: 39px;
+        margin-top: 20px;
+        margin-bottom: 20px;
       }
     }
   }
@@ -582,4 +618,11 @@
 
 .step2, .step3, .step4, .stepDone {
   display: none;
+}
+.utensilsRed, .drinkRed, .coctailRed {
+  opacity: 0;
+  transition: opacity 200ms ease;
+}
+.showRefreshments {
+  opacity: 1;
 }
