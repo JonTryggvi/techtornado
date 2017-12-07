@@ -63,6 +63,9 @@
       font-size: 50px;
       font-weight: 700;
       text-align: center;
+      @include bp(415){
+        font-size: 30px;
+      }
     }
 
     form {
@@ -163,10 +166,10 @@
       z-index: 999999;
       @include bp(769){
         height: 65px;
-        right: 10px;
+        right: 20px;
       }
       @include bp(415){
-        right: 15px;
+        right: 37px;
         bottom: 25px;
       }
       a {
