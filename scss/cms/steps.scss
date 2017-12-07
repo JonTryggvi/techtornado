@@ -28,6 +28,7 @@
     max-width: 220px;
     height: 45px;
     margin-left: 15px;
+    border-radius: 1px;
     background-color: $black;
     box-shadow: 2px 2px 6px 0 rgba(0,0,0,0.06);
     border: 5px solid $black;
@@ -54,7 +55,7 @@
       position: absolute;
       background: transparent;
       border: 10px solid $black;
-      top: 10px;
+      top: 8px;
       left: -25px;
       border-top-color: transparent;
       border-left-color: transparent;
