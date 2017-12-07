@@ -49,7 +49,7 @@ $(document).ready(function() {
   thisDecline.click(function() {
     console.log('x');
     console.dir(setActiveAfter);
-    setActiveAfter.addClass('selectedEvent')
+    setActiveAfter.addClass('selectedEvent');
     $(this)[0].parentNode.parentNode.remove();
 
   });
