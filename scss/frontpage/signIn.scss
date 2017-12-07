@@ -103,6 +103,7 @@
           height: 40px;
           font-size: 18px;
           color: $black;
+          font-weight: 500;
           margin: 70px 10% 0;
           padding-left: 45px;
           position: relative;
@@ -112,6 +113,7 @@
 
           &::placeholder {
             color: $signInGrey;
+            font-weight: 300;
           }
         }
       }
@@ -121,6 +123,8 @@
         display: flex;
         justify-content: center;
         margin-top: 22px;
+        font-weight: 300;
+        font-size: 12px;
       }
 
       button {
@@ -157,15 +161,16 @@
           width: 24px;
           height: 18px;
           margin-left: 30px;
+          transition: all 100ms ease;
         }
 
         .logIn_facebook,
         .logIn_google {
           .arrowForwRedFacebook,
           .arrowForwRedGoogle {
-            transition: all 200ms 100ms ease;
+            transition: all 100ms ease;
             fill: transparent;
-            transform: translateX(-5px);
+            transform: translateX(-3px);
           }
         }
         .logIn_facebook:hover{
