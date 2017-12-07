@@ -1,9 +1,9 @@
 <section class="eventsection">
-  <div class="eventsection__left">
+  <div id="eventLeft" class="eventsection__left">
     <div class="eventsection__left__container">
 
       <div class="eventsection__left__container__filter">
-        <div class="eventsection__left__container__filter__background">
+        <div id="filterBackground" class="eventsection__left__container__filter__background">
           <label>
             <input class="searchInput" type="text" name="" value="" placeholder="Search">
             <svg class="searchInput__icon">
@@ -114,7 +114,7 @@
     </div>
 
   </div>
-  <div class="eventsection__right">
+  <div id="eventRight" class="eventsection__right">
     <div class="eventsection__right__event">
       <h2>Morning Booster: Happiness at Work with Alexander Kjerulf</h2>
       <img src="img/unprosessed_slider_img/techtornado_pic9.jpg" alt="">

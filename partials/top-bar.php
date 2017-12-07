@@ -5,7 +5,7 @@
  ?>
 <div id="topBar" class="top-bar-container">
   <div class="top-bar topbar_wrapper">
-    <svg data-page="pageFront" class="top-bar__logo btnRootNav">
+    <svg data-page="<?php if($isLoggedin){echo 'pageCms';}else{echo 'pageFront';} ?>" class="top-bar__logo btnRootNav">
       <use href="#topBarLogo" data-page="pageFront" class="btnRootNav"></use>
     </svg>
     <?php if (!$isLoggedin): ?>

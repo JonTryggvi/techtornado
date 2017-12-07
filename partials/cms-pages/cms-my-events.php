@@ -1,10 +1,10 @@
 <section id="pageMyEvents" class="cmsPage">
   <div class="eventsection eventsection-cms ">
-    <div id="eventLeft" class="eventsection__left">
+    <div id="eventLeftcmsMyEvents" class="eventsection__left">
       <div class="eventsection__left__container">
 
         <div class="eventsection__left__container__filter">
-          <div class="eventsection__left__container__filter__background">
+          <div id="filterBackgroundMyEvents" class="eventsection__left__container__filter__background">
             <label>
               <input class="searchInput" type="text" name="" value="" placeholder="Search">
               <svg class="searchInput__icon">
@@ -102,7 +102,7 @@
       </div>
 
     </div>
-    <div id="eventRight" class="eventsection__right">
+    <div id="eventRightMyEvents" class="eventsection__right">
       <div class="eventsection__right__stats">
         <div class="eventsection__right__stats__item">
           <svg>

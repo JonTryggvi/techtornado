@@ -8,6 +8,10 @@
     width: 230px;
     background-color: #fff;
     box-shadow: 2px 2px 4px 0 rgba(0,0,0,0.02);
+    transition: all 300ms ease;
+    @include bp(769) {
+      width: 0;
+    }
 
     &__main-ul {
       width: 100%;
@@ -243,6 +247,10 @@
     }
   }
 
+  .sideBarHidden {
+    width: 230px;
+  }
+
   &__view {
     flex: 1;
   }
@@ -278,5 +286,70 @@
 
   span:last-child {
     height: 0;
+  }
+}
+
+.cmsBurger-container {
+  display: none;
+  @include bp(769) {
+    display: flex;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    position: fixed;
+    animation: showburger 300ms 2s forwards ease;
+    z-index: 4;
+
+    &__burger {
+      margin-left: 15px;
+      display: flex;
+      flex-direction: column;
+      // align-content: center;
+      // justify-content: space-between;
+      width: 30px;
+      height: 15px;
+      position: relative;
+
+      span {
+        width: 100%;
+        height: 2px;
+        background-color: $black;
+        transition: all 300ms ease;
+        position: absolute;
+        box-shadow: 1px 1px 3px $greyLight;
+      }
+
+      span:nth-child(1) {
+        top: 0;
+      }
+
+      span:nth-child(2) {
+        top: 100%;
+      }
+    }
+
+    .burgerActive {
+      span:nth-child(1) {
+        transform: rotate(45deg);
+        top: 50%;
+        margin-top: 1px;
+      }
+
+      span:nth-child(2) {
+        transform: rotate(135deg);
+        top: 50%;
+        margin-top: 1px;
+      }
+    }
+  }
+}
+@keyframes showburger {
+  0% {
+    bottom: -60px;
+  }
+
+  100% {
+    bottom: 0;
   }
 }

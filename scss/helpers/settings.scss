@@ -12,7 +12,7 @@
 body {
   width: 100%;
   min-height: 100vh;
-  background-color: $white;
+  background-color: #fff;
 }
 
 a {
@@ -72,25 +72,28 @@ p {
   color: $black;
 }
 
-a{
+a {
   font-family: $mont;
   font-size: 14px;
   font-weight: 500;
   line-height: 17px;
   color: $blue;
 }
-button{
+
+button {
   font-family: $mont;
   font-size: 16px;
   font-weight: 500;
   line-height: 17px;
   color: $white;
 }
+
 .wrapper {
   max-width: 1440px;
   width: 90%;
   margin: 0 auto;
 }
+
 .topbar_wrapper {
   max-width: 1440px;
   width: 96%;
