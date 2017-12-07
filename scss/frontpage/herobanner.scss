@@ -26,6 +26,11 @@
         justify-content: center;
         width: 70%;
         margin: 0 auto;
+        @include bp(376) {
+          h2 {
+            font-size: 30px;
+          }
+        }
 
         h3 {
           color: $black;

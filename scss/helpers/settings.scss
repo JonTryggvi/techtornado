@@ -36,6 +36,14 @@ h2 {
   @include x-linear-gradient('135deg', $gradLight, $gradLight, $gradDark);
   background-clip: text;
   color: transparent;
+  @include bp(769){
+    font-size: 40px;
+    line-height: 55px;
+  }
+  @include bp(376){
+    font-size: 30px;
+    line-height: 45px;
+  }
 }
 
 h3 {
