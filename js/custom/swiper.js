@@ -24,7 +24,8 @@ if (isMobile) {
   if (pageAllEvents) {
     var hammertimeAll = new Hammer(pageAllEvents);
     hammertimeAll.on('pan', function(ev) {
-      // console.log(ev);
+      console.log($('.eventsection__left').width());
+
       eventLeftCmsAll.classList.toggle('resizeLeft');
       filterBackgroundAll.classList.toggle('rezizeFilter');
       eventRightAll.classList.toggle('swipeRight');

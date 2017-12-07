@@ -112,15 +112,17 @@ function clickedEvent(motherClass, pageId) {
     $('.' + motherClass + ' .eventsection__left__container__list__item').removeClass('selectedEvent');
     $(this).addClass('selectedEvent');
     var sThisHeading = $(this).children().children('h3').html();
-    $('#' + pageId + ' .eventsection__right__event h2').text(sThisHeading);
+    $('#' + pageId + ' .eventsection__right__event > h2').text(sThisHeading);
     $('#' + pageId + ' .eventsection__right__event img').attr('src', aImgList[randomImgNumber]);
-    var views = $('#' + pageId + ' .eventsection__right__stats__item')[0];
-    var attending = $('#' + pageId + ' .eventsection__right__stats__item')[1];
-    var shares = $('#' + pageId + ' .eventsection__right__stats__item')[2];
-    views.children[1].children[0].innerHTML = randomNumberFromRange(0, 1000);
-    attending.children[1].children[0].innerHTML = randomNumberFromRange(0, 300);
-    shares.children[1].children[0].innerHTML = randomNumberFromRange(0, 300);
-    // console.dir(views.children[1].children[0].innerHTML);
+    if (pageId != 'pageEvents') {
+      var views = $('#' + pageId + ' .eventsection__right__stats__item')[0];
+      var attending = $('#' + pageId + ' .eventsection__right__stats__item')[1];
+      var shares = $('#' + pageId + ' .eventsection__right__stats__item')[2];
+      views.children[1].children[0].innerHTML = randomNumberFromRange(0, 1000);
+      attending.children[1].children[0].innerHTML = randomNumberFromRange(0, 300);
+      shares.children[1].children[0].innerHTML = randomNumberFromRange(0, 300);
+      // console.dir(views.children[1].children[0].innerHTML);
+    }
 
   });
 }
