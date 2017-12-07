@@ -10,6 +10,9 @@
   &__button {
     position: absolute;
     top: -200px;
+    @include bp(415) {
+      top: -150px;
+    }
 
     .btnFloater {
       position: relative;

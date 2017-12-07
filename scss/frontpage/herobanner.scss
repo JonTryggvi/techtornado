@@ -11,7 +11,9 @@
     display: flex;
     justify-content: space-around;
     overflow: hidden;
-
+    @include bp(415) {
+      margin-top:-25px;
+    }
     &__content {
       display: flex;
       flex-flow: row nowrap;
@@ -26,11 +28,6 @@
         justify-content: center;
         width: 70%;
         margin: 0 auto;
-        @include bp(376) {
-          h2 {
-            font-size: 30px;
-          }
-        }
 
         h3 {
           color: $black;
