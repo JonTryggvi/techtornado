@@ -19,11 +19,23 @@
     @include bp(1025) {
       width: 35vw;
       left: 0;
+
     }
     @include bp(769) {
       width: 15vw;
       left: 0;
-      opacity: 0.1;
+      // opacity: 0.1;
+
+      &:before {
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.2);
+        z-index: 5;
+      }
       // transform: rotate3d(0,1,0,36deg);
 
       h3 {
@@ -70,13 +82,35 @@
 
           }
           @include bp(769) {
-            width: calc(15vw - 35px);
-            opacity: 0.1;
+            width: calc(19vw - 31px);
+
+            &:before {
+              position: absolute;
+              content: '';
+              left: 0;
+              top: 0;
+              width: 100%;
+              height: 100%;
+              background-color: rgba(0,0,0,0.2);
+              z-index: 5;
+
+            }
+
+          }
+          @include bp(376) {
+            width: calc(19vw - 15px);
           }
 
           label {
             @include bp(1025) {
               width: 90% !important;
+            }
+            @include bp(769) {
+              opacity: 0.3;
+              transform: scale(0.6);
+            }
+            @include bp(376) {
+              transform: scale(0.3);
             }
           }
 
@@ -106,6 +140,13 @@
             font-weight: 500;
             text-indent: 30px;
             padding-top: 14px;
+            @include bp(769) {
+              opacity: 0.3;
+              transform: scale(0.6);
+            }
+            @include bp(376) {
+              transform: scale(0.3);
+            }
 
             &__icon {
               display: flex;
@@ -117,12 +158,25 @@
               right: 17px;
               top: 50%;
               margin-top: -10px;
+              @include bp(769) {
+                opacity: 0.3;
+                transform: scale(0.6);
+              }
+              @include bp(376) {
+                transform: scale(0.3);
+              }
 
               span {
                 position: absolute;
                 width: 100%;
                 height: 2px;
                 background-color: $black;
+                @include bp(769) {
+                  transform: scale(0.6);
+                }
+                @include bp(376) {
+                  transform: scale(0.3);
+                }
               }
 
               span:last-child {
@@ -226,6 +280,13 @@
 
             .dropdownActive {
               transform: scaleY(1);
+              @include bp(769) {
+                opacity: 0.3;
+                transform: scale(0.6);
+              }
+              @include bp(376) {
+                transform: scale(0.3);
+              }
             }
             @include bp(1025) {
               width: 90% !important;
@@ -235,8 +296,22 @@
 
         .rezizeFilter {
           @include bp(769) {
-            width: calc(55vw - 45px);
+            width: calc(75vw - 58px);
             opacity: 1;
+
+            &:before {
+              position: absolute;
+              content: '';
+              left: 0;
+              top: 0;
+              width: 0;
+              height: 0;
+              background-color: rgba(0,0,0,0.2);
+              z-index: 5;
+            }
+          }
+          @include bp(376) {
+            width: calc(75vw - 28px);
           }
         }
 
@@ -250,6 +325,10 @@
             height: 20px;
             top: 17px;
             right: 17px;
+            @include bp(769) {
+              opacity: 0.3;
+              transform: scale(0.6);
+            }
           }
         }
       }
@@ -264,11 +343,18 @@
           width: 100%;
           justify-content: space-between;
           background-color: $white;
+          @include bp(769) {
+            opacity: 0.3;
+            transform: scale(0.6);
+          }
 
           &__rightText {
             border-bottom: 1px solid $greyLight;
             width: 60%;
             padding: 12% 0;
+            @include bp(376) {
+              padding: 1% 0;
+            }
 
             h3 {
               font-size: 18px;
@@ -279,6 +365,9 @@
           &__leftText {
             padding: 12% 0;
             width: 25%;
+            @include bp(376) {
+              display: none;
+            }
 
             span {
               font-family: $mont;
@@ -360,6 +449,11 @@
           border: 1px solid $blue;
           border-left: none;
           position: relative;
+          @include bp(769) {
+            border: none;
+            opacity: 0.3;
+            transform: scale(0.6);
+          }
 
           &::after {
             position: absolute;
@@ -373,6 +467,10 @@
             transform: rotate(45deg);
             border-top: 1px solid $blue;
             border-right: 1px solid $blue;
+            @include bp(769) {
+              opacity: 0.3;
+              transform: scale(0.6);
+            }
           }
 
           .eventsection__left__container__list__item__rightText {
@@ -381,6 +479,11 @@
             h3,
             span {
               color: $blue;
+            }
+            @include bp(376) {
+              h3 {
+                font-size: 14px;
+              }
             }
           }
         }
@@ -398,10 +501,102 @@
 
   .resizeLeft {
     @include bp(769) {
-      width: 55vw;
+      width: 75vw;
       opacity: 1;
+
+      &:before {
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        width: 0;
+        height: 0;
+        background-color: rgba(0,0,0,0.2);
+        z-index: 5;
+      }
+
+      .eventsection__left__container__list__item__leftText {
+        @include bp(769) {
+          display: flex;
+        }
+        @include bp(376) {
+          span {
+            font-size: 12px;
+          }
+        }
+      }
+
+      .eventsection__left__container__list__item__rightText {
+        border-bottom: 1px solid transparent;
+
+        @include bp(376) {
+          display: flex;
+          align-items: center;
+
+          h3 {
+            font-size: 14px;
+          }
+        }
+      }
       // transform: rotate3d(0,1,0,0deg);
+      .eventsection__left__container__filter__background {
+        opacity: 1;
+
+        label {
+          transform: scale(1);
+          opacity: 1;
+
+          svg {
+            transform: scale(1);
+            opacity: 1;
+          }
+        }
+
+        .filterGenre {
+          transform: scale(1);
+          opacity: 1;
+
+          &__icon {
+            transform: scale(1);
+            opacity: 1;
+
+            span {
+              transform: scale(1);
+
+            }
+
+            span:last-child {
+              transform: scale(1) rotate(90deg);
+            }
+          }
+        }
+      }
+
+      .selectedEvent {
+        transform: scale(1);
+        opacity: 1;
+        border: 1px solid $blue;
+        border-left: none;
+
+        &:after {
+          opacity: 1;
+          transform: scale(1);
+          transform: rotate(45deg);
+          @include bp(769) {
+            width: 20px;
+            height: 20px;
+            margin-top: -10px;
+            right: -11px;
+          }
+        }
+      }
+
+      .eventsection__left__container__list__item {
+        opacity: 1;
+        transform: scale(1);
+      }
     }
+    @include bp(376) {}
   }
 
   &__left::-webkit-scrollbar {
@@ -423,6 +618,9 @@
       flex: 1;
       padding: 3%;
     }
+    @include bp(769) {
+      box-shadow: -4px 1px 24px rgba(0,0,0,0.05);
+    }
 
     &__stats {
       display: flex;
@@ -433,6 +631,9 @@
       // background-color: $red;
       border-bottom: 1px solid $black;
       margin: 0 0 54px;
+      @include bp(376) {
+        margin: 0 0 24px;
+      }
 
       &__item {
         display: flex;
@@ -462,10 +663,17 @@
 
     &__event {
       padding-top: 7%;
+      @include bp(376) {
+        padding-top: 0;
+      }
 
       h2 {
         font-size: 40px;
         line-height: 50px;
+        @include bp(376) {
+          font-size: 20px;
+          line-height: 22px;
+        }
       }
 
       h3 {
@@ -564,11 +772,45 @@
 
   .swipeRight {
     opacity: 0.1;
-    transform: scale(0.8);
+    transform: scale(1);
     padding: 1%;
+    @include bp(1025) {
+      padding: 0 1% 0 0;
+      margin-left: -30px;
+    }
+    @include bp(769) {
+      margin-left: -10px;
+    }
+
+    .eventsection__right__stats {
+      margin-bottom: 10px;
+
+      &__item {
+        transform: scale(0.5);
+
+      }
+    }
+
+    .eventsection__right__event__buttons {
+      .toLinks {
+        a svg {
+          transform: scale(0.6);
+        }
+      }
+    }
 
     h2 {
       font-size: 18px;
+      line-height: 18px;
+    }
+
+    h3 {
+      font-size: 14px;
+      line-height: 15px;
+    }
+
+    p {
+      line-height: 20px;
     }
 
   }

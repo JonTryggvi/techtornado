@@ -4,7 +4,7 @@ var listPlus = $('.listPlus');
 
 btnAllEvents.click(function() {
   // console.log('x');
-  console.dir($(this));
+  // console.dir($(this));
   // $(this).toggleClass('activeSidebar');
   eventFilter.toggleClass('accordActive');
   listPlus.toggleClass('listPlusActive');

@@ -1,5 +1,5 @@
 
-  <div class="cms-container__sidebar">
+  <div id="cmsSidebar" class="cms-container__sidebar">
     <ul class="cms-container__sidebar__main-ul">
       <li class="cms-container__sidebar__main-ul__manageContent"><p class="manageP">~ Manage Your Content ~</p></li>
       <li class="cms-container__sidebar__main-ul__li">
@@ -45,4 +45,10 @@
     <?php include_once('partials/cms-pages/cms-users.php'); ?>
     <?php include_once('partials/cms-pages/cms-sponsors.php'); ?>
 
+  </div>
+  <div class="cmsBurger-container">
+    <div id="cmsBurger" class="cmsBurger-container__burger">
+      <span></span>
+      <span></span>
+    </div>
   </div>

@@ -1,7 +1,7 @@
 ///dropdown for Genre
 $(document).ready(function() {
 
-  $('#filterDropdown').click(function() {
+  $('.filterGenre').click(function() {
     $('.filterGenre__icon').toggleClass('iconActive');
     $('.filterGenre__dropdown').toggleClass('dropdownActive');
   });

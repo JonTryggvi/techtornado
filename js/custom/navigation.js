@@ -75,3 +75,11 @@ switch (localStorage.pageId) {
 }
 
 console.log(localStorage.pageId);
+
+var cmsBurger = $('#cmsBurger');
+var cmsSidebar = $('#cmsSidebar');
+cmsBurger.click(function() {
+  console.log('x');
+  $(this).toggleClass('burgerActive');
+  $('#cmsSidebar').toggleClass('sideBarHidden');
+});

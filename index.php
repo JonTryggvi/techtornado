@@ -7,7 +7,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-  
+
     <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
 
     <title>Tech Tornado</title>
@@ -26,7 +26,6 @@
     <?php include_once('partials/frontpage.php'); ?>
   </section>
   <section id="pageEvents" class="frontPage-view rootPage">
-    <!-- <?php // include_once('partials/top-bar.php'); ?> -->
     <?php include_once('partials/events.php'); ?>
   </section>
     <section id="pageCms" class="cms-container rootPage <?php if($isLoggedin) {echo 'showRootPage';} ?>">
