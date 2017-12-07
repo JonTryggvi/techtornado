@@ -1,6 +1,6 @@
 <div id="sponsorsModal" class="Sponsers">
   <section class="sponsorsModal">
-    <span id="btnCLoseSponsers" class="signIn__close">
+    <span id="btnCLoseSponsers" class="sponsorsModal__close">
         <svg class="signIn__close__svg" viewBox="0 0 54 53" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
           <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
             <g id="Style-Guide" transform="translate(-449.000000, -2315.000000)" stroke-width="3" stroke="#2B2B2B">
