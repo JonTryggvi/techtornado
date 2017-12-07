@@ -28,12 +28,16 @@
         justify-content: center;
         width: 70%;
         margin: 0 auto;
-
         h3 {
           color: $black;
           font-weight: 500;
           line-height: 26px;
+          @include bp(415) {
+            font-size: 14px;
+            line-height: 18px;
+          }
         }
+
       }
 
     }
@@ -45,6 +49,9 @@
       flex-flow: column nowrap;
       height: 100%;
       width: 10%;
+      @include bp(415) {
+        width: 20%;
+      }
       justify-content: flex-end;
       align-items: center;
       z-index: 1;

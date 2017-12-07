@@ -2,11 +2,11 @@
   <div id="myImageSlider" class="imagesliderContainer__allItems owl-carousel">
     <div class="imagesliderContainer__allItems__oneItem">
       <img src="img/unprosessed_slider_img/techtornado_pic1.jpg" alt="" />
-      <p>From exhibition at Kødbyen hosted by Martine Jarlgaard</p>
+      <p>From exhibition at Kødbyen hosted by Jarlgaard</p>
     </div>
     <div class="imagesliderContainer__allItems__oneItem">
       <img src="img/unprosessed_slider_img/techtornado_pic2.jpg" alt="" />
-      <p>Meetups are independent community gatherings organized by Tech Tornado and co-creators</p>
+      <p>Independent community gatherings.</p>
     </div>
     <div class="imagesliderContainer__allItems__oneItem">
       <img src="img/unprosessed_slider_img/techtornado_pic3.jpg" alt="" />
@@ -18,7 +18,7 @@
     </div>
     <div class="imagesliderContainer__allItems__oneItem">
       <img src="img/unprosessed_slider_img/techtornado_pic5.jpg" alt="" />
-      <p>Happiness at Work with Alexander Kjerulf</p>
+      <p>Happiness at Work with Kjerulf</p>
     </div>
     <div class="imagesliderContainer__allItems__oneItem">
       <img src="img/unprosessed_slider_img/techtornado_pic6.jpg" alt="" />

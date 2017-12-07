@@ -17,13 +17,45 @@
     width: 70%;
     margin: 0 auto;
     padding-top: 4%;
-    &__btnClose {
+    @include bp(415) {
       position: absolute;
-      right: 20px;
-      top: 20px;
-      img {
-        width: 20px;
+      top: 26px;
+    }
+    &__close {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 22px;
+      height: 22px;
+      border: none;
+      background-color: $white;
+      position: absolute;
+      top: 30px;
+      right: 30px;
+      @include bp(415) {
+        top: 0;
+        right: -30px;
       }
+      cursor: pointer;
+
+      &:hover {
+        .declineHollowStroke {
+          fill: $grey;
+          stroke: $grey;
+        }
+      }
+
+      &__svg {
+        width: 18px;
+        height: 18px;
+
+        .declineHollowStroke {
+          transition: all 200ms ease;
+          fill: $greyLight;
+          stroke: $greyLight;
+        }
+      }
+
     }
     &__topInfo {
       display: flex;
@@ -48,7 +80,7 @@
       flex-wrap: wrap;
       justify-content: space-around;
       margin-top: 40px;
-      height: 70vh;
+      height: 60vh;
       overflow-y: scroll;
       &__eachIcon {
         padding: 40px;

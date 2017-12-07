@@ -10,6 +10,9 @@
     margin-left: 70px;
     color: $black;
     font-size: 32px;
+    @include bp(415) {
+      font-size: 24px;
+    }
     font-family: $mont;
     font-weight: 500;
     align-items: center;
@@ -55,6 +58,9 @@
     font-weight: 500;
     margin-left: 60px;
     font-size: 32px;
+    @include bp(415) {
+      font-size: 24px;
+    }
     span {
       margin-top: -5px;
     }
@@ -94,6 +100,10 @@
     font-size: 16px;
     font-family: $mont;
     font-weight: 500;
+    @include bp(415) {
+      font-size: 14px;
+      font-weight: 300;
+    }
     color: white;
     position: relative;
     background: none;
@@ -108,11 +118,18 @@
       position: absolute;
       top: 32px;
       right: 40px;
+      @include bp(415) {
+          right: 10px;
+      }
           .btnSubscribe {
             display: flex;
             justify-content: space-between;
             color: white;
             font-size: 16px;
+            @include bp(415) {
+                font-size: 14px;
+                font-weight: 300;
+            }
             font-family: $mont;
             font-weight: 500;
             padding-bottom: 25px;
@@ -122,6 +139,10 @@
               margin-left: 24px;
               transform: translateX(-3px);
               transition: all 100ms ease;
+              @include bp(415) {
+                margin-left: 0;
+                margin-right: 20px;
+              }
               .arrowSub {
               stroke: #fff;
               }
@@ -147,5 +168,8 @@
   }
   .showForm{
     display: flex;
+    @include bp(769) {
+      width: 90%;
+    }
   }
 }

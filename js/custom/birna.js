@@ -18,6 +18,10 @@ $(document).ready(function() {
     autoplaySpeed: 1500,
     autoplayTimeout: 10000,
     responsive: {
+      300: {
+        items: 1,
+        stagePadding: 40
+      },
       600: {
         items: 1,
         stagePadding: 60
