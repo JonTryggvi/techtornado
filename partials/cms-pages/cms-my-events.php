@@ -135,7 +135,7 @@
       </div>
       <div class="eventsection__right__event">
         <h2>Morning Booster: Happiness at Work with Alexander Kjerulf</h2>
-        <img src="img/unprosessed_slider_img/techtornado_pic9.jpg" alt="">
+        <img src="opt_img/unprosessed_slider_img/techtornado_pic9.jpg" alt="">
         <h3>Tuesday, Sep 5</h3>
         <h3>  08:30 — 09:30</h3>
         <h3>KLUB, COPENHAGEN</h3>

@@ -1,3 +1,15 @@
+// $(window).resize(function() {
+function vwToPixels(winWidth, decimal) {
+  return winWidth * decimal
+}
+
+// var windowWidth = $(window).width();
+// var eventsectionWidthAfter = $('.eventsection__left__container').width();
+// console.log(eventsectionWidthAfter);
+// var filterWidth = $('#filterBackground').width();
+
+// $('.rezizeFilter').width(vwToPixels(windowWidth, 0.75));
+
 var isMobile = false;
 if ($(window).innerWidth() < 769) {
   isMobile = true;
@@ -14,21 +26,21 @@ if (isMobile) {
       eventLeft.classList.toggle('resizeLeft');
       filterBackground.classList.toggle('rezizeFilter');
       eventRight.classList.toggle('swipeRight');
+
+      // console.dir(filterWidth)
     });
-    hammertime.get('swipe').set({
-      direction: Hammer.DIRECTION_HORIZONTAL
-    });
+
   }
 
   var pageAllEvents = document.querySelector('#pageAllEvents');
   if (pageAllEvents) {
     var hammertimeAll = new Hammer(pageAllEvents);
-    hammertimeAll.on('pan', function(ev) {
-      console.log($('.eventsection__left').width());
+    hammertimeAll.on('swipe', function(ev) {
 
       eventLeftCmsAll.classList.toggle('resizeLeft');
       filterBackgroundAll.classList.toggle('rezizeFilter');
       eventRightAll.classList.toggle('swipeRight');
+
     });
 
     // hammertimeAll.get('swipe').set({
@@ -39,7 +51,7 @@ if (isMobile) {
   var pagePendingEvents = document.querySelector('#pagePendingEvents');
   if (pagePendingEvents) {
     var hammertimePending = new Hammer(pagePendingEvents);
-    hammertimePending.on('swipe', function(ev) {
+    hammertimePending.on('pan', function(ev) {
       // console.dir('x');
       eventLeftcmsPending.classList.toggle('resizeLeft');
       filterBackgroundPending.classList.toggle('rezizeFilter');
@@ -61,4 +73,6 @@ if (isMobile) {
 
 
 }
+
+// });
 // console.log(pagePendingEvents);

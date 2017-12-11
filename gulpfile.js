@@ -11,14 +11,23 @@ var colors = require('colors');
 var dateFormat = require('dateformat');
 var del = require('del');
 var cleanCSS = require('gulp-clean-css');
-
-
+var gutil = require('gulp-util');
+var uglifyEs = require('gulp-uglify-es').default;
+var imagemin = require('gulp-imagemin');
 var mampFolder = '2017-f-web-des/tech-tornado';
 var URL = 'http://localhost:8888/' + mampFolder;
 
-// Check for --production flag
-var isProduction = !!(argv.production);
 
+
+// Check for --production flag
+var isProduction;
+if (process.argv[2] == 'package') {
+  isProduction = true;
+} else {
+  isProduction = false;
+}
+console.log(isProduction);
+// console.log(process.argv[2]);
 // Browsers to target when prefixing CSS.
 var COMPATIBILITY = [
   'last 2 versions',
@@ -33,12 +42,15 @@ var PATHS = {
   ],
 
   javascript: [
+    'js/anime.min.js',
+    'js/main.js',
     'js/hammer.js',
     'js/custom/**/*.js'
   ],
 
   pkg: [
     '**/*',
+    '!**/img/**',
     '!**/js/custom/**',
     '!**/node_modules/**',
     '!**/components/**',
@@ -117,12 +129,44 @@ gulp.task('lint', function() {
 
 // Combine JavaScript into one file
 // In production, the file is minified
+
+
+
+// on('error', $.notify.onError({
+//   message: "<%= error.message %>",
+//   title: "Uglify JS Error"
+// }))
+
+gulp.task('images', function(cb) {
+  gulp.src(['img/**/*.jpg']).pipe(imageop({
+    optimizationLevel: 5,
+    progressive: true,
+    interlaced: true
+  })).pipe(gulp.dest('test/')).on('end', cb).on('error', cb);
+});
+
+gulp.task('imgop', () =>
+  gulp.src('img/**/*')
+  .pipe($.if(isProduction, imagemin()))
+  .pipe(gulp.dest('opt_img'))
+);
+
+gulp.task("uglifyEs", function() {
+  return gulp.src("js/scripts.js")
+    .pipe(rename("scripts.min.js"))
+    .pipe(sourcemaps.init())
+    .pipe(uglifyEs())
+    .pipe(sourcemaps.write('.')) // Inline source maps.
+    // For external source map file:
+    //.pipe(sourcemaps.write("./maps")) // In this case: lib/maps/bundle.min.js.map
+    .pipe(gulp.dest("js/"));
+});
+
 gulp.task('javascript', function() {
-  var uglify = $.uglify()
-    .on('error', $.notify.onError({
-      message: "<%= error.message %>",
-      title: "Uglify JS Error"
-    }));
+  var uglify = uglifyEs().on('error', function(err) {
+    gutil.log(gutil.colors.red('[Error]'), err.toString());
+    this.emit('end');
+  });
 
   return gulp.src(PATHS.javascript)
     .pipe($.sourcemaps.init())
@@ -152,7 +196,7 @@ gulp.task('package', ['build'], function() {
 
 // Build task
 // Runs copy then runs sass & javascript in parallel
-gulp.task('build', ['clean'], function(done) {
+gulp.task('build', ['clean', ], function(done) {
   sequence(
     ['sass', 'javascript', 'lint'],
     done);

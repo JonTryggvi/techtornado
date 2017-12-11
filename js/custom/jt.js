@@ -49,6 +49,7 @@ $(document).ready(function() {
     console.log('x');
     console.dir(setActiveAfter);
     setActiveAfter.addClass('selectedEvent');
+    $('.pendingIndicator').text('2');
     $(this)[0].parentNode.parentNode.remove();
 
   });
