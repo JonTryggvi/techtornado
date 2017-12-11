@@ -132,7 +132,7 @@ $(document).ready(function() {
 
 });
 
-$('.loader').delay(1500).fadeOut('fast');
+
 
 // var closeButton = document.querySelector(".signIn__close");
 // var divLogIn = document.querySelector(".signIn");

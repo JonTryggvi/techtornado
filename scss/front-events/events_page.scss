@@ -311,6 +311,9 @@
               z-index: 5;
             }
           }
+          @include bp(414) {
+            width: calc(75vw - 3%);
+          }
           @include bp(376) {
             width: calc(75vw - 28px);
           }
@@ -546,7 +549,8 @@
         }
         @include bp(376) {
           span {
-            font-size: 12px;
+            font-size: 9px;
+            line-height: 10px;
           }
         }
       }
@@ -560,6 +564,7 @@
 
           h3 {
             font-size: 14px;
+            line-height: 15px;
           }
         }
       }
@@ -828,6 +833,14 @@
       .toLinks {
         a svg {
           transform: scale(0.6);
+        }
+      }
+
+      .btnFloatingForm_getTicket {
+        .btnFloatingForm__button {
+          @include bp(376) {
+            transform: scale(0.7);
+          }
         }
       }
     }

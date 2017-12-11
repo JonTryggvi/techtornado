@@ -1,11 +1,11 @@
 ///dropdown for Genre
 $(document).ready(function() {
-
+  $('.loader').delay(1500).fadeOut('fast');
   $('.filterGenre').click(function() {
     $('.filterGenre__icon').toggleClass('iconActive');
     $('.filterGenre__dropdown').toggleClass('dropdownActive');
   });
-/// show icond when checkbox in step 4 is checked
+  /// show icond when checkbox in step 4 is checked
   $('#checkbox-12:checkbox').click(function() {
     $('.coctailRed').toggleClass('showRefreshments');
   });

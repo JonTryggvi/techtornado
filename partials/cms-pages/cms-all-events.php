@@ -112,7 +112,7 @@
             <div class="eventsection__left__container__list__item__rightText">
               <h3>Future of Urban Mobility Meetup</h3>
             </div>
-
+            <div class="eventsection__left__container__list__item__crud"></div>
           </div>
           <div class="flexFix"></div>
         </div>
@@ -152,7 +152,7 @@
       </div>
       <div class="eventsection__right__event">
         <h2>Morning Booster: Happiness at Work with Alexander Kjerulf</h2>
-        <img src="img/unprosessed_slider_img/techtornado_pic9.jpg" alt="">
+        <img src="opt_img/unprosessed_slider_img/techtornado_pic9.jpg" alt="">
         <h3>Tuesday, Sep 5</h3>
         <h3>  08:30 — 09:30</h3>
         <h3>KLUB, COPENHAGEN</h3>
@@ -177,7 +177,7 @@
               </svg>
             </a>
           </div>
-          
+
           <div class="btnFloatingForm btnFloatingForm_getTicket">
             <div class="btnFloatingForm__button">
               <div class="btnFloater btnFloater--style-2" data-animation-path-duration="1500" data-animation-path-easing="easeOutElastic" data-morph-path="M 418.1,159.8 C 460.9,222.9 497,321.5 452.4,383.4 417.2,432.4 371.2,405.6 271.3,420.3 137.2,440 90.45,500.6 42.16,442.8 -9.572,381 86.33,289.1 117.7,215.5 144.3,153.4 145.7,54.21 212.7,36.25 290.3,15.36 373.9,94.6 418.1,159.8 Z" data-path-scaleY="1.1" data-image-scaleX="1.3" data-image-scaleY="1.3" data-animation-deco-duration="2000" data-animation-deco-delay="100" data-deco-rotate="-10">

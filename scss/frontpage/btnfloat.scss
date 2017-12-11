@@ -80,11 +80,11 @@
 
   .btnFloatingForm__button {
     right: -100px;
-    @include bp(769){
+    @include bp(769) {
       right: 55%;
       top: -45px;
     }
-    @include bp(415){
+    @include bp(415) {
       right: 20%;
       top: -122px;
     }
@@ -102,6 +102,7 @@
   align-items: center;
   justify-content: center;
 }
+
 .btnFloatingForm_getTicket {
   display: flex;
   width: 30%;
@@ -113,4 +114,14 @@
   align-items: center;
   justify-content: center;
   z-index: 999999999;
+
+  .btnFloatingForm__button {
+    @include bp(376) {
+      top: -160px;
+
+      .btnFloater {
+        transform: scale(0.7);
+      }
+    }
+  }
 }

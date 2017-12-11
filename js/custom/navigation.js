@@ -86,16 +86,16 @@ cmsBurger.click(function() {
 });
 
 var aImgList = [
-  'img/unprosessed_slider_img/techtornado_pic1.jpg',
-  'img/unprosessed_slider_img/techtornado_pic2.jpg',
-  'img/unprosessed_slider_img/techtornado_pic3.jpg',
-  'img/unprosessed_slider_img/techtornado_pic4.jpg',
-  'img/unprosessed_slider_img/techtornado_pic5.jpg',
-  'img/unprosessed_slider_img/techtornado_pic6.jpg',
-  'img/unprosessed_slider_img/techtornado_pic7.jpg',
-  'img/unprosessed_slider_img/techtornado_pic8.jpg',
-  'img/unprosessed_slider_img/techtornado_pic9.jpg',
-  'img/unprosessed_slider_img/techtornado_pic10.jpg',
+  'opt_img/unprosessed_slider_img/techtornado_pic1.jpg',
+  'opt_img/unprosessed_slider_img/techtornado_pic2.jpg',
+  'opt_img/unprosessed_slider_img/techtornado_pic3.jpg',
+  'opt_img/unprosessed_slider_img/techtornado_pic4.jpg',
+  'opt_img/unprosessed_slider_img/techtornado_pic5.jpg',
+  'opt_img/unprosessed_slider_img/techtornado_pic6.jpg',
+  'opt_img/unprosessed_slider_img/techtornado_pic7.jpg',
+  'opt_img/unprosessed_slider_img/techtornado_pic8.jpg',
+  'opt_img/unprosessed_slider_img/techtornado_pic9.jpg',
+  'opt_img/unprosessed_slider_img/techtornado_pic10.jpg',
 ];
 
 function randomNumberFromRange(min, max) {
@@ -105,7 +105,7 @@ var randomImgNumber = 0;
 
 
 function clickedEvent(motherClass, pageId) {
-
+  $('#' + pageId + ' .eventsection__right__event img').attr('src', aImgList[randomNumberFromRange(0, 10)]);
   $('.' + motherClass + ' .eventsection__left__container__list__item').click(function() {
     // console.log('list');
     randomImgNumber = randomNumberFromRange(0, 10);
@@ -114,7 +114,7 @@ function clickedEvent(motherClass, pageId) {
     var sThisHeading = $(this).children().children('h3').html();
     $('#' + pageId + ' .eventsection__right__event > h2').text(sThisHeading);
     $('#' + pageId + ' .eventsection__right__event img').attr('src', aImgList[randomImgNumber]);
-    if (pageId != 'pageEvents') {
+    if (pageId != 'pageEvents' || pageId != 'pagePendingEvents') {
       var views = $('#' + pageId + ' .eventsection__right__stats__item')[0];
       var attending = $('#' + pageId + ' .eventsection__right__stats__item')[1];
       var shares = $('#' + pageId + ' .eventsection__right__stats__item')[2];

@@ -162,39 +162,10 @@
 
     </div>
     <div id="eventRightPending" class="eventsection__right">
-      <div class="eventsection__right__stats">
-        <div class="eventsection__right__stats__item">
-          <svg>
-            <use href="#eyeRed"></use>
-          </svg>
-          <div>
-            <span>0</span>
-            <span>views</span>
-          </div>
 
-        </div>
-        <div class="eventsection__right__stats__item">
-          <svg>
-            <use href="#usersRed"></use>
-          </svg>
-          <div>
-            <span>0</span>
-            <span>Attending</span>
-          </div>
-        </div>
-        <div class="eventsection__right__stats__item">
-          <svg>
-            <use href="#heartRed"></use>
-          </svg>
-          <div>
-            <span>0</span>
-            <span>Shares</span>
-          </div>
-        </div>
-      </div>
       <div class="eventsection__right__event">
         <h2>ColdFront</h2>
-        <img src="img/unprosessed_slider_img/techtornado_pic4.jpg" alt="">
+        <img src="opt_img/unprosessed_slider_img/techtornado_pic4.jpg" alt="">
         <h3>Tuesday, Sep 5</h3>
         <h3>  08:30 — 09:30</h3>
         <h3>KLUB, COPENHAGEN</h3>
