@@ -55,7 +55,7 @@
     position: relative;
     @include bp(415){
       height: auto;
-      margin-top: 100px;
+      margin-top: 70px;
     }
 
 
@@ -63,6 +63,7 @@
       font-size: 50px;
       font-weight: 700;
       text-align: center;
+      line-height: 60px;
       @include bp(415){
         font-size: 30px;
       }
