@@ -1,6 +1,6 @@
 // $(window).resize(function() {
 function vwToPixels(winWidth, decimal) {
-  return winWidth * decimal
+  return winWidth * decimal;
 }
 
 // var windowWidth = $(window).width();
