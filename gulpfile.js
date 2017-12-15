@@ -14,6 +14,8 @@ var cleanCSS = require('gulp-clean-css');
 var gutil = require('gulp-util');
 var uglifyEs = require('gulp-uglify-es').default;
 var imagemin = require('gulp-imagemin');
+var phpMinify = require('@aquafadas/gulp-php-minify');
+
 var mampFolder = '2017-f-web-des/tech-tornado';
 var URL = 'http://localhost:8888/' + mampFolder;
 
@@ -51,16 +53,25 @@ var PATHS = {
   pkg: [
     '**/*',
     '!**/img/**',
+    '!**/js/scripts.js.map',
+    '!**/js/anime.min.js',
+    '!**/js/hammer.js',
+    '!**/js/main.js',
+    '!**/js/custom',
     '!**/js/custom/**',
+    '!**/node_modules',
     '!**/node_modules/**',
     '!**/components/**',
     '!**/scss/**',
+    '!**/css/styles.css.map',
     '!**/bower.json',
     '!**/gulpfile.js',
     '!**/package.json',
     '!**/composer.json',
     '!**/composer.lock',
     '!**/packaged/*',
+    '!**/packaged'
+
   ]
 };
 
@@ -72,7 +83,7 @@ gulp.task('browser-sync', ['build'], function() {
     'scss/**/*.scss',
     'index.php',
     '**/*.php',
-    'images/**/*.{png,jpg,gif}',
+    'opt_img/**/*.{png,jpg,gif}',
   ];
 
   browserSync.init(files, {
@@ -109,6 +120,7 @@ gulp.task('sass', function() {
 });
 
 
+
 // Lint all JS files in custom directory
 gulp.task('lint', function() {
   return gulp.src('js/custom/**/*.js')
@@ -127,23 +139,16 @@ gulp.task('lint', function() {
     }));
 });
 
-// Combine JavaScript into one file
-// In production, the file is minified
 
+gulp.task('minify:php', () => $.if(isProduction, gulp.src('/**/*.php', {
+    read: false
+  }))
+  .pipe($.if(isProduction, phpMinify({
+    mode: TransformMode.fast
+  })))
+  .pipe(gulp.dest('/'))
+);
 
-
-// on('error', $.notify.onError({
-//   message: "<%= error.message %>",
-//   title: "Uglify JS Error"
-// }))
-
-gulp.task('images', function(cb) {
-  gulp.src(['img/**/*.jpg']).pipe(imageop({
-    optimizationLevel: 5,
-    progressive: true,
-    interlaced: true
-  })).pipe(gulp.dest('test/')).on('end', cb).on('error', cb);
-});
 
 gulp.task('imgop', () =>
   gulp.src('img/**/*')
@@ -153,12 +158,10 @@ gulp.task('imgop', () =>
 
 gulp.task("uglifyEs", function() {
   return gulp.src("js/scripts.js")
-    .pipe(rename("scripts.min.js"))
+    .pipe(rename("scripts.js"))
     .pipe(sourcemaps.init())
     .pipe(uglifyEs())
-    .pipe(sourcemaps.write('.')) // Inline source maps.
-    // For external source map file:
-    //.pipe(sourcemaps.write("./maps")) // In this case: lib/maps/bundle.min.js.map
+    .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest("js/"));
 });
 
@@ -183,7 +186,7 @@ gulp.task('javascript', function() {
 
 
 // Package task
-gulp.task('package', ['build'], function() {
+gulp.task('package', ['build', 'imgop'], function() {
   var fs = require('fs');
   var time = dateFormat(new Date(), "yyyy-mm-dd_HH-MM");
   var pkg = JSON.parse(fs.readFileSync('./package.json'));
@@ -196,7 +199,7 @@ gulp.task('package', ['build'], function() {
 
 // Build task
 // Runs copy then runs sass & javascript in parallel
-gulp.task('build', ['clean', ], function(done) {
+gulp.task('build', ['clean'], function(done) {
   sequence(
     ['sass', 'javascript', 'lint'],
     done);
@@ -211,10 +214,8 @@ gulp.task('clean', function(done) {
 // Clean CSS
 gulp.task('clean:css', function() {
   return del([
-    'stylesheets/styles.css',
-    'stylesheets/styles.css.map',
-    'stylesheets/admin-styles.css',
-    'stylesheets/admin-styles.css.map'
+    'css/styles.css',
+    'css/styles.css.map'
   ]);
 });
 

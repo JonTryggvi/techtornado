@@ -4,6 +4,7 @@ node_modules
 */.DS_Store
 **/.DS_Store
 **/*/.DS_Store
+packaged
 js/scripts.js
 js/scripts.js.map
 css/styles.css

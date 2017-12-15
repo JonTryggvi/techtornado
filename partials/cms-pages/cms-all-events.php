@@ -186,7 +186,7 @@
                     <path class="btnFloater__clippath" d="M 378.1,121.2 C 408.4,150 417.2,197.9 411,245.8 404.8,293.7 383.5,341.7 353.4,370.7 303.2,419.1 198.7,427.7 144.5,383.8 86.18,336.5 67.13,221.3 111.9,161 138.6,125 188.9,99.62 240.7,90.92 292.4,82.24 345.6,90.32 378.1,121.2 Z" />
                   </clipPath>
                   <g clip-path="url(#clipShape5)">
-                    <image class="btnFloater__img btnFloater__color" xlink:href="img/2.png" x="0" y="0" height="500px" width="500px" />
+                    <image class="btnFloater__img btnFloater__color" xlink:href="opt_img/2.png" x="0" y="0" height="500px" width="500px" />
                   </g>
                 </svg>
                 <div class="btnFloater__meta">

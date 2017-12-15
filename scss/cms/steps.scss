@@ -3,26 +3,30 @@
   display: flex;
   flex-direction: column;
 }
-.stepContainer{
+
+.stepContainer {
   position: relative;
 }
-.stepContainer__needHelp{
+
+.stepContainer__needHelp {
   display: flex;
   flex-direction: row;
   position: absolute;
   right: 45px;
   bottom: 100px;
-  @include bp(530){
+  @include bp(530) {
     display: none;
   }
-  &__img{
+
+  &__img {
     width: 45px;
     height: 45px;
-    background-image: url("../img/helpImg.jpg");
+    background-image: url("../opt_img/helpImg.jpg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
   }
+
   &__info {
     position: relative;
     max-width: 220px;
@@ -32,6 +36,7 @@
     background-color: $black;
     box-shadow: 2px 2px 6px 0 rgba(0,0,0,0.06);
     border: 5px solid $black;
+
     &__text {
       min-height: 30px;
       border-radius: 3px;
@@ -43,15 +48,17 @@
       align-items: center;
       font-weight: 300;
       padding: 10px;
-      span{
+
+      span {
         text-decoration: underline;
         padding-left: 6px;
         font-weight: 300;
       }
     }
+
     &__blob {
-      width: 0px;
-      height: 0px;
+      width: 0;
+      height: 0;
       position: absolute;
       background: transparent;
       border: 10px solid $black;
@@ -63,15 +70,18 @@
     }
   }
 
-
 }
 
-.step1, .step2, .step3, .step4, .stepDone {
+.step1,
+.step2,
+.step3,
+.step4,
+.stepDone {
   height: 100vh;
   width: 100%;
   position: relative;
   padding: 85px 20%;
-  @include bp(530){
+  @include bp(530) {
     padding: 55px 10%;
     position: unset;
   }
@@ -80,6 +90,7 @@
     background-color: $red;
     height: 14px;
   }
+
   h3 {
     font-size: 30px;
     color: $black;
@@ -87,27 +98,30 @@
     font-family: $mont;
     margin-bottom: 15px;
   }
-  h4{
+
+  h4 {
     font-size: 16px;
     color: $black;
     font-weight: 500;
   }
-  p{
+
+  p {
     margin-top: 15px;
   }
+
   &__basicInfo {
     margin-top: 45px;
     width: 100%;
+
     img {
       display: flex;
       justify-content: center;
       align-items: center;
       width: 300px;
-      margin: 0 auto;
-      margin-top: 30px;
-      margin-bottom: -50px;
+      margin: 30px auto -50px;
     }
   }
+
   .stepBtns {
     position: absolute;
     bottom: 180px;
@@ -116,80 +130,97 @@
     flex-direction: row;
     // margin-top: 65px;
     justify-content: space-between;
-    @include bp(530){
+    @include bp(530) {
       width: 100%;
       position: unset;
       margin-top: 65px;
     }
-    .back, .next {
+
+    .back,
+    .next {
       display: flex;
       justify-content: space-between;
       color: $black;
       padding-bottom: 25px;
+
       span {
         padding: 0 20px;
       }
-      svg{
+
+      svg {
         width: 25px;
         height: 18px;
         transform: translateX(-3px);
         transition: all 100ms ease;
       }
-      .goTo_back, .goTo_next{
-        .arrowBackRed_back, .arrowForwRed_next {
+
+      .goTo_back,
+      .goTo_next {
+        .arrowBackRed_back,
+        .arrowForwRed_next {
           transition: all 200ms ease;
           fill: transparent;
           transform: translateX(-5px);
         }
+
         .arrowBackRed_back {
           transform: translateX(5px);
         }
       }
+
       &:hover {
-        .arrowBackRed_back, .arrowForwRed_next{
+        .arrowBackRed_back,
+        .arrowForwRed_next {
           fill: $red;
           transform: translateX(0);
         }
+
         svg {
-        transform: translateX(0px);
+          transform: translateX(0px);
         }
+
         .goTo_back {
           transform: translateX(-5px);
         }
       }
     }
+
     .stepOneNext {
       right: 385px;
-      @include bp(530){
-      right: 0;
+      @include bp(530) {
+        right: 0;
       }
     }
   }
 }
 
-.step1{
-  &__line{
-      animation: line1 1s 1 forwards;
+.step1 {
+  &__line {
+    animation: line1 1s 1 forwards;
   }
   @keyframes line1 {
     0% {
       width: 0;
     }
+
     100% {
       width: 25%;
     }
   }
+
   .back {
     opacity: 0;
   }
+
   &__basicInfoForm {
     // max-width: 620px;
     width: 100%;
     height: 500px;
-    @include bp(530){
+    @include bp(530) {
       height: 350px;
       max-width: 620px;
     }
+
     h2 {
       font-size: 50px;
       font-weight: 700;
@@ -200,10 +231,10 @@
       width: 80%;
       height: 220px;
       position: relative;
-      @include bp(679){
+      @include bp(679) {
         width: 80%;
       }
-      @include bp(530){
+      @include bp(530) {
         width: 95%;
       }
 
@@ -226,7 +257,10 @@
           }
         }
 
-        svg.makeEventName, svg.makeEventDay, svg.createEventLocation, svg.makeEventPrice {
+        svg.createEventLocation,
+        svg.makeEventDay,
+        svg.makeEventName,
+        svg.makeEventPrice {
           width: 21px;
           height: 23px;
           position: absolute;
@@ -239,19 +273,24 @@
             transform: translateX(5px);
           }
         }
-        svg.createEventLocation{
+
+        svg.createEventLocation {
           width: 25px;
           height: 27px;
         }
-        .clockRedFill, .locationRedFill{
+
+        .clockRedFill,
+        .locationRedFill {
           transition: all 200ms ease;
           fill: transparent;
           transform: translateX(-5px);
         }
-        .priceRedFill{
+
+        .priceRedFill {
           stroke: transparent;
         }
-        .tagRedFill{
+
+        .tagRedFill {
           fill: transparent;
         }
 
@@ -271,12 +310,13 @@
           background: none;
           border: none;
           border-bottom: 1px solid $signInGrey;
-          @include bp(530){
+          @include bp(530) {
             font-size: 16px;
           }
-          @include bp(476){
+          @include bp(476) {
             font-size: 14px;
           }
+
           &::placeholder {
             color: $signInGrey;
             font-weight: 300;
@@ -339,18 +379,20 @@
   }
 }
 
-.step2{
+.step2 {
   .step2-line {
     animation: line2 1s 1 forwards;
+  }
+  @keyframes line2 {
+    0% {
+      width: 25%;
     }
-    @keyframes line2 {
-      0% {
-        width: 25%;
-      }
-      100% {
-        width: 50%;
-      }
+
+    100% {
+      width: 50%;
     }
+  }
+
   &__imgDropBox {
     width: 80%;
     height: 125px;
@@ -359,18 +401,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    @include bp(530){
+    @include bp(530) {
       width: 95%;
     }
+
     p {
       font-family: $mont;
       font-size: 18px;
       color: $greyLight;
       font-weight: 300;
       margin: 0;
-      @include bp(530){
+      @include bp(530) {
         font-size: 16px;
       }
+
       span {
         text-decoration: underline;
       }
@@ -378,7 +422,8 @@
   }
 }
 
-.step3, .step4 {
+.step3,
+.step4 {
   &__checkboxContainer {
     display: flex;
     flex-flow: row wrap;
@@ -387,26 +432,29 @@
     justify-content: space-between;
     margin-top: 30px;
     margin-left: 33px;
-    @include bp(1025){
+    @include bp(1025) {
       width: 95%;
       margin-left: 25px;
     }
-    @include bp(530){
+    @include bp(530) {
       height: 50px;
     }
 
     &__checkboxSteps {
       width: 25%;
-      @include bp(1025){
+      @include bp(1025) {
         width: 50%;
         height: 30px;
       }
+
       input[type="checkbox"] {
         display: none;
       }
+
       label {
         position: relative;
         font-family: $mont;
+
         strong {
           font-size: 10px;
         }
@@ -420,6 +468,7 @@
         bottom: 0;
         margin: auto;
       }
+
       span.checkbox::before {
         width: 18px;
         height: 18px;
@@ -428,7 +477,7 @@
         border: 1px solid $greyLight;
         transition: border-color 0.2s;
         left: -33px;
-        @include bp(1025){
+        @include bp(1025) {
           left: -25px;
         }
       }
@@ -439,7 +488,7 @@
 
       span.checkbox::after {
         content: '';
-        background-image: url("../img/icons/svg/checkmark.svg");
+        background-image: url("../opt_img/icons/svg/checkmark.svg");
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;
@@ -448,7 +497,7 @@
         transition: color 0.2s;
         opacity: 0;
         left: -32px;
-        @include bp(1025){
+        @include bp(1025) {
           left: -25px;
         }
       }
@@ -458,12 +507,14 @@
         opacity: 1;
       }
     }
-    .stepBtns{
-      @include bp(530){
+
+    .stepBtns {
+      @include bp(530) {
         margin-top: 30px;
       }
     }
   }
+
   &__keywordContainer {
     height: 50px;
     width: 80%;
@@ -472,13 +523,14 @@
     flex-flow: row wrap;
     align-items: center;
     margin-top: 27px;
-    @include bp(1025){
+    @include bp(1025) {
       width: 85%;
       height: 80px;
     }
-    @include bp(530){
+    @include bp(530) {
       width: 95%;
     }
+
     .keyword {
       height: 28px;
       width: 120px;
@@ -493,15 +545,16 @@
       font-weight: 100;
       font-size: 14px;
       position: relative;
-      @include bp(1025){
+      @include bp(1025) {
         width: 115px;
         margin-right: 10px;
         margin-left: 10px;
       }
     }
+
     .keyword::after {
       content: '';
-      background-image: url("../img/icons/svg/close.svg");
+      background-image: url("../opt_img/icons/svg/close.svg");
       background-repeat: no-repeat;
       background-size: contain;
       background-position: center;
@@ -513,6 +566,7 @@
       right: 8px;
       top: 8px;
     }
+
     p {
       font-family: $mont;
       color: $greyLight;
@@ -526,46 +580,51 @@
 .step3 {
   .step3-line {
     animation: line3 1s 1 forwards;
+  }
+  @keyframes line3 {
+    0% {
+      width: 50%;
     }
-    @keyframes line3 {
-      0% {
-        width: 50%;
-      }
-      100% {
-        width: 75%;
-      }
+
+    100% {
+      width: 75%;
     }
+  }
 }
 
 .step4 {
   .step4-line {
     animation: line4 1s 1 forwards;
+  }
+  @keyframes line4 {
+    0% {
+      width: 75%;
     }
-    @keyframes line4 {
-      0% {
-        width: 75%;
-      }
-      100% {
-        width: 95%;
-      }
+
+    100% {
+      width: 95%;
     }
+  }
+
   &__checkboxContainer {
     width: 100%;
-    @include bp(1025){
+    @include bp(1025) {
       flex-flow: column;
     }
+
     &__checkboxSteps {
       width: 33%;
-      @include bp(1025){
+      @include bp(1025) {
         width: 50%;
         height: 30px;
       }
-      @include bp(1025){
+      @include bp(1025) {
         height: 70px;
         padding-bottom: 50px;
       }
     }
   }
+
   &__iconsDrink {
     display: flex;
     flex-direction: row;
@@ -574,26 +633,28 @@
     width: 98%;
     margin-left: -40px;
     @include bp(1025) {
-    flex-direction: column;
-    justify-content: flex-end;
-    margin-top: 0;
-    width: 40%;
-    margin-left: 180px;
-    height: 40%;
-    margin-top: -90px;
+      flex-direction: column;
+      justify-content: flex-end;
+      margin-top: 0;
+      width: 40%;
+      margin-left: 180px;
+      height: 40%;
+      margin-top: -90px;
     }
+
     svg {
       height: 65px;
       overflow: visible;
-      @include bp(1025){
+      @include bp(1025) {
         height: 55px;
       }
     }
+
     svg:nth-child(2) {
       height: 47px;
       margin-top: 18px;
       overflow: visible;
-      @include bp(1025){
+      @include bp(1025) {
         height: 39px;
         margin-top: 20px;
         margin-bottom: 20px;
@@ -605,25 +666,32 @@
 .stepDone {
   .stepDone-line {
     animation: lineDone 1s 1 forwards;
+  }
+  @keyframes lineDone {
+    0% {
+      width: 95%;
     }
-    @keyframes lineDone {
-      0% {
-        width: 95%;
-      }
-      100% {
-        width: 100%;
-      }
+
+    100% {
+      width: 100%;
     }
+  }
 }
 
-
-.step2, .step3, .step4, .stepDone {
+.step2,
+.step3,
+.step4,
+.stepDone {
   display: none;
 }
-.utensilsRed, .drinkRed, .coctailRed {
+
+.coctailRed,
+.drinkRed,
+.utensilsRed {
   opacity: 0;
   transition: opacity 200ms ease;
 }
+
 .showRefreshments {
   opacity: 1;
 }
