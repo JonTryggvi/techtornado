@@ -114,7 +114,6 @@ function clickedEvent(motherClass, pageId) {
     var sThisHeading = $(this).children().children('h3').html();
     $('#' + pageId + ' .eventsection__right__event > h2').text(sThisHeading);
     $('#' + pageId + ' .eventsection__right__event img').attr('src', aImgList[randomImgNumber]);
-    // console.log(+);
     if (pageId != 'pageEvents' && pageId != 'pagePendingEvents') {
       var views = $('#' + pageId + ' .eventsection__right__stats__item')[0];
       var attending = $('#' + pageId + ' .eventsection__right__stats__item')[1];

@@ -14,7 +14,7 @@ var isMobile = false;
 if ($(window).innerWidth() < 769) {
   isMobile = true;
 }
-console.log(isMobile);
+// console.log(isMobile);
 
 
 if (isMobile) {

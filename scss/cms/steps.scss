@@ -130,6 +130,12 @@
     flex-direction: row;
     // margin-top: 65px;
     justify-content: space-between;
+    @include bp(1281) {
+      bottom: 90px;
+    }
+    @include bp(1024) {
+      bottom: 180px;
+    }
     @include bp(530) {
       width: 100%;
       position: unset;

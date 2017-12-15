@@ -92,8 +92,7 @@ $(document).ready(function() {
     //console.log('x');
     signIn.removeClass('scaleUp');
   });
-
-  btnSendSignIn.click(function() {
+  $('.signInmedia').click(function() {
     $.post('api-signin.php', {
       'loggedin': true
     }).done(function(data) {
