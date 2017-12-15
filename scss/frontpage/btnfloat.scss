@@ -21,7 +21,7 @@
       max-width: 100%;
       margin: 0 0 0 auto;
       cursor: pointer;
-      z-index: 99999;
+      // z-index: 99999;
     }
 
     .btnFloater__svg {
@@ -113,7 +113,7 @@
   height: auto;
   align-items: center;
   justify-content: center;
-  z-index: 999999999;
+  // z-index: 999999999;
 
   .btnFloatingForm__button {
     @include bp(376) {

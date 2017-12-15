@@ -610,8 +610,7 @@
 
         &:after {
           opacity: 1;
-          transform: scale(1);
-          transform: rotate(45deg);
+          transform: rotate(45deg) scale(1);
           @include bp(769) {
             width: 20px;
             height: 20px;
