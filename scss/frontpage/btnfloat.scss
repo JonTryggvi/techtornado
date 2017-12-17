@@ -21,7 +21,7 @@
       max-width: 100%;
       margin: 0 0 0 auto;
       cursor: pointer;
-      // z-index: 99999;
+      z-index: 1;
     }
 
     .btnFloater__svg {
@@ -85,7 +85,8 @@
       top: -45px;
     }
     @include bp(415) {
-      right: 20%;
+      right: 50%;
+      margin-right: -125px;
       top: -122px;
     }
   }

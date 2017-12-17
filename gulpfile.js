@@ -62,6 +62,7 @@ var PATHS = {
     '!**/node_modules',
     '!**/node_modules/**',
     '!**/components/**',
+    '!**/scss**',
     '!**/scss/**',
     '!**/css/styles.css.map',
     '!**/bower.json',
