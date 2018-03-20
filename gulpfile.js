@@ -92,7 +92,7 @@ gulp.task('browser-sync', ['build'], function() {
     proxy: URL,
 
     // Port #
-    // port: PORT
+    // port: 1981
   });
 });
 
@@ -141,14 +141,14 @@ gulp.task('lint', function() {
 });
 
 
-gulp.task('minify:php', () => $.if(isProduction, gulp.src('/**/*.php', {
-    read: false
-  }))
-  .pipe($.if(isProduction, phpMinify({
-    mode: TransformMode.fast
-  })))
-  .pipe(gulp.dest('/'))
-);
+// gulp.task('minify:php', () => $.if(isProduction, gulp.src('/**/*.php', {
+//     read: false
+//   }))
+//   .pipe($.if(isProduction, phpMinify({
+//     mode: TransformMode.fast
+//   })))
+//   .pipe(gulp.dest('/'))
+// );
 
 
 gulp.task('imgop', () =>
