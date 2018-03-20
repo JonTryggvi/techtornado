@@ -1,0 +1,204 @@
+.fp-createevent {
+  height: 265px;
+  width: 100%;
+  background-color: $white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__btn-create {
+    display: flex;
+    margin-left: 70px;
+    color: $black;
+    font-size: 32px;
+    cursor: pointer;
+    @include bp(415) {
+      font-size: 22px;
+    }
+    font-family: $mont;
+    font-weight: 500;
+    align-items: center;
+    justify-content: center;
+
+    span {
+      margin-top: 2px;
+    }
+
+    &:hover {
+      .leftTrans {
+        transform: translateX(5px);
+      }
+
+      .redPoly {
+        transform: translateX(0);
+        fill: $red;
+      }
+    }
+
+    &__arrow {
+      height: 24px;
+      width: 50px;
+      margin-left: 30px;
+      transition: all 200ms ease;
+
+      .redPoly {
+        transform: translateX(-5px);
+        fill: transparent;
+        transition: all 200ms 100ms ease;
+      }
+    }
+  }
+}
+
+.fp-subscribe {
+  height: 265px;
+  width: 100%;
+  background-color: $red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__btn-subscribe {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-family: $mont;
+    font-weight: 500;
+    margin-left: 60px;
+    font-size: 32px;
+    cursor: pointer;
+    @include bp(415) {
+      font-size: 22px;
+      width: 60%;
+      margin-left: 10px;
+    }
+
+    span {
+      margin-top: -5px;
+    }
+
+    &:hover {
+      .leftTransSub {
+        transform: translateX(5px);
+      }
+
+      .whitePoly {
+        transform: translateX(0);
+        fill: $black;
+      }
+    }
+
+    &__arrow {
+      height: 24px;
+      width: 50px;
+      margin-left: 30px;
+      transition: all 200ms ease;
+
+      .whiteArrow {
+        stroke: #fff;
+      }
+
+      .whitePoly {
+        transform: translateX(-5px);
+        fill: transparent;
+        transition: all 200ms 100ms ease;
+      }
+    }
+  }
+
+  .activeForm {
+    display: none;
+  }
+
+  &__frmSubscribe {
+    display: none;
+    position: relative;
+
+    input {
+      width: 830px;
+      height: 80px;
+      font-size: 16px;
+      font-family: $mont;
+      font-weight: 500;
+      @include bp(415) {
+        font-size: 14px;
+        font-weight: 300;
+      }
+      color: white;
+      position: relative;
+      background: none;
+      border: 1px solid white;
+      padding: 0 30px;
+
+      &::placeholder {
+        color: white;
+      }
+    }
+
+    &__toSubscribe {
+      width: 130px;
+      position: absolute;
+      top: 32px;
+      right: 40px;
+      @include bp(415) {
+        right: 10px;
+      }
+
+      .btnSubscribe {
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        font-size: 16px;
+        @include bp(415) {
+          font-size: 14px;
+          font-weight: 300;
+        }
+        font-family: $mont;
+        font-weight: 500;
+        padding-bottom: 25px;
+
+        svg {
+          width: 25px;
+          height: 18px;
+          margin-left: 24px;
+          transform: translateX(-3px);
+          transition: all 100ms ease;
+          @include bp(415) {
+            margin-left: 0;
+            margin-right: 20px;
+          }
+
+          .arrowSub {
+            stroke: #fff;
+          }
+        }
+
+        .goTo_subscribe {
+          .arrowForwRed_subscribe {
+            transition: all 200ms ease;
+            fill: transparent;
+            transform: translateX(-5px);
+          }
+        }
+
+        &:hover {
+          .arrowForwRed_subscribe {
+            fill: $black;
+            transform: translateX(0);
+          }
+
+          svg {
+            transform: translateX(0px);
+          }
+        }
+      }
+    }
+  }
+
+  .showForm {
+    display: flex;
+    @include bp(769) {
+      width: 90%;
+    }
+  }
+}

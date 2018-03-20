@@ -1,0 +1,44 @@
+// main view such as front page - cms view
+
+.rootPage {
+  transform: translateX(-104vw);
+  transition: transform 200ms ease;
+  position: absolute;
+}
+
+.showRootPage {
+  top: 60px;
+  transform: translateX(0);
+  position: relative;
+}
+
+.frontPage-view {
+  height: 100%;
+  width: 100%;
+}
+
+// cms view
+.cmsPage {
+  transform: translateX(104vw);
+  position: absolute;
+  background-color: $white;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  transition: all 700ms ease;
+  z-index: 1;
+  // box-shadow: inset 2px 2px 4px rgba($black, 0.02);
+}
+
+.showCmsPage {
+  transform: translateX(0);
+  opacity: 1;
+  position: relative;
+  z-index: 2;
+}
+
+.btnRootNav {
+  cursor: pointer;
+}

@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  &:active,
+  &:focus {
+    outline: none;
+  }
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #fff;
+}
+
+a {
+  font-family: $mont;
+  text-decoration: none;
+  color: $black;
+}
+
+h1 {
+  font-family: $robo;
+  font-size: 14px;
+  line-height: 17px;
+  color: $black;
+}
+
+h2 {
+  font-family: $mont;
+  font-size: 70px;
+  line-height: 90px;
+  font-weight: 700;
+  @include x-linear-gradient('135deg', $gradLight, $gradLight, $gradDark);
+  background-clip: text;
+  color: transparent;
+  @include bp(1024){
+    font-size: 45px;
+    line-height: 50px;
+  }
+  @include bp(769){
+    font-size: 40px;
+    line-height: 55px;
+  }
+  @include bp(415){
+    font-size: 30px;
+    line-height: 38px;
+    margin-bottom: 4px;
+  }
+}
+
+h3 {
+  font-family: $mont;
+  font-size: 18px;
+  line-height: 20px;
+  color: $greyLight;
+}
+
+h4 {
+  font-family: $mont;
+  font-size: 12px;
+  font-weight: 300;
+  color: $greyLight;
+}
+
+p {
+  font-family: $play;
+  font-size: 14px;
+  line-height: 26px;
+  color: $black;
+}
+
+a {
+  font-family: $mont;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  color: $blue;
+}
+
+button {
+  font-family: $mont;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 17px;
+  color: $white;
+}
+
+.wrapper {
+  max-width: 1440px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.topbar_wrapper {
+  max-width: 1440px;
+  width: 96%;
+  margin: 0 auto;
+  @include bp(415){
+    width: 90%;
+  }
+}
+
+ul {
+  font-family: $mont;
+}

@@ -1,0 +1,128 @@
+.btnFloatingForm {
+  display: flex;
+  width: 100vw;
+  margin: 0 auto;
+  position: relative;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+
+  &__button {
+    position: absolute;
+    top: -200px;
+    @include bp(415) {
+      top: -150px;
+    }
+
+    .btnFloater {
+      position: relative;
+      width: 250px;
+      height: 250px;
+      max-width: 100%;
+      margin: 0 0 0 auto;
+      cursor: pointer;
+      z-index: 1;
+    }
+
+    .btnFloater__svg {
+      position: relative;
+      display: block;
+      width: 100%;
+      min-height: 300px;
+      height: auto;
+      margin: 0 auto;
+    }
+
+    .btnFloater__clippath,
+    .btnFloater__deco,
+    .btnFloater__img {
+      transform-origin: 50% 50%;
+    }
+
+    .btnFloater__meta {
+      position: absolute;
+      top: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+    }
+
+    .btnFloater__title {
+      font-family: $mont;
+      font-size: 14px;
+      font-weight: 500;
+      width: 30%;
+      text-align: center;
+      padding-top: 50px;
+      color: #fff;
+    }
+
+    .btnFloater--style-2 .btnFloater__deco {
+      fill: #F7F9FB;
+    }
+  }
+}
+
+.btnFloatingForm_signIn {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  position: absolute;
+  top: 300px;
+  right: 0;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+
+  .btnFloatingForm__button {
+    right: -100px;
+    @include bp(769) {
+      right: 55%;
+      top: -45px;
+    }
+    @include bp(415) {
+      right: 50%;
+      margin-right: -125px;
+      top: -122px;
+    }
+  }
+}
+
+.btnFloatingForm_sponsers {
+  display: flex;
+  width: 100%;
+  min-height: 300px;
+  margin: 0 auto;
+  position: absolute;
+  top: 270px;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.btnFloatingForm_getTicket {
+  display: flex;
+  width: 30%;
+  margin: 0 auto;
+  position: relative;
+  top: -20px;
+  left: 0;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  // z-index: 999999999;
+
+  .btnFloatingForm__button {
+    @include bp(376) {
+      top: -160px;
+
+      .btnFloater {
+        transform: scale(0.7);
+      }
+    }
+  }
+}

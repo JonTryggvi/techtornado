@@ -1,0 +1,173 @@
+.fp-hero {
+  width: 100%;
+  height: 90vh;
+  position: relative;
+  background-color: #fff;
+
+  &__slider {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+    @include bp(415) {
+      margin-top:-25px;
+    }
+    &__content {
+      display: flex;
+      flex-flow: row nowrap;
+      width: 100%;
+      height: 100%;
+      align-items: center;
+      // background-color: $red;
+      &__slide {
+        display: flex;
+        flex-flow: column;
+        align-items: flex-start;
+        justify-content: center;
+        width: 70%;
+        margin: 0 auto;
+        h3 {
+          color: $black;
+          font-weight: 500;
+          line-height: 26px;
+          @include bp(415) {
+            font-size: 14px;
+            line-height: 18px;
+          }
+        }
+
+      }
+
+    }
+
+    &__controlls {
+      position: absolute;
+      right: 0;
+      display: flex;
+      flex-flow: column nowrap;
+      height: 100%;
+      width: 10%;
+      @include bp(415) {
+        width: 20%;
+      }
+      justify-content: flex-end;
+      align-items: center;
+      z-index: 1;
+
+      &__conainer {
+        position: relative;
+        display: flex;
+        flex-flow: column;
+        align-items: flex-end;
+        justify-content: space-evenly;
+        min-height: 20%;
+        margin-bottom: 100px;
+        // background-color: $red;
+        &__nextContainer,
+        &__prevContainer {
+          svg {
+            width: 24px;
+            height: 30px;
+          }
+        }
+
+        &__nextContainer,
+        &__prevContainer {
+          position: relative;
+          display: flex;
+          flex-flow: column;
+          align-items: center;
+          justify-content: space-between;
+
+          .btnCommonRules {
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            position: absolute;
+            font-family: $mont;
+            font-size: 14px;
+            white-space: nowrap;
+            width: 0;
+            height: 100%;
+          }
+        }
+
+        &__prevContainer {
+          .prevText {
+            bottom: -80px;
+            transform: rotate(-90deg);
+          }
+        }
+
+        &__nextContainer {
+          .nextText {
+            bottom: 70px;
+            transform: rotate(90deg);
+          }
+        }
+      }
+    }
+  }
+
+  &__btn-seeEvents {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    background-color: $red;
+    color: #fff;
+    border-radius: 50%;
+    left: 50%;
+    bottom: 0;
+    margin-left: -50px;
+    margin-bottom: -50px;
+    z-index: 1;
+    text-align: center;
+  }
+}
+
+// svg slider animations
+.arrowUpRed {
+  cursor: pointer;
+
+  &:hover {
+    .slide-up {
+      transform: translateY(0px);
+      fill: $red;
+    }
+  }
+}
+
+.slide-up {
+  transition: all 200ms 100ms ease;
+  fill: transparent;
+  transform: translateY(5px);
+}
+
+.arrowDownRed {
+  cursor: pointer;
+  position: relative;
+  overflow: visible;
+
+  &:hover {
+    .slide-down {
+      transform: translateY(0px);
+      fill: $red;
+    }
+  }
+}
+
+.slide-down {
+  transition: all 200ms 100ms ease;
+  fill: transparent;
+  transform: translateY(-5px);
+}
+
+.no-js .owl-carousel,
+.owl-carousel.owl-loaded {
+  display: flex;
+}
